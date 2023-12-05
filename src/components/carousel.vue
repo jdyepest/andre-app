@@ -5,11 +5,12 @@
         class="carousel-inner flex transition-transform duration-500 h-full"
         :style="`transform: translateX(-${currentSlide * 100}%)`"
       >
-        <div
-          v-for="(slide, index) in slides"
-          :key="index"
-          class="w-full h-full flex-none relative"
-        >
+        
+        
+  <div
+    v-for="(slide, index) in slides"
+    :key="slide.title" class="flex-none w-full h-full"
+  >
         <img :src="slide.imageSrc" alt="Slide image" class="object-fill  w-full h-full">
 
           
@@ -41,7 +42,7 @@
   <script>
 
 import image2 from './image2.png'
-
+import image6 from './image2.png'
 import image4 from './image4.png'
 import image5 from './image5.png'
 
@@ -72,10 +73,36 @@ data() {
                 description: 'This is the description for slide 3.',
                 buttonText: 'Go to link 3',
                 link: '/link3'
-            }
+            },
+            {
+                imageSrc: image6, // <-- Use the imported image here
+                title: 'Slide 5',
+                description: 'This is the description for slide 1.',
+                buttonText: 'Go to link 1',
+                link: '/link1'
+            },
         ]
     };
 },
+
+computed: {
+  orderedSlides() {
+    let ordered = [];
+    let total = this.slides.length;
+
+    // Calculate the previous, current, and next slide indices
+    let prev = (this.currentSlide - 1 + total) % total;
+    let next = (this.currentSlide + 1) % total;
+
+    // Rearrange slides
+    ordered.push(this.slides[prev]);
+    ordered.push(this.slides[this.currentSlide]);
+    ordered.push(this.slides[next]);
+
+    return ordered;
+  }
+},
+
 
     methods: {
 
@@ -94,9 +121,9 @@ data() {
       this.currentSlide--;
     } else {
       // Direct transition to the last slide
-      this.disableTransition();
+      
       this.currentSlide = this.slides.length - 1;
-      this.$nextTick(this.enableTransition);
+      
     }
   },
   disableTransition() {
@@ -114,6 +141,12 @@ data() {
   </script>
   
   <style scoped>
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
+  opacity: 0;
+}
 
 
   </style>

@@ -1,14 +1,17 @@
 <template>
-    <div class="md:h-[14%] h-1/6">
+    <div class="  md:h-[16%] h-1/6">
       <!-- Desktop Navbar -->
       <nav class="bg-purple-700 h-full hidden md:flex">
-        <div class="container mx-auto">
+        <div class="container mx-10">
           <div class="flex justify-between h-full items-center">
-            <h1 class="text-white text-5xl font-bold italic">Creart Emotion</h1>
-            <div class="space-x-4">
-              <router-link to="/About" class="text-white">Acerca de mi</router-link>
-              <router-link to="/sessions" class="text-white">Sesiones</router-link>
-              <router-link to="/reflections" class="text-white">Reflexiones</router-link>
+            <router-link to="/"  class="block text-white my-1" >
+              <h1 class="text-white text-5xl font-normal font-sans italic">Creart Emotion</h1>
+            </router-link>
+            
+            <div class="space-x-10 ml">
+              <router-link to="/About" class="text-white text-2xl">Acerca de mi</router-link>
+              <router-link to="/sessions" class="text-white text-2xl">Sesiones</router-link>
+              <router-link to="/reflections" class="text-white text-2xl">Reflexiones</router-link>
             </div>
           </div>
         </div>
@@ -47,7 +50,7 @@
     methods: {
       toggleMenu() {
         this.showMenu = !this.showMenu;
-        console.log(this.showMenu);
+        
       }
     }
   }
