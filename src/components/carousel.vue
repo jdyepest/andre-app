@@ -1,43 +1,44 @@
 <template>
-    
-    <div class="carousel relative overflow-hidden md:aspect-[2.0] aspect-[1.3]">
-      <div
-        class="carousel-inner flex transition-transform duration-500 h-full"
-        :style="`transform: translateX(-${currentSlide * 100}%)`"
-      >
-        
-        
-  <div
-    v-for="(slide, index) in slides"
-    :key="slide.title" class="flex-none w-full h-full"
-  >
-        <img :src="slide.imageSrc" alt="Slide image" class="object-fill  w-full h-full">
 
+  <div class="carousel relative overflow-hidden md:aspect-[2.0] aspect-[1.3]">
+    <!-- Removed the transform style from the carousel-inner -->
+    <div class="carousel-inner  h-full">
+      <!-- Use v-show to display the current slide -->
+    <TransitionGroup :name="slideDirection" tag="div">
+      <div v-for="(slide, index) in slides" :key="slide" class="flex-none w-full h-full carousel-slider" v-show="index === currentSlide">
+        <!-- Slide content -->
+        
+          <div >
+            <img :src="slide.imageSrc" alt="Slide image" class="object-fill w-full h-full">
+            
           
-          <div class="absolute bottom-0 right-0 bg-white bg-opacity-50 p-5 rounded-l-lg">
-            <h2 class="text-2xl mb-4">{{ slide.title }}</h2>
-            <p class="mb-4">{{ slide.description }}</p>
-            <router-link :to="slide.link" class="btn btn-blue">
-              {{ slide.buttonText }}
-            </router-link>
+            <div class="absolute bottom-0 right-0 bg-white bg-opacity-50 p-5 rounded-l-lg">
+              <h2 class="text-2xl mb-4">{{ slide.title }}</h2>
+              <p class="mb-4">{{ slide.imageSrc }}</p>
+              <router-link :to="slide.link" class="btn btn-blue">
+                {{ slide.buttonText }}
+              </router-link>
+          
+            </div>
           </div>
-        </div>
+
+      
       </div>
-      <button
-      @click="prevSlide"
-      class="absolute top-1/2 left-0 ml-2 transform -translate-y-1/2 z-10 text-4xl"
-    >
+    </TransitionGroup>
+      </div>
+  
+  
+    <!-- Navigation buttons -->
+    <button @click="prevSlide" class="absolute top-1/2 left-0 ml-2 transform -translate-y-1/2 z-10 text-4xl">
       ←
     </button>
-    <button
-      @click="nextSlide"
-      class="absolute top-1/2 right-0 mr-2 transform -translate-y-1/2 z-10 text-4xl"
-    >
+    <button @click="nextSlide" class="absolute top-1/2 right-0 mr-2 transform -translate-y-1/2 z-10 text-4xl">
       →
     </button>
+  </div>
 
-    </div>
-  </template>
+</template>
+
   
   <script>
 
@@ -81,27 +82,11 @@ data() {
                 buttonText: 'Go to link 1',
                 link: '/link1'
             },
-        ]
+        ],
+        slideDirection: 'slide-right',
     };
 },
 
-computed: {
-  orderedSlides() {
-    let ordered = [];
-    let total = this.slides.length;
-
-    // Calculate the previous, current, and next slide indices
-    let prev = (this.currentSlide - 1 + total) % total;
-    let next = (this.currentSlide + 1) % total;
-
-    // Rearrange slides
-    ordered.push(this.slides[prev]);
-    ordered.push(this.slides[this.currentSlide]);
-    ordered.push(this.slides[next]);
-
-    return ordered;
-  }
-},
 
 
     methods: {
@@ -114,7 +99,10 @@ computed: {
       
       this.currentSlide = 0;
       
+      
     }
+    this.slideDirection = 'slide-right';
+   
   },
   prevSlide() {
     if (this.currentSlide > 0) {
@@ -125,15 +113,9 @@ computed: {
       this.currentSlide = this.slides.length - 1;
       
     }
+    this.slideDirection = 'slide-left';
   },
-  disableTransition() {
-    const carouselInner = this.$el.querySelector('.carousel-inner');
-    carouselInner.style.transition = 'none';
-  },
-  enableTransition() {
-    const carouselInner = this.$el.querySelector('.carousel-inner');
-    carouselInner.style.transition = '';
-  }
+  
 
 
     }
@@ -141,13 +123,60 @@ computed: {
   </script>
   
   <style scoped>
-.fade-enter-active, .fade-leave-active {
-  transition: opacity 0.5s;
+  .list-enter-active,
+.list-leave-active {
+  transition: all 0.5s ease;
 }
-.fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
+.list-enter-from,
+.list-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+}
+.slide-enter-active, .slide-leave-active {
+  transition: opacity 4.5s;
+}
+.slide-enter, .slide-leave-to /* starting and ending state for leave */ {
   opacity: 0;
 }
+.slide-left-enter-active {
+        animation: slide-left-in 0.5s ease-in;
+    }
+    .slide-left-leave-active {
+        animation: slide-left-out 0.5s ease-in;
+    }
 
+    @keyframes slide-left-in{
+        from  { transform: translateX(-100%);}
+        to { transform: translateX(0);} 
+    }
 
+    @keyframes slide-left-out{
+        from  { transform: translateX(0%);}
+        to { transform: translateX(100%);} 
+    }
+    
+
+    .slide-right-enter-active {
+        animation: slide-right-in 0.5s ease-in;
+    }
+    .slide-right-leave-active {
+        animation: slide-right-out 0.5s ease-in;
+    }
+    @keyframes slide-right-out{
+        from  { transform: translateX(0%);}
+        to { transform: translateX(-100%);} 
+    }
+    @keyframes slide-right-in{
+        from  { transform: translateX(100%);}
+        to { transform: translateX(0);} 
+    }
+
+.carousel-slider {
+        position:absolute;
+        top:0;
+        left:0;
+        bottom:0;
+        right:0;
+    }
   </style>
   
