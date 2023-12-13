@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="h-[74%]">
       
       <carousel></carousel>
       <div class="bg-[#360269] h-92" >

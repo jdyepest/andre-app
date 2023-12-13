@@ -41,6 +41,7 @@
   </template>
   
   <script>
+  import AnimatedComponent from './fadeA.vue'
   export default {
     data() {
       return {
@@ -52,7 +53,8 @@
         this.showMenu = !this.showMenu;
         
       }
-    }
+    },
+    components: {AnimatedComponent}
   }
   </script>
   
