@@ -1,7 +1,7 @@
 <template>
-    <div ref="target" class="wrapper">
+    <div ref="target" class="">
         <transition :name="animationType">
-            <div v-if="animate" class="animated-component h-full w-full">
+            <div v-if="animate" class="animated-component ">
                 <slot></slot>
             </div>
         </transition>
@@ -24,10 +24,11 @@ export default {
     const animate = ref(false);
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting && !animate.value) {
+        animate.value = entry.isIntersecting;
+        /*if (entry.isIntersecting && !animate.value) {
           animate.value = true;
-          observer.unobserve(target.value); // Stop observing after animation
-        }
+          //observer.unobserve(target.value); // Stop observing after animation
+        }*/
       },
       {
         threshold: 0.5
