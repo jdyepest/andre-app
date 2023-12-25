@@ -15,7 +15,7 @@
  <div class="h-92">    
 <div class="grid grid-cols-1 md:grid-cols-2 h-screen md:h-full">
   <div class="feminist-purple h-screen md:h-full flex justify-center items-center relative">
-          <img src="./assets/andre.jpg" class="object-fill max-h-full w-full absoulute">
+          <img src="./assets/andre1.jpg" class="object-fill max-h-full w-full absoulute">
     
   </div>
           
@@ -29,7 +29,7 @@
     <div class="flex items-center h-full">
       <AnimatedComponent>
         <div class=" mx-auto px-4 h-full">
-          <h2 class="text-[78px] font-bold mb-4 italic text-right text-white italic font-normal font-sans">Andrea Narváez <br> 'Path'</h2>
+          <h2 class="md:text-[78px] text-[52px] font-bold mb-4 italic md:text-right text-center text-white italic font-normal font-sans">Andrea Narváez <br> 'Path'</h2>
           
           <p class="text-lg mb-2 text-white text-right md:text-justify">
               Psicoanalista especializada en infancia, adolescencia y género. Egresada de la Universidad del Valle, con un enfoque terapéutico influenciado por las teorías de Jacques Lacan.
@@ -50,7 +50,7 @@
     <div class="flex items-center h-full">
       <AnimatedComponent>
         <div class="mx-auto px-4 h-full">
-    <h2 class="text-[78px] font-bold mb-4 italic text-left text-white italic font-normal font-sans">Terapia</h2>
+    <h2 class="md:text-[78px] text-[52px] font-bold mb-4 italic md:text-left text-center text-white italic font-normal font-sans">Terapia</h2>
 
 
     <p class="text-lg text-white text-right md:text-justify text-center">
@@ -75,7 +75,7 @@
     
   </div>
   <div class="feminist-purple h-screen flex justify-center items-center relative order-5">
-          <img src="./assets/andre_con_libro.jpg" class="object-fill max-h-full w-full absoulute">
+          <img src="./assets/andre_con_libro1.jpg" class="object-fill max-h-full w-full absoulute">
     
   </div>
           
@@ -89,7 +89,7 @@
     <div class="flex items-center h-screen">
       <AnimatedComponent>
         <div class=" mx-auto px-4 h-full">
-          <h2 class="text-[78px] font-bold mb-4 italic text-right text-white italic font-normal font-sans">mi libro <br> 'el cajon de la noche'</h2>
+          <h2 class="md:text-[78px] text-[52px] font-bold mb-4 italic text-right text-white italic font-normal font-sans">mi libro <br> 'el cajon de la noche'</h2>
           
           <p class="text-lg mb-2 text-white text-right md:text-justify">
               mi obra mas completa es un poemario que escribi en pandemia en el cual se puede obsever mis vision del mundo atravez de este arte mis impresiones de la poesia el amor el arte
@@ -108,6 +108,32 @@
 </div>
 
 </div> 
+
+<div class="contact-section bg-[#360269] h-3/5 w-full flex justify-center">
+    <div class="my-auto w-4/5">
+      <div class="text-center">
+        <h2 class="text-[24px] text-white">Contact Us</h2>
+        <div class="flex justify-center mt-4">
+          <!-- Facebook SVG Link -->
+          <a href="https://www.facebook.com" target="_blank" class="mx-2">
+            <img src="./assets/facebook.svg" alt="Facebook" class="h-8 w-8">
+          </a>
+          <!-- Instagram SVG Link -->
+          <a href="https://www.instagram.com" target="_blank" class="mx-2">
+            <img src="./assets/instagram.svg" alt="Instagram" class="h-8 w-8">
+          </a>
+          <!-- Email SVG Link -->
+          <a href="mailto:example@example.com" class="mx-2">
+            <img src="./assets/mail.svg" alt="Email" class="h-8 w-8">
+          </a>
+          <!-- WhatsApp SVG Link -->
+          <a href="https://wa.me/+573187392384" target="_blank" class="mx-2">
+            <img src="./assets/whatsapp.svg" alt="WhatsApp" class="h-8 w-8">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 

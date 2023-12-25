@@ -59,6 +59,10 @@ export default {
 .fade-leave-to {
   opacity: 0;
 }
+
+.fade-leave-active {
+  transition: opacity 900ms ease-out;
+}
 /* Zoom animation */
 .zoom-enter-active,
 .zoom-leave-active {
