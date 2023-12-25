@@ -119,7 +119,7 @@
             <img src="./assets/facebook.svg" alt="Facebook" class="h-8 w-8">
           </a>
           <!-- Instagram SVG Link -->
-          <a href="https://www.instagram.com" target="_blank" class="mx-2">
+          <a href="https://www.instagram.com/andrecreation_/" target="_blank" class="mx-2">
             <img src="./assets/instagram.svg" alt="Instagram" class="h-8 w-8">
           </a>
           <!-- Email SVG Link -->
