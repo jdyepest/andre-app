@@ -12,11 +12,13 @@
             <img :src="slide.imageSrc" alt="Slide image" class="object-fill w-full h-full">
             
           
-            <div class="absolute bottom-0 left-0 bg-white bg-opacity-50 p-5 rounded-lg">
-              <h2 class="text-2xl mb-4">{{ slide.title }}</h2>
-              <p class="mb-4">{{ slide.imageSrc }}</p>
+            <div class="absolute top-5 left-10 bg-white bg-opacity-25 p-5 rounded-lg w-3/4 text-violet-950">
+              <h2 class="text-base mb-4">{{ slide.title }}</h2>
+              <p class="mb-4 text-xs">{{ slide.description }}</p>
               <router-link :to="slide.link" class="btn btn-blue">
+                <div class="text-base">
                 {{ slide.buttonText }}
+                </div>
               </router-link>
           
             </div>
@@ -57,7 +59,7 @@ data() {
             {
                 imageSrc: image4, // <-- Use the imported image here
                 title: 'Acerca de mi',
-                description: 'soy una psicologa',
+                description: 'Psicóloga con formación psicoanalitica, de género y especialista en problemas de la infancia y adolescencia. Graduada de pregrado en la Universitaria del Valle y  posgrado  en la Universidad de Antioquia. Me desarrollo en el ámbito clínico con sesiones 1:1 a partir de herramientas psicoterapéuticas en el arte y la escritura. Procuro un espacio de confianza para ir más allá del tratamiento de manera que se ofrezca un acompañamiento y atención singular en cada proceso.',
                 buttonText: 'conoce mas',
                 link: '/About'
             },
@@ -115,11 +117,39 @@ data() {
     }
     this.slideDirection = 'slide-left';
   },
+  handleTouchStart(e) {
+      this.touchStartX = e.changedTouches[0].clientX;
+    },
+    handleTouchMove(e) {
+      this.touchEndX = e.changedTouches[0].clientX;
+    },
+    handleTouchEnd() {
+      if (this.touchStartX - this.touchEndX > 50) {
+        // Swiped left
+        this.nextSlide();
+      } else if (this.touchEndX - this.touchStartX > 50) {
+        // Swiped right
+        this.prevSlide();
+      }
+    },
+  },
+  mounted() {
+    const carousel = this.$el.querySelector('.carousel-inner');
+    carousel.addEventListener('touchstart', this.handleTouchStart);
+    carousel.addEventListener('touchmove', this.handleTouchMove);
+    carousel.addEventListener('touchend', this.handleTouchEnd);
+  },
+  beforeDestroy() {
+    const carousel = this.$el.querySelector('.carousel-inner');
+    carousel.removeEventListener('touchstart', this.handleTouchStart);
+    carousel.removeEventListener('touchmove', this.handleTouchMove);
+    carousel.removeEventListener('touchend', this.handleTouchEnd);
+  },
+};
   
 
 
-    }
-  };
+
   </script>
   
   <style scoped>

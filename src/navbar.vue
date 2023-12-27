@@ -22,7 +22,7 @@
       <nav class="nav-back h-full md:hidden">
         <div class="container mx-auto flex justify-between h-full items-center">
           <div></div>
-          <h1 class="text-white s:text-3xl text-3xl font-bold">Creart Emotion</h1>
+          <h1 class="text-white s:text-3xl text-3xl font-normal font-sans italic">Creart Emotion</h1>
           <button @click="toggleMenu" class="text-white  text-5xl">
             ☰
           </button>

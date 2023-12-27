@@ -13,7 +13,7 @@
 </div>
 
  <div class="h-92">    
-<div class="grid grid-cols-1 md:grid-cols-2 h-screen md:h-full">
+<div class="grid grid-cols-1 md:grid-cols-2 h-full md:h-full">
   <div class="feminist-purple h-screen md:h-full flex justify-center items-center relative">
           <img src="./assets/andre1.jpg" class="object-fill max-h-full w-full absoulute">
     
@@ -32,7 +32,8 @@
           <h2 class="md:text-[78px] text-[52px] font-bold mb-4 italic md:text-right text-center text-white italic font-normal font-sans">Andrea Narváez <br> 'Path'</h2>
           
           <p class="text-lg mb-2 text-white text-right md:text-justify">
-              Psicoanalista especializada en infancia, adolescencia y género. Egresada de la Universidad del Valle, con un enfoque terapéutico influenciado por las teorías de Jacques Lacan.
+            Psicóloga con formación psicoanalitica, de género y especialista en problemas de la infancia y adolescencia. Graduada de pregrado en la Universitaria del Valle y  posgrado  en la Universidad de Antioquia. Me desarrollo en el ámbito clínico con sesiones 1:1 a partir de herramientas psicoterapéuticas en el arte y la escritura. Procuro un espacio de confianza para ir más allá del tratamiento de manera que se ofrezca un acompañamiento y atención singular en cada proceso.
+
           </p>
           
           <p class="text-lg text-white text-right md:text-justify">
@@ -109,13 +110,16 @@
 
 </div> 
 
-<div class="contact-section bg-[#360269] h-3/5 w-full flex justify-center">
+<div class="contact-section bg-[#360269] h-3/5 w-full flex justify-center absolute">
     <div class="my-auto w-4/5">
       <div class="text-center">
-        <h2 class="text-[24px] text-white">Contact Us</h2>
+        <h2 class="text-[24px] text-white">Contacto</h2>
+        <div class="text-center   text-white" >
+          puedes contactarme atravez de mis reades sociales como facebook, instagram o whatsapp para obtener mas informacion al respcto
+        </div>
         <div class="flex justify-center mt-4">
           <!-- Facebook SVG Link -->
-          <a href="https://www.facebook.com" target="_blank" class="mx-2">
+          <a href="https://m.facebook.com/101364628375459?wtsid=rdr_0dPxI4AJkH3KylJhn" target="_blank" class="mx-2">
             <img src="./assets/facebook.svg" alt="Facebook" class="h-8 w-8">
           </a>
           <!-- Instagram SVG Link -->
@@ -123,7 +127,7 @@
             <img src="./assets/instagram.svg" alt="Instagram" class="h-8 w-8">
           </a>
           <!-- Email SVG Link -->
-          <a href="mailto:example@example.com" class="mx-2">
+          <a href="mailto:crear.emotion.1998@gmail.com" class="mx-2">
             <img src="./assets/mail.svg" alt="Email" class="h-8 w-8">
           </a>
           <!-- WhatsApp SVG Link -->
