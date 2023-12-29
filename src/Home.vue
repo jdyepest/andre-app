@@ -3,18 +3,18 @@
       
 <carousel ></carousel>
       
-<div class="bg-[#360269] h-3/5 w-full flex justify-center" >
+<div class="bg-[#360269] h-screen w-full flex justify-center" >
   <div class="text-center px-5 my-auto w-4/5">
     <AnimatedComponent>
-    <p class="md:text-[40px] text-[24px] text-white ">"{{ aboutText }}"</p>
-    <p class="md:text-[20px] text-[12px] text-white mt-4">Jacques Lacan</p>
+    <p class="md:text-[40px] text-[22px] text-white ">"{{ aboutText }}"</p>
+    <p class="md:text-[20px] text-[12px] text-white mt-4">Melanie Klein</p>
   </AnimatedComponent>
   </div>
 </div>
 
  <div class="h-92">    
 <div class="grid grid-cols-1 md:grid-cols-2 h-full md:h-full">
-  <div class="feminist-purple h-screen md:h-full flex justify-center items-center relative">
+  <div class="feminist-purple h-full md:h-full flex justify-center items-center relative">
           <img src="./assets/andre1.jpg" class="object-fill max-h-full w-full absoulute">
     
   </div>
@@ -31,12 +31,12 @@
         <div class=" mx-auto px-4 h-full">
           <h2 class="md:text-[78px] text-[52px] font-bold mb-4 italic md:text-right text-center text-white italic font-normal font-sans">Andrea Narváez <br> 'Path'</h2>
           
-          <p class="text-lg mb-2 text-white text-right md:text-justify">
+          <p class="text-md md:text-lg mb-2 text-white text-right md:text-justify">
             Psicóloga con formación psicoanalitica, de género y especialista en problemas de la infancia y adolescencia. Graduada de pregrado en la Universitaria del Valle y  posgrado  en la Universidad de Antioquia. Me desarrollo en el ámbito clínico con sesiones 1:1 a partir de herramientas psicoterapéuticas en el arte y la escritura. Procuro un espacio de confianza para ir más allá del tratamiento de manera que se ofrezca un acompañamiento y atención singular en cada proceso.
 
           </p>
           
-          <p class="text-lg text-white text-right md:text-justify">
+          <p class="text-md md:text-lg text-white text-right md:text-justify">
               Apasionada por la poesía, la escritura y el arte, integro la creatividad en mi práctica terapéutica para explorar y sanar, ofreciendo un espacio de acogida y comprensión para el bienestar y el autoconocimiento de mis pacientes.
           </p>
         </div>
@@ -156,7 +156,7 @@ import AnimatedComponent from './fadeA.vue'
   export default {
     name: 'Home',
     setup() {
-        const aboutText = ref("Lo que está en juego en el amor es precisamente la diferencia entre el ser y el semblante, entre el ser y la aparición, entre el amor y la imagen.");
+        const aboutText = ref("«El equilibrio no significa evitar conflictos, implica la fuerza para tolerar emociones dolorosas y poder manejarlas. Si disociamos excesivamente las emociones dolorosas restringimos la personalidad y provocamos inhibiciones variadas. De esto se desprende que la salud mental no es compatible con la superficialidad, puesto que ésta se vincula con renegación del conflicto interior y de las dificultades externas. Se utiliza la renegación de manera excesiva porque el Yo no es suficientemente fuerte para tolerar el dolor»");
         return {
             aboutText
         };

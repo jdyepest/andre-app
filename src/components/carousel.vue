@@ -12,7 +12,7 @@
             <img :src="slide.imageSrc" alt="Slide image" class="object-fill w-full h-full">
             
           
-            <div class="absolute top-5 left-10 bg-white bg-opacity-25 p-5 rounded-lg w-3/4 text-violet-950">
+            <div class="absolute bottom-5 left-10 bg-white bg-opacity-25 p-5 rounded-lg w-3/4 text-violet-950">
               <h2 class="text-base mb-4">{{ slide.title }}</h2>
               <p class="mb-4 text-xs">{{ slide.description }}</p>
               <router-link :to="slide.link" class="btn btn-blue">
@@ -59,7 +59,7 @@ data() {
             {
                 imageSrc: image4, // <-- Use the imported image here
                 title: 'Acerca de mi',
-                description: 'Psicóloga con formación psicoanalitica, de género y especialista en problemas de la infancia y adolescencia. Graduada de pregrado en la Universitaria del Valle y  posgrado  en la Universidad de Antioquia. Me desarrollo en el ámbito clínico con sesiones 1:1 a partir de herramientas psicoterapéuticas en el arte y la escritura. Procuro un espacio de confianza para ir más allá del tratamiento de manera que se ofrezca un acompañamiento y atención singular en cada proceso.',
+                description: 'Psicóloga con formación psicoanalitica, de género y especialista en problemas de la infancia y adolescencia. Graduada de pregrado en la Universitaria del Valle y  posgrado  en la Universidad de Antioquia.',
                 buttonText: 'conoce mas',
                 link: '/About'
             },
