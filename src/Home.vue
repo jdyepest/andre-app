@@ -31,7 +31,7 @@
         <div class=" mx-auto px-4 h-full">
           <h2 class="md:text-[78px] text-[52px] font-bold mb-4 italic md:text-right text-center text-white italic font-normal font-sans">Andrea Narváez <br> 'Path'</h2>
           
-          <p class="text-md md:text-lg mb-2 text-white text-right md:text-justify">
+          <p class="text-md md:text-lg mb-2 text-white md:text-right text-justify">
             Psicóloga con formación psicoanalitica, de género y especialista en problemas de la infancia y adolescencia. Graduada de pregrado en la Universitaria del Valle y  posgrado  en la Universidad de Antioquia. Me desarrollo en el ámbito clínico con sesiones 1:1 a partir de herramientas psicoterapéuticas en el arte y la escritura. Procuro un espacio de confianza para ir más allá del tratamiento de manera que se ofrezca un acompañamiento y atención singular en cada proceso.
 
           </p>
