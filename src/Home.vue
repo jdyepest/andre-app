@@ -26,46 +26,50 @@
   
   <div class="feminist-purple font-sans antialiased h-screen md:h-full ">
 
-    <div class="flex items-center h-full">
+
       <AnimatedComponent>
+        <div class="flex items-center h-full">
         <div class=" mx-auto px-4 h-full">
-          <h2 class="md:text-[78px] text-[52px] font-bold mb-4 italic md:text-right text-center text-white italic font-normal font-sans">Andrea Narváez <br> 'Path'</h2>
+          <h2 class="md:text-[78px] text-[52px] font-bold mb-4 italic  text-white italic font-normal font-sans">Andrea Narváez <br> 'Path'</h2>
           
-          <p class="text-md md:text-lg mb-2 text-white md:text-right text-justify">
+          <p class="text-md md:text-lg mb-2 text-white md:text-left text-justify">
             Psicóloga con formación psicoanalitica, de género y especialista en problemas de la infancia y adolescencia. Graduada de pregrado en la Universitaria del Valle y  posgrado  en la Universidad de Antioquia. Me desarrollo en el ámbito clínico con sesiones 1:1 a partir de herramientas psicoterapéuticas en el arte y la escritura. Procuro un espacio de confianza para ir más allá del tratamiento de manera que se ofrezca un acompañamiento y atención singular en cada proceso.
 
           </p>
           
-          <p class="text-md md:text-lg text-white text-right md:text-justify">
+          <p class="text-md md:text-lg text-white text-left md:text-justify">
               Apasionada por la poesía, la escritura y el arte, integro la creatividad en mi práctica terapéutica para explorar y sanar, ofreciendo un espacio de acogida y comprensión para el bienestar y el autoconocimiento de mis pacientes.
           </p>
         </div>
+      </div>
       </AnimatedComponent>
-    </div>
+    
 
 
   </div>
  
-<div class="feminist-purple font-sans antialiased h-screen order-4 md:order-3 ">
+<div class="feminist-purple font-sans  md:h-screen h-96 order-4 order-3 ">
 
-    <div class="flex items-center h-full">
+    
       <AnimatedComponent>
-        <div class="mx-auto px-4 h-full">
-    <h2 class="md:text-[78px] text-[52px] font-bold mb-4 italic md:text-left text-center text-white italic font-normal font-sans">Terapia</h2>
+        <div class="flex items-center h-screen">
+        <div class="mx-auto px-4 ">
+    <h2 class="md:text-[78px] text-[52px] font-bold mb-4 italic  text-white italic font-normal font-sans">Terapia</h2>
 
 
-    <p class="text-lg text-white text-right md:text-justify text-center">
+    <p class="text-lg text-white text-justify md:text-right ">
         Ofrezco consultas presenciales en Medellín, así como terapia en línea para pacientes de todo el mundo. Mi enfoque se centra en la adaptación del psicoanálisis a la era digital, manteniendo un espacio seguro y empático para el crecimiento personal de mis pacientes.
     </p>
 
-    <p class="text-lg text-white text-right md:text-justify text-center">
+    <p class="text-lg text-white text-justify md:text-right">
         Comprometida con la accesibilidad y la flexibilidad, utilizo herramientas tecnológicas avanzadas para garantizar una experiencia terapéutica profunda y significativa, sin importar la distancia.
     </p>
+</div>
 </div>
 
       </AnimatedComponent>
       
-    </div>
+    
 
 
 
@@ -87,8 +91,9 @@
   
   <div class="feminist-purple font-sans antialiased h-screen order-6">
 
-    <div class="flex items-center h-screen">
+    
       <AnimatedComponent>
+        <div class="flex items-center h-screen">
         <div class=" mx-auto px-4 h-full">
           <h2 class="md:text-[78px] text-[52px] font-bold mb-4 italic text-right text-white italic font-normal font-sans">mi libro <br> 'el cajon de la noche'</h2>
           
@@ -100,8 +105,9 @@
              parthe esta obra signitifico mucho para mi en el contexto que vivia en aquel entonces y espero poderla compartir con el mundo si deseas una saber mas o una copia virtual o fisica hazmelo saber se envia a cualquier parte del mundo
           </p>
         </div>
+      </div>
       </AnimatedComponent>
-    </div>
+    
 
 
   </div>

@@ -12,11 +12,11 @@
             <img :src="slide.imageSrc" alt="Slide image" class="object-fill w-full h-full">
             
           
-            <div class="absolute bottom-5 left-10 bg-white bg-opacity-25 p-5 rounded-lg w-3/4 text-violet-950">
-              <h2 class="text-base mb-4">{{ slide.title }}</h2>
-              <p class="mb-4 text-xs">{{ slide.description }}</p>
+            <div class="absolute md:bottom-[10%] md:left-[10%] bottom-5 left-10 bg-white bg-opacity-50 p-5 rounded-lg w-3/4 text-violet-950">
+              <h2 class="text-base md:text-xl mb-4">{{ slide.title }}</h2>
+              <p class="mb-4 text-xs md:text-xl">{{ slide.description }}</p>
               <router-link :to="slide.link" class="btn btn-blue">
-                <div class="text-base">
+                <div class="text-base md:text-l">
                 {{ slide.buttonText }}
                 </div>
               </router-link>
