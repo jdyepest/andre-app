@@ -3,14 +3,21 @@
       
 <carousel ></carousel>
       
-<div class="bg-[#360269] h-screen w-full flex justify-center" >
-  <div class="text-center px-5 my-auto w-4/5">
+<div class="bg-[#360269] h-screen w-full " >
+  
+  <div class="text-center px-5 mx-4 ">
     <AnimatedComponent>
+      <div class="grid place-items-center r h-screen w-full">
+        <div>
+
     <p class="md:text-[40px] text-[22px] text-white ">"{{ aboutText }}"</p>
     <p class="md:text-[20px] text-[12px] text-white mt-4">Melanie Klein</p>
+        </div>
+  </div>
   </AnimatedComponent>
   </div>
 </div>
+
 
  <div class="h-92">    
 <div class="grid grid-cols-1 md:grid-cols-2 h-full md:h-full">
@@ -24,12 +31,12 @@
         
         
   
-  <div class="feminist-purple font-sans antialiased h-screen md:h-full ">
+  <div class="feminist-purple font-sans  h-screen md:h-full ">
 
 
       <AnimatedComponent>
-        <div class="flex items-center h-full">
-        <div class=" mx-auto px-4 h-full">
+        <div class="flex items-center justify-center h-screen">
+        <div class=" mx-auto px-4">
           <h2 class="md:text-[78px] text-[52px] font-bold mb-4 italic  text-white italic font-normal font-sans">Andrea Narváez <br> 'Path'</h2>
           
           <p class="text-md md:text-lg mb-2 text-white md:text-left text-justify">
@@ -48,7 +55,7 @@
 
   </div>
  
-<div class="feminist-purple font-sans  md:h-screen h-96 order-4 order-3 ">
+<div class="feminist-purple font-sans  h-screen md:h-full order-4 order-3 ">
 
     
       <AnimatedComponent>
@@ -57,11 +64,11 @@
     <h2 class="md:text-[78px] text-[52px] font-bold mb-4 italic  text-white italic font-normal font-sans">Terapia</h2>
 
 
-    <p class="text-lg text-white text-justify md:text-right ">
+    <p class="text-lg text-white text-justify md:text-left ">
         Ofrezco consultas presenciales en Medellín, así como terapia en línea para pacientes de todo el mundo. Mi enfoque se centra en la adaptación del psicoanálisis a la era digital, manteniendo un espacio seguro y empático para el crecimiento personal de mis pacientes.
     </p>
 
-    <p class="text-lg text-white text-justify md:text-right">
+    <p class="text-lg text-white text-justify md:text-left">
         Comprometida con la accesibilidad y la flexibilidad, utilizo herramientas tecnológicas avanzadas para garantizar una experiencia terapéutica profunda y significativa, sin importar la distancia.
     </p>
 </div>
@@ -93,8 +100,8 @@
 
     
       <AnimatedComponent>
-        <div class="flex items-center h-screen">
-        <div class=" mx-auto px-4 h-full">
+        <div class="flex items-center justify-center h-screen">
+        <div class=" mx-auto px-4 ">
           <h2 class="md:text-[78px] text-[52px] font-bold mb-4 italic text-right text-white italic font-normal font-sans">mi libro <br> 'el cajon de la noche'</h2>
           
           <p class="text-lg mb-2 text-white text-right md:text-justify">

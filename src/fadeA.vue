@@ -1,7 +1,7 @@
 <template>
     <div ref="target" class="">
         <transition :name="animationType">
-            <div v-if="animate" class="animated-component ">
+            <div v-if="animate" class="animated-component h-full">
                 <slot></slot>
             </div>
         </transition>
