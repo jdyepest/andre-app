@@ -1,6 +1,6 @@
 <template>
 <div >
-  <div class="carousel relative overflow-hidden md:aspect-[2.0] lg:aspect-[2.4] aspect-[0.9]">
+  <div class="carousel relative overflow-hidden md:aspect-[2.0] lg:aspect-[2.4] aspect-[0.7]">
     <!-- Removed the transform style from the carousel-inner -->
     <div class="carousel-inner  h-full">
       <!-- Use v-show to display the current slide -->
@@ -12,10 +12,10 @@
             <img :src="slide.imageSrc" alt="Slide image" class="object-fill w-full h-full">
             
           
-            <div class="absolute md:bottom-[15%] md:left-[13%] bottom-5 left-10 bg-white bg-opacity-50 p-5 rounded-lg w-3/4 text-violet-950">
-              <h2 class="text-base md:text-xl mb-4 text-center">{{ slide.title }}</h2>
-              <p class="mb-4 text-xs md:text-xl">{{ slide.description }}</p>
-              <router-link :to="slide.link" class="btn btn-blue text-center">
+            <div class="absolute md:bottom-[15%] md:left-[13%] bottom-5 left-[13%] bg-white bg-opacity-50 p-5 rounded-lg w-3/4 text-violet-950">
+              <h2 class="text-[1.5rem] md:text-xl mb-4 text-center font-fun2">{{ slide.title }}</h2>
+              <p class="mb-4 text-[0.9rem] text-center md:text-xl font-fun2">{{ slide.description }}</p>
+              <router-link :to="slide.link" class="btn btn-blue text-center  font-fun2">
                 <div class="text-base md:text-l">
                 {{ slide.buttonText }}
                 </div>

@@ -5,7 +5,14 @@ export default {
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        'vintage-coquete': ['Great Vibes','cursive', 'sans-serif'],
+        'fun2': ['Happy Monkey', "system-ui", 'sans-serif']
+
+      }
+      
+    },
   },
   plugins: [],
 }

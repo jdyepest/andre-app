@@ -1,7 +1,7 @@
 <template>
-    <div ref="target" class="">
+    <div ref="target" class="h-screen">
         <transition :name="animationType">
-            <div v-if="animate" class="animated-component h-full">
+            <div v-if="animate" class="animated-component h-full ">
                 <slot></slot>
             </div>
         </transition>
@@ -20,7 +20,7 @@ export default {
     }
   },
   setup() {
-    const target = ref();
+    const target = ref("target");
     const animate = ref(false);
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -31,7 +31,9 @@ export default {
         }*/
       },
       {
-        threshold: 0.5
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.4
       }
     );
     onMounted(() => {
