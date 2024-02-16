@@ -9,6 +9,7 @@
       </div>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 ">
+        
         <div class="bg-pink-400 aspect-4/3">
           <img src="./assets/andre.jpg" class="w-full">
 
