@@ -67,7 +67,7 @@
   </template>
   
   <script>
-  import yu from './assets/reflections.json'
+  import data from './assets/reflections.json'
   import navbar from './navbar.vue'
   export default {
     
@@ -78,12 +78,9 @@
       }
     },
     mounted() {
-      
-      fetch('./src/assets/reflections.json')
-        .then(response => response.json())
-        .then(data => {
-          this.items = data;
-        });
+      console.log(data);
+
+this.items=data
     }, 
     components: {navbar}
   }
