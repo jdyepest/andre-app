@@ -67,6 +67,7 @@
   </template>
   
   <script>
+  import yu from './assets/reflections.json'
   import navbar from './navbar.vue'
   export default {
     
