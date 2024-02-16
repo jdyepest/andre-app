@@ -78,7 +78,7 @@
     },
     mounted() {
       
-      fetch('src/assets/reflections.json')
+      fetch('.\assets\reflections.json')
         .then(response => response.json())
         .then(data => {
           this.items = data;
