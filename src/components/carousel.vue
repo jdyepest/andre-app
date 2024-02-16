@@ -1,6 +1,6 @@
 <template>
-<div >
-  <div class="carousel relative overflow-hidden md:aspect-[2.0] lg:aspect-[2.4] aspect-[0.7]">
+<div class="md:h-[84%] h-[87%] z-4 overflow-hidden" >
+  <div class="carousel relative h-full">
     <!-- Removed the transform style from the carousel-inner -->
     <div class="carousel-inner  h-full">
       <!-- Use v-show to display the current slide -->

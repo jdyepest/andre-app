@@ -1,6 +1,6 @@
 <template>
   
-    <div class="  md:h-[16%] h-[13%]">
+    <div class="md:h-[16%] h-[13%] z-5">
       <!-- Desktop Navbar -->
       <nav class="nav-back h-full hidden md:flex justify-center w-full ">
         <div class="container mx-10 w-full">

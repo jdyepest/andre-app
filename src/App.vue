@@ -4,8 +4,8 @@ import navbar from './navbar.vue'
 </script>
 
 <template>
-  <div class="h-screen sc2">
-    <navbar />
+  <div class=" sc2">
+    
     <RouterView ></RouterView>
   </div>
   

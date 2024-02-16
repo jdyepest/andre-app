@@ -1,7 +1,13 @@
 <template>
+ <div class="h-screen">
     
+      <navbar></navbar>
+    
+  
       
-<carousel ></carousel>
+    <carousel ></carousel>
+  
+</div>  
       
 <div class="bg-[#360269] h-screen w-full " >
   
@@ -160,6 +166,7 @@
   
   <script>
   import { ref } from 'vue';
+  import navbar from './navbar.vue'
   
 import carousel from './components/carousel.vue';
 import AnimatedComponent from './fadeA.vue'
@@ -173,7 +180,7 @@ import AnimatedComponent from './fadeA.vue'
             aboutText
         };
     },
-    components: { carousel, AnimatedComponent}
+    components: { navbar, carousel, AnimatedComponent}
 }
   </script>
 
