@@ -1,7 +1,7 @@
 <template>
  <div class="h-screen">
     
-      <navbar></navbar>
+      <navbar class="md:h-[16%] h-[13%] z-5"></navbar>
     
   
       

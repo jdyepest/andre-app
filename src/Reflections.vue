@@ -67,20 +67,27 @@
   </template>
   
   <script>
-  import data from './assets/reflections.json'
+ //require('./assets/reflections.json')
+ 
   import navbar from './navbar.vue'
+  import data from './assets/reflections.json'
+ 
+
+
   export default {
     
 
     data() {
       return {
-        items: []
+        items: [],
+        
       }
     },
     mounted() {
-      console.log(data);
+      //console.log(data);
+      
 
-this.items=data
+    this.items=data;
     }, 
     components: {navbar}
   }

@@ -49,7 +49,7 @@
   </template>
   
   <script>
-  import AnimatedComponent from './fadeA.vue'
+
   export default {
     data() {
       return {
@@ -62,7 +62,7 @@
         
       }
     },
-    components: {AnimatedComponent}
+   
   }
   </script>
 <style scoped>

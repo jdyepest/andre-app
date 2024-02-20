@@ -2,19 +2,19 @@
     {
       "title": "Sobre el exceso y el deseo",
       "description": "Me impresiona cómo los cuerpos femeninos son un 'atractivo turístico' en muchas culturas occidentales. En cada oportunidad, interrogo sobre qué piensan de esa situación. Recibo...",
-      "image": "./assets/libros.jpg",
+      "image": "/libros.jpg",
       "route": "/imbolc-brigid-light"
     },
     {
       "title": "Carta al psicoanálisis",
       "description": "Cuando leí con demasiado desvergüenza sobre las fantasías inconscientes de las mujeres abusadas, consideradas “histéricas”, pasó tiempo para ver ante mí los invisibles lentes masculinos que por no comprender el sufrimiento...",
-      "image": "./assets/remedios.jpeg",
+      "image": "/remedios.jpeg",
       "route": "/solstice-awe-returning-light"
     },
     {
       "title": "El control",
       "description": "Sin esa sensación, parece que la voluntad se hace trizas así como cualquier alusión a poder y querer son suficientes. Hoy en día qué tanto se fomenta el control que ya ni parece posible sentir el cuerpo...",
-      "image": "./assets/refle3.jpg",
+      "image": "/refle3.jpg",
       "route": "/the-heart-opening"
     }
   ]
