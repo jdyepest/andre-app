@@ -5,7 +5,7 @@
         
         <img src='./assets/sesiones.jpg' alt="Slide image" class="object-fill w-full h-full">
         <div class="absolute bottom-[55%] left-[8%] md:left-[10%] w-4/5 text-white">
-          <h1 class="text-base text-center text-[115px] md:text-[144px] font-vintage-coquete ">Terapia</h1>
+          <h1 class="text-center text-[80px] md:text-[144px] font-vintage-coquete ">Terapia</h1>
           </div>
     </div>
  <div class="md:h-[70vh] h-[80vh] w-full bg-purple-800">
