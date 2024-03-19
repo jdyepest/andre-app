@@ -59,30 +59,30 @@ data() {
             {
                 imageSrc: image4, // <-- Use the imported image here
                 title: 'Acerca de mi',
-                description: 'Psicóloga con formación psicoanalitica, de género y especialista en problemas de la infancia y adolescencia. Graduada de pregrado en la Universitaria del Valle y  posgrado  en la Universidad de Antioquia.rocuro un espacio de confianza para ir más allá del tratamiento de manera que se ofrezca un acompañamiento y atención singular en cada proceso.',
+                description: 'Psicóloga con formación psicoanalitica, de género y especialista en problemas de la infancia y adolescencia. Graduada de pregrado en la Universitaria del Valle y  posgrado  en la Universidad de Antioquia. Procuro un espacio de confianza para ir más allá del tratamiento de manera que se ofrezca un acompañamiento y atención singular en cada proceso.',
                 buttonText: 'conoce mas',
-                link: '/About'
+                link: '/acerca de mi'
             },
             {
                 imageSrc: image2,
-                title: 'Slide 2',
-                description: 'This is the description for slide 2.',
-                buttonText: 'Go to link 2',
-                link: '/link2'
+                title: 'Terapia',
+                description: 'Brindo sesiones de terapia psicoanalítica personalizadas, disponibles tanto en remoto para aquellos en distintas partes del mundo, con horarios flexibles que se adaptan a tu ritmo de vida, como presenciales en la ciudad de Cali, Colombia.',
+                buttonText: 'conoce mas',
+                link: '/sesiones'
             },
             {
-                imageSrc: image5,
-                title: 'Slide 3',
-                description: 'This is the description for slide 3.',
-                buttonText: 'Go to link 3',
-                link: '/link3'
+                imageSrc: image6,
+                title: 'relfexiones',
+                description: 'me emociona poder compartir contigo reflexiones profundas desde la Psicología, la Filosofía, la Poesía y el Arte, desde un enfoque que abraza nuestras raíces y vivencias latinas, con un compromiso hacia la justicia social y el empoderamiento femenino.',
+                buttonText: 'conoce mas',
+                link: '/reflexiones'
             },
             {
-                imageSrc: image6, // <-- Use the imported image here
-                title: 'Slide 5',
-                description: 'This is the description for slide 1.',
-                buttonText: 'Go to link 1',
-                link: '/link1'
+                imageSrc: image5, // <-- Use the imported image here
+                title: 'Contacto',
+                description: 'Puedes contactarme a través de cualquiera de mis redes sociales si requieres más información o tienes alguna pregunta al respecto.',
+                buttonText: 'contacto',
+                link: 'https://wa.me/+573187392384'
             },
         ],
         slideDirection: 'slide-right',

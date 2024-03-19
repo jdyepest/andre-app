@@ -6,10 +6,10 @@
         
           <img src=".\assets\reflection.jpg" alt="Slide image" class="object-fill w-full h-full">
           <div class="absolute bottom-[75%] left-[10%] w-4/5 text-white">
-            <h2 class="text-base text-center text-[50px] md:text-[86px] ">Reflexiones</h2>
+            <h2 class="text-base text-center text-[61px] md:text-[86px] font-vintage-coquete ">Reflexiones</h2>
             </div>
-            <div class="absolute bottom-[50%] left-[10%] w-4/5 text-white">
-              <p class="mt-4 text-xs md:text-[22px] text-[14px] text-justify leading-normal">
+            <div class="absolute bottom-[30%] md:bottom-[50%] left-[10%] w-4/5 text-white">
+              <p class="mt-4 text-xs md:text-[22px] text-[16px] text-justify leading-normal">
                 En estas páginas, me emociona poder compartir contigo reflexiones profundas desde la Psicología, la Filosofía, la Poesía y el Arte, desde un enfoque que abraza nuestras raíces y vivencias latinas, con un compromiso hacia la justicia social y el empoderamiento femenino. A través de un lente psicoanalítico, busco inspirarte y motivarte a encender tu propia chispa de creatividad y curiosidad, fomentando así tu crecimiento y desarrollo personal.
               </p>
 
