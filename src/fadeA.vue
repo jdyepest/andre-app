@@ -17,9 +17,15 @@ export default {
       type: String,
       required: false,
       default: 'fade'
+    },
+    t3: {
+      type: Number,
+      required: false,
+      default: 0.4
     }
+    
   },
-  setup() {
+  setup(props) {
     const target = ref("target");
     const animate = ref(false);
     const observer = new IntersectionObserver(
@@ -33,7 +39,7 @@ export default {
       {
         root: null,
         rootMargin: "0px",
-        threshold: 0.4
+        threshold: props.t3
       }
     );
     onMounted(() => {

@@ -1,22 +1,20 @@
 <template>
-    <div>
-      <h2>About the Blog</h2>
-      <p>{{ aboutText }}</p>
-    </div>
+<div>
+  <navbar></navbar>
+</div>
   </template>
   
   <script>
   import { ref } from 'vue';
   
+
+import navbar from './navbar.vue';
+  
   export default {
     name: 'About',
     setup() {
-      const aboutText = ref("This is a blog built with Vue.js and TailwindCSS.");
-  
-      return {
-        aboutText
-      };
-    }
-  }
+
+    },
+    components: {  navbar }
+}
   </script>
-  

@@ -145,7 +145,7 @@
             <img src="./assets/instagram.svg" alt="Instagram" class="h-8 w-8">
           </a>
           <!-- Email SVG Link -->
-          <a href="mailto:crear.emotion.1998@gmail.com" class="mx-2">
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=crear.emotion.1998@gmail.com" class="mx-2">
             <img src="./assets/mail.svg" alt="Email" class="h-8 w-8">
           </a>
           <!-- WhatsApp SVG Link -->
