@@ -9,9 +9,8 @@
             <h2 class="text-center text-[61px] md:text-[86px] font-vintage-coquete ">Reflexiones</h2>
             </div>
             <div class="absolute bottom-[30%] md:bottom-[50%] left-[10%] w-4/5 text-white">
-              <p class="mt-4 text-xs md:text-[22px] text-[16px] text-justify leading-normal">
-                En estas páginas, me emociona poder compartir contigo reflexiones profundas desde la Psicología, la Filosofía, la Poesía y el Arte, desde un enfoque que abraza nuestras raíces y vivencias latinas, con un compromiso hacia la justicia social y el empoderamiento femenino. A través de un lente psicoanalítico, busco inspirarte y motivarte a encender tu propia chispa de creatividad y curiosidad, fomentando así tu crecimiento y desarrollo personal.
-              </p>
+              <p class="mt-4 text-xs md:text-[22px] text-[188px] text-justify leading-normal">
+                En estas páginas me complace compartir algunos textos a partir de mi experiencia personal como psicóloga con pasión a la poesía, interesada en los diálogos de género, feministas y culturales, y comprometida con brindar espacios seguros en los acompañamientos psicoterapéuticos con enfoque psicoanalitico. Busco poder  trasmitir a través de pensamientos y sensaciones vívidas una proximidad de conocerme en mi labor.</p>
 
           
           </div>

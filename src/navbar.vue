@@ -74,7 +74,7 @@
   case "pink":
     return "h-full hidden md:flex justify-center w-full bg-gradient-to-r from-purple-900 to-purple-500";
   case "blue": // Replace 'newTheme' with your theme name
-    return "h-full hidden md:flex justify-center w-full bg-gradient-to-r from-purple-700 to-cyan-400";
+    return "h-full hidden md:flex justify-center w-full bg-gradient-to-r from-purple-700 to-emerald-400";
   case "golden":
     return "h-full hidden md:flex justify-center w-full bg-gradient-to-r from-yellow-400 to-purple-700";
   case "green":

@@ -1,22 +1,22 @@
 <template>
     
       <navbar bck="green"></navbar>
-      <div class="md:aspect-[2.3]  w-full relative">
+      <div class="md:aspect-[2.7]  h-[40vh] md:h-full w-full relative">
         
-        <img src='./assets/sesiones.jpg' alt="Slide image" class="object-fill w-full h-full">
-        <div class="absolute bottom-[55%] left-[8%] md:left-[10%] w-4/5 text-white">
+        <img src='./assets/solecito.webp' alt="Slide image" class="object-fill w-full h-full">
+        <div class="absolute bottom-[35%] left-[8%] md:left-[8%] w-4/5 text-white">
           <h1 class="text-center text-[80px] md:text-[144px] font-vintage-coquete ">Terapia</h1>
           </div>
     </div>
  <div class="md:h-[70vh] h-[80vh] w-full bg-purple-800">
   <div class="md:py-5 flex flex-col items-center justify-center h-full">
     <h1 class="md:text-[80px] text-[60px] font-bold mb-4 italic  text-white italic text-justify font-normal font-vintage-coquete">sesiones</h1>
-    <p class="w-4/5 text-white text-md text-justify">Brindo sesiones de terapia psicoanalítica personalizadas, disponibles tanto en remoto para aquellos en distintas partes del mundo, con horarios flexibles que se adaptan a tu ritmo de vida, como presenciales en la ciudad de Cali, Colombia. Enfrenta una variedad de desafíos emocionales, desde ansiedad y depresión hasta problemas de relación y transiciones de vida, en un espacio seguro y acogedor. Me esfuerzo por hacer la terapia accesible, ofreciendo precios asequibles y múltiples opciones de pago, incluyendo transferencia bancaria, PayPal y tarjeta de crédito. Empieza con una sesión de evaluación y descubre el camino hacia tu bienestar, sin importar dónde te encuentres.</p>
+    <p class="w-4/5 text-white text-md text-justify md:text-xl">Brindo sesiones de terapia psicoanalítica personalizadas, disponibles tanto en remoto para aquellos en distintas partes del mundo, con horarios flexibles que se adaptan a tu ritmo de vida, como presenciales en la ciudad de Cali, Colombia. Enfrenta una variedad de desafíos emocionales, desde ansiedad y depresión hasta problemas de relación y transiciones de vida, en un espacio seguro y acogedor. Me esfuerzo por hacer la terapia accesible, ofreciendo precios asequibles y múltiples opciones de pago, incluyendo transferencia bancaria, PayPal y tarjeta de crédito. Empieza con una sesión de evaluación y descubre el camino hacia tu bienestar, sin importar dónde te encuentres.</p>
     <div class="flex justify-center">
           <a href="https://wa.me/+573187392384" target="_blank" class="mx-2">
         <button class="self-start bg-purple-500 hover:bg-blue-700 text-white font-bold mt-20 md:text-lg py-2 px-4 rounded h-[10vh] md:mt-20 md:h-[10vh] md:w-[20vh] w-[20vh]">
 
-          contactar
+          Contactar
         </button>
       </a>
       </div>
@@ -45,8 +45,8 @@
       <AnimatedComponent t3="0.1">
         <div class="flex justify-evenly md:h-3/4 h-full flex flex-col mx-8 md:mr-10 mt-5 md:mt-10">
        
-          <h2 class="md:text-[20px] text-[20px] font-bold mb-4 italic  text-white italic font-normal font-sans">mi enfoque terapeutico</h2>
-          <h1 class="md:text-[78px] text-[52px] font-bold mb-4 italic text-center md:text-left  text-white italic font-normal font-sans"> Psicoterapia</h1>
+          <h2 class="md:text-[27px] text-[27px] font-bold mb-4 italic  text-white italic font-normal font-vintage-coquete">Mi enfoque terapéutico</h2>
+          <h1 class="md:text-[78px] text-[52px] font-bold mb-4 italic text-center md:text-left  text-white italic font-normal font-vintage-coquete"> Psicoterapia</h1>
           <div>
           <p class="text-md md:text-lg mb-8 text-white  text-justify">
             En mi práctica como psicoterapeuta, me especializo en explorar cómo nuestras experiencias y creencias pasadas pueden afectarnos en el presente, con un enfoque particular en el trauma intergeneracional y su impacto en nuestras vidas y la sociedad. Mi meta es ofrecer un espacio compasivo para que experiencias y emociones difíciles sean procesadas, promoviendo la sanación y el entendimiento personal. Este enfoque se enriquece con la inclusión de la poesía y el feminismo, herramientas clave para la expresión y exploración de nuestras vivencias.
@@ -59,7 +59,7 @@
           <a href="https://wa.me/+573187392384" target="_blank" class="mx-2">
         <button class="self-start bg-purple-800 hover:bg-blue-700 text-white font-bold md:text-lg py-2 px-4 rounded md:mt-20 h-[10vh] w-[20vh]">
 
-          contactar
+          Contactar
         </button>
       </a>
       </div>

@@ -12,11 +12,10 @@
 
 <div class="h-full w-full feminist-purple ">
   <h1 class="text-center text-white mt-10 mb-10 md:mt-20 md:text-[90px] text-[45px] font-vintage-coquete">Mi Experiencia profesional</h1>
-  <p class="mx-10 text-justify text-white md:text-[20px] mb-5">Desde mi adolescencia, la psicología capturó mi interés, llevándome a estudiar esta apasionante carrera en la Universidad del Valle. Paralelamente, seguí mi otra gran pasión, la Licenciatura en Idiomas, especializándome en francés.</p>
+  <p class="mx-10 text-justify text-white md:text-[20px] mb-5">Desde mi adolescencia, la psicología capturó mi interés, llevándome a estudiar esta apasionante carrera en la Universidad del Valle. Paralelamente me interesó otra pasión literarioa que me encamino a la escritura de un poemario llamado El Cajón de La noche donde buscaba capturar experiencias estéticas y creativas que encontraba en la cotidianidad</p>
 
 <p class="mx-10 text-justify text-white md:text-[20px] mb-5">Mis primeros pasos en la psicología clínica los di en el centro de atención de la universidad, donde tuve el honor de recibir reconocimientos por los resultados y evaluaciones positivas de mis pacientes durante mis prácticas. Esta experiencia temprana fue fundamental, pero mi camino no se detuvo ahí.</p>
 
-<p class="mx-10 text-justify text-white md:text-[20px] mb-5">Posteriormente, me sumergí en el mundo de la Terapia Dialéctica Conductual en la Fundación Centro Terapéutico Impronta IPS en Cali, enfrentándome al desafío de trabajar con niños y adultos del espectro autista. Esta experiencia enriqueció enormemente mi perspectiva y enfoque psicológico.</p>
 
 <p class="mx-10 text-justify text-white md:text-[20px] mb-5">Decidida a profundizar en mi especialización, cursé estudios de posgrado en Psicología de la Infancia y Adolescencia en la Universidad de Antioquia, donde adopté una óptica psicoanalítica para comprender mejor estas etapas vitales.</p>
 

@@ -73,7 +73,7 @@ data() {
             {
                 imageSrc: image6,
                 title: 'reflexiones',
-                description: 'me emociona poder compartir contigo reflexiones profundas desde la Psicología, la Filosofía, la Poesía y el Arte, desde un enfoque que abraza nuestras raíces y vivencias latinas, con un compromiso hacia la justicia social y el empoderamiento femenino.',
+                description: 'En estas páginas me complace compartir algunos textos a partir de mi experiencia personal como psicóloga con pasión a la poesía, interesada en los diálogos de género, feministas y culturales, y comprometida con brindar espacios seguros en los acompañamientos psicoterapéuticos con enfoque psicoanalitico. Busco poder  trasmitir a través de pensamientos y sensaciones vívidas una proximidad de conocerme en mi labor.',
                 buttonText: 'Conoce más',
                 link: '/reflexiones'
             },
