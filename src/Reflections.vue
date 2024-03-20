@@ -4,7 +4,7 @@
 
       <div class="md:h-[74%] h-[74%] relative">
         
-          <img src=".\assets\reflection.jpg" alt="Slide image" class="object-fill w-full h-full">
+          <img src=".\assets\DKS.jpg" alt="Slide image" class="object-fill w-full h-full">
           <div class="absolute bottom-[75%] left-[10%] w-4/5 text-white">
             <h2 class="text-center text-[61px] md:text-[86px] font-vintage-coquete ">Reflexiones</h2>
             </div>

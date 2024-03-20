@@ -1,5 +1,5 @@
 <template>
-    <div class="fondo h-full min-h-screen">
+    <div class="bg-gradient-to-r from-purple-900 to-purple-500 h-full min-h-screen">
        
         <navbar bck="pink" ></navbar>
         <div class="flex flex-col items-center  p-10 ">
@@ -33,4 +33,4 @@
   .fondo{
     background-image: linear-gradient(to right, #a855f7, #ec4899);
   }
-  </style>
+</style>

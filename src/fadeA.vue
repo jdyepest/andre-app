@@ -1,5 +1,5 @@
 <template>
-    <div ref="target" class="h-screen">
+    <div ref="target" class="h-fulls">
         <transition :name="animationType">
             <div v-if="animate" class="animated-component h-full ">
                 <slot></slot>

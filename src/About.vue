@@ -1,16 +1,16 @@
 <template>
 <div>
-  <navbar bck="golden"></navbar>
+  <navbar bck="blue"></navbar>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 h-full md:h-full">
           <div class="flex justify-center items-center feminist-purple  h-[60vh] md:h-full "> 
-            <div class="h-[90%] md:h-[90%] w-5/6 bg-blue-200">
-          <img src="./assets/andre_pintura.jpg" class="object-fill md:object-cover max-h-full w-full absoulute">
+            <div class="h-[90%] md:h-[90%] w-5/6 feminist-puple">
+          <img src="./assets/andre_pintura.jpg" class="object-fill   w-full absoulute">
     
   </div>
 </div>
 
-<div class="h-full w-full bg-amber-500 ">
+<div class="h-full w-full feminist-purple ">
   <h1 class="text-center text-white mt-10 mb-10 md:mt-20 md:text-[90px] text-[45px] font-vintage-coquete">Mi Experiencia profesional</h1>
   <p class="mx-10 text-justify text-white md:text-[20px] mb-5">Desde mi adolescencia, la psicología capturó mi interés, llevándome a estudiar esta apasionante carrera en la Universidad del Valle. Paralelamente, seguí mi otra gran pasión, la Licenciatura en Idiomas, especializándome en francés.</p>
 

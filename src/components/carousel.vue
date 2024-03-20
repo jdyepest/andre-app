@@ -13,9 +13,9 @@
             
           
             <div class="absolute md:bottom-[15%] md:left-[13%] bottom-5 left-[13%] bg-white bg-opacity-50 p-5 rounded-lg w-3/4 text-violet-950">
-              <h2 class="text-[1.5rem] md:text-xl mb-4 text-center font-fun2">{{ slide.title }}</h2>
-              <p class="mb-4 text-[0.9rem] text-center md:text-xl font-fun2">{{ slide.description }}</p>
-              <router-link :to="slide.link" class="btn btn-blue text-center  font-fun2">
+              <h2 class="text-[1.5rem] md:text-[30px] mb-4 text-center font-vintage-coquete font-bold">{{ slide.title }}</h2>
+              <p class="mb-4 text-[0.9rem] text-center md:text-xl font-sans">{{ slide.description }}</p>
+              <router-link :to="slide.link" class="btn btn-blue text-center  font-sans">
                 <div class="text-base md:text-l">
                 {{ slide.buttonText }}
                 </div>
@@ -58,30 +58,30 @@ data() {
         slides: [
             {
                 imageSrc: image4, // <-- Use the imported image here
-                title: 'Acerca de mi',
+                title: 'Acerca de mí',
                 description: 'Psicóloga con formación psicoanalitica, de género y especialista en problemas de la infancia y adolescencia. Graduada de pregrado en la Universitaria del Valle y  posgrado  en la Universidad de Antioquia. Procuro un espacio de confianza para ir más allá del tratamiento de manera que se ofrezca un acompañamiento y atención singular en cada proceso.',
-                buttonText: 'conoce mas',
+                buttonText: 'Conoce mas',
                 link: '/acerca de mi'
             },
             {
                 imageSrc: image2,
                 title: 'Terapia',
                 description: 'Brindo sesiones de terapia psicoanalítica personalizadas, disponibles tanto en remoto para aquellos en distintas partes del mundo, con horarios flexibles que se adaptan a tu ritmo de vida, como presenciales en la ciudad de Cali, Colombia.',
-                buttonText: 'conoce mas',
+                buttonText: 'Conoce mas',
                 link: '/sesiones'
             },
             {
                 imageSrc: image6,
-                title: 'relfexiones',
+                title: 'reflexiones',
                 description: 'me emociona poder compartir contigo reflexiones profundas desde la Psicología, la Filosofía, la Poesía y el Arte, desde un enfoque que abraza nuestras raíces y vivencias latinas, con un compromiso hacia la justicia social y el empoderamiento femenino.',
-                buttonText: 'conoce mas',
+                buttonText: 'Conoce más',
                 link: '/reflexiones'
             },
             {
                 imageSrc: image5, // <-- Use the imported image here
                 title: 'Contacto',
                 description: 'Puedes contactarme a través de cualquiera de mis redes sociales si requieres más información o tienes alguna pregunta al respecto.',
-                buttonText: 'contacto',
+                buttonText: 'Contacto',
                 link: 'https://wa.me/+573187392384'
             },
         ],

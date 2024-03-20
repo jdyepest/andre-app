@@ -1,7 +1,7 @@
 <template>
-    <div>
+    
       <navbar bck="green"></navbar>
-      <div class="md:h-[65vh] h-[65vh] relative">
+      <div class="md:aspect-[2.3]  w-full relative">
         
         <img src='./assets/sesiones.jpg' alt="Slide image" class="object-fill w-full h-full">
         <div class="absolute bottom-[55%] left-[8%] md:left-[10%] w-4/5 text-white">
@@ -10,7 +10,7 @@
     </div>
  <div class="md:h-[70vh] h-[80vh] w-full bg-purple-800">
   <div class="md:py-5 flex flex-col items-center justify-center h-full">
-    <h1 class="md:text-[80px] text-[60px] font-bold mb-4 italic  text-white italic text-justify font-normal">sesiones</h1>
+    <h1 class="md:text-[80px] text-[60px] font-bold mb-4 italic  text-white italic text-justify font-normal font-vintage-coquete">sesiones</h1>
     <p class="w-4/5 text-white text-md text-justify">Brindo sesiones de terapia psicoanalítica personalizadas, disponibles tanto en remoto para aquellos en distintas partes del mundo, con horarios flexibles que se adaptan a tu ritmo de vida, como presenciales en la ciudad de Cali, Colombia. Enfrenta una variedad de desafíos emocionales, desde ansiedad y depresión hasta problemas de relación y transiciones de vida, en un espacio seguro y acogedor. Me esfuerzo por hacer la terapia accesible, ofreciendo precios asequibles y múltiples opciones de pago, incluyendo transferencia bancaria, PayPal y tarjeta de crédito. Empieza con una sesión de evaluación y descubre el camino hacia tu bienestar, sin importar dónde te encuentres.</p>
     <div class="flex justify-center">
           <a href="https://wa.me/+573187392384" target="_blank" class="mx-2">
@@ -27,7 +27,7 @@
     <div class="grid grid-cols-1 md:grid-cols-2 h-full md:h-full">
           <div class="flex justify-center items-center feminist-purple  h-[60vh] md:h-full order-2 md:order-1 "> 
             <div class="h-[90%] md:h-5/6 w-3/4 bg-blue-200">
-          <img src="./assets/imagen_sesiones_2.jpg" class="object-fill md:object-cover max-h-full w-full absoulute">
+          <img src="./assets/imagen_sesiones_2.jpg" class="object-fill md:object-cover max-h-full w-full">
     
   </div>
 </div>
@@ -43,7 +43,7 @@
 
 
       <AnimatedComponent t3="0.1">
-        <div class="flex justify-evenly md:h-3/4 h-full flex flex-col mx-8 md:mr-10 mt-5 md:mt-20">
+        <div class="flex justify-evenly md:h-3/4 h-full flex flex-col mx-8 md:mr-10 mt-5 md:mt-10">
        
           <h2 class="md:text-[20px] text-[20px] font-bold mb-4 italic  text-white italic font-normal font-sans">mi enfoque terapeutico</h2>
           <h1 class="md:text-[78px] text-[52px] font-bold mb-4 italic text-center md:text-left  text-white italic font-normal font-sans"> Psicoterapia</h1>
@@ -101,7 +101,7 @@
       </div>
     </div>
   </div>
-  </div>
+ 
       
 
   

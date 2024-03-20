@@ -11,7 +11,7 @@
             </router-link>
             
             <div class="space-x-10 ml">
-              <router-link to="/acerca de mi" class="text-white text-2xl">Acerca de mi</router-link>
+              <router-link to="/acerca de mi" class="text-white text-2xl">Acerca de mí</router-link>
               <router-link to="/sesiones" class="text-white text-2xl">Sesiones</router-link>
               <router-link to="/reflexiones" class="text-white text-2xl">Reflexiones</router-link>
             </div>
@@ -72,9 +72,9 @@
     computedClass() {
       switch (this.bck) {
   case "pink":
-    return "h-full hidden md:flex justify-center w-full bg-gradient-to-r from-purple-500 to-pink-500";
+    return "h-full hidden md:flex justify-center w-full bg-gradient-to-r from-purple-900 to-purple-500";
   case "blue": // Replace 'newTheme' with your theme name
-    return "h-full hidden md:flex justify-center w-full bg-gradient-to-r from-blue-500 to-cyan-500";
+    return "h-full hidden md:flex justify-center w-full bg-gradient-to-r from-purple-700 to-cyan-400";
   case "golden":
     return "h-full hidden md:flex justify-center w-full bg-gradient-to-r from-yellow-400 to-purple-700";
   case "green":
@@ -91,7 +91,7 @@
 
       switch (this.bck) {
   case "pink":
-    return "bg-gradient-to-r from-purple-500 to-pink-500";
+    return "bg-gradient-to-r from-purple-900 to-purple-500";
   case "blue":
     return "bg-gradient-to-r from-blue-500 to-indigo-500";
   case "golden":
