@@ -13,10 +13,10 @@
   
   <div class="text-center px-5 mx-4 ">
     <AnimatedComponent>
-      <div class="grid place-items-center r h-screen w-full">
+      <div class="grid place-items-center justify-center h-screen w-full">
         <div>
 
-    <p class="md:text-[40px] text-[22px] text-white font-vintage-coquete ">"{{ aboutText }}"</p>
+    <p class="md:text-[42px] text-[22px] text-white font-vintage-coquete ">"{{ aboutText }}"</p>
     <p class="md:text-[20px] text-[12px] text-white mt-4">Melanie Klein</p>
         </div>
   </div>
@@ -43,7 +43,7 @@
       <AnimatedComponent>
         <div class="flex items-center justify-center h-screen">
         <div class=" mx-auto px-4">
-          <h2 class="md:text-[78px] text-[52px] font-bold mb-4 italic  text-white italic font-normal font-sans">Andrea Narváez <br> 'Path'</h2>
+          <h2 class="md:text-[78px] text-[52px] font-bold mb-4 italic  text-white italic font-normal font-vintage-coquete text-center">Andrea Narváez <br> 'Path'</h2>
           
           <p class="text-md md:text-lg mb-2 text-white md:px-5 text-justify">
             Psicóloga con formación psicoanalítica, de género y especialista en problemas de la infancia y adolescencia. Graduada de pregrado en la Universitaria del Valle y posgrado en la Universidad de Antioquia. Me desarrollo en el ámbito clínico con sesiones 1:1, utilizando herramientas psicoterapéuticas en el arte y la escritura. Procuro un espacio de confianza para ir más allá del tratamiento, de manera que se ofrezca un acompañamiento y atención singular en cada proceso.
@@ -66,11 +66,11 @@
       <AnimatedComponent>
         <div class="flex items-center justify-center h-screen">
         <div class="mx-auto px-4 ">
-    <h2 class="md:text-[78px] text-[52px] font-bold mb-4 italic text-center md:text-left text-white italic font-normal font-sans">Terapia</h2>
+    <h2 class="md:text-[78px] text-[52px] font-bold mb-4 italic text-center md:text-left text-white italic font-normal font-vintage-coquete">Terapia</h2>
 
 
     <p class="text-lg text-white text-justify md:text-left ">
-      Ofrezco consultas presenciales en Medellín, así como terapia en línea para pacientes de todo el mundo. Mi enfoque se centra en la adaptación del psicoanálisis a la era digital, manteniendo un espacio seguro y empático para el crecimiento personal de mis pacientes.
+      Ofrezco consultas presenciales en Cali, así como terapia en línea para pacientes de todo el mundo. Mi enfoque se centra en la adaptación del psicoanálisis a la era digital, manteniendo un espacio seguro y empático para el crecimiento personal de mis pacientes.
     </p>
 
     <p class="text-lg text-white text-justify md:text-left">
@@ -107,10 +107,10 @@
       <AnimatedComponent>
         <div class="grid place-items-center h-full">
         <div class=" mx-auto px-4 ">
-          <h2 class="md:text-[78px] text-[52px] font-bold mb-4 italic text-center md:text-left text-white italic font-normal font-sans">Mi libro <br> 'el cajon de la noche'</h2>
+          <h2 class="md:text-[78px] text-[52px] font-bold mb-4 italic text-center md:text-left text-white italic font-normal font-vintage-coquete">Mi libro <br> 'el cajón de la noche'</h2>
           
           <p class="text-lg mb-2 text-white text-justify md:text-justify">
-            Mi obra más completa es un poemario que escribí durante la pandemia, en el cual se puede observar mi visión del mundo a través de este arte, mis impresiones sobre la poesía, el amor y el arte.
+            Hace unos años publiqué un poemario sobre los micro universos estéticos de la cotidianidad, a través de un simbolismo y alusión a las figuras concretas, me permití expresar los cambios, las revelaciones y las vivencias de infancia.
           </p>
           
           <p class="text-lg text-white text-jusrify md:text-justify">
