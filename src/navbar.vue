@@ -45,7 +45,7 @@
     <div v-if="showMenu" :class="['flex', 'flex-col', 'mx-auto',  'w-full', 'h-screen', 'items-center', 'justify-normal', 'gap-5', computedClass2]" >
       
           <router-link to="/" @click="toggleMenu" class="block text-white my-1 text-[42px] font-vintage-coquete"  >Inicio</router-link>
-          <router-link to="/acerca de mi" @click="toggleMenu" class="block text-white my-1 text-[42px] font-vintage-coquete" >Acerca de mi</router-link>
+          <router-link to="/acerca de mi" @click="toggleMenu" class="block text-white my-1 text-[42px] font-vintage-coquete" >Acerca de mí</router-link>
           <router-link to="/sesiones" @click="toggleMenu" class="block text-white my-1 text-[42px] font-vintage-coquete">Terapia</router-link>
           <router-link to="/reflexiones" @click="toggleMenu" class="block text-white my-1 text-[42px] font-vintage-coquete">Reflexiones</router-link>
         

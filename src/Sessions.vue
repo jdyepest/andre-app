@@ -49,13 +49,13 @@
           <h1 class="md:text-[78px] text-[52px] font-bold mb-4 italic text-center md:text-left  text-white italic font-normal font-vintage-coquete"> Psicoterapia</h1>
           <div>
           <p class="text-md md:text-lg mb-8 text-white  text-justify">
-            En mi práctica como psicoterapeuta, me especializo en explorar cómo nuestras experiencias y creencias pasadas pueden afectarnos en el presente, con un enfoque particular en el trauma intergeneracional y su impacto en nuestras vidas y la sociedad. Mi meta es ofrecer un espacio compasivo para que experiencias y emociones difíciles sean procesadas, promoviendo la sanación y el entendimiento personal. Este enfoque se enriquece con la inclusión de la poesía y el feminismo, herramientas clave para la expresión y exploración de nuestras vivencias.
+            En mi práctica como psicoterapeuta, me especializo en explorar cómo nuestras experiencias y creencias pasadas pueden afectarnos de forma consciente e inconsciente desde  un enfoque psicoanalitico y cultural, entendiendo el impacto del trauma y las formas en cómo se transforman los significados del mismo. Desde herramientas narrativas y artísticas, busco ofrecer un espacio compasivo y libre para que experiencias y emociones puedan ser expresadas y procesadas. Este enfoque se enriquece con la inclusión de la poesía y discursos en torno al género, para poder abordar problemáticas a nivel psicosocial de una manera creativa y resiliente.
           </p>
           
           <p class="text-md md:text-lg text-white text-left  text-justify">
             Desde Cali, Colombia, y a través de plataformas virtuales, extiendo mi apoyo terapéutico a personas alrededor del mundo. Este es un espacio de acogida y comprensión, donde se fomenta la liberación de creencias limitantes y se abren nuevas formas de conexión con uno mismo, con los demás y con nuestro entorno, celebrando nuestra identidad cultural en el proceso de sanación y crecimiento personal.</p>
         </div>
-        <div class="flex justify-center">
+        <div class="flex justify-center mt-10 md:mt-0">
           <a href="https://wa.me/+573187392384" target="_blank" class="mx-2">
         <button class="self-start bg-purple-800 hover:bg-blue-700 text-white font-bold md:text-lg py-2 px-4 rounded md:mt-20 h-[10vh] w-[20vh]">
 

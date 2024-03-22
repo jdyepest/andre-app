@@ -59,15 +59,15 @@ data() {
             {
                 imageSrc: image4, // <-- Use the imported image here
                 title: 'Acerca de mí',
-                description: 'Psicóloga con formación psicoanalitica, de género y especialista en problemas de la infancia y adolescencia. Graduada de pregrado en la Universitaria del Valle y  posgrado  en la Universidad de Antioquia. Procuro un espacio de confianza para ir más allá del tratamiento de manera que se ofrezca un acompañamiento y atención singular en cada proceso.',
-                buttonText: 'Conoce mas',
+                description: 'Psicóloga con formación psicoanalitica, de género y especialista en problemás de la infancia y adolescencia. Graduada de pregrado en la Universitaria del Valle y  posgrado  en la Universidad de Antioquia. Procuro un espacio de confianza para ir más allá del tratamiento de manera que se ofrezca un acompañamiento y atención singular en cada proceso.',
+                buttonText: 'Conoce más',
                 link: '/acerca de mi'
             },
             {
                 imageSrc: image2,
                 title: 'Terapia',
                 description: 'Brindo sesiones de terapia psicoanalítica personalizadas, disponibles tanto en remoto para aquellos en distintas partes del mundo, con horarios flexibles que se adaptan a tu ritmo de vida, como presenciales en la ciudad de Cali, Colombia.',
-                buttonText: 'Conoce mas',
+                buttonText: 'Conoce más',
                 link: '/sesiones'
             },
             {
