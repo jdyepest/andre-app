@@ -4,12 +4,12 @@
 
       <div class="md:h-[74%] h-[74%] relative">
         
-          <img src=".\assets\DKS.jpg" alt="Slide image" class="object-fill w-full h-full">
+          <img src=".\assets\DKS2.jpg" alt="Slide image" class="object-fill w-full h-full">
           <div class="absolute bottom-[75%] left-[10%] w-4/5 text-white">
             <h2 class="text-center text-[61px] md:text-[86px] font-vintage-coquete ">Reflexiones</h2>
             </div>
-            <div class="absolute bottom-[30%] md:bottom-[50%] left-[10%] w-4/5 text-white">
-              <p class="mt-4  md:text-[22px] text-[18px] text-justify leading-normal">
+            <div class="absolute bottom-[20%] md:bottom-[35%] left-[20%] w-3/5 text-white">
+              <p class="mt-4  md:text-[22px] text-[16px] text-justify leading-normal">
                 En estas páginas me complace compartir algunos textos a partir de mi experiencia personal como psicóloga con pasión a la poesía, interesada en los diálogos de género, feministas y culturales, y comprometida con brindar espacios seguros en los acompañamientos psicoterapéuticos con enfoque psicoanalitico. Busco poder  trasmitir a través de pensamientos y sensaciones vívidas una proximidad de conocerme en mi labor.</p>
 
           
