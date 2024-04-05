@@ -46,7 +46,7 @@
           <h2 class="md:text-[78px] text-[52px] font-bold mb-4 italic  text-white italic font-normal font-vintage-coquete text-center">Andrea Narváez <br> 'Path'</h2>
           
           <p class="text-md md:text-lg mb-2 text-white md:px-5 text-justify">
-            Psicóloga con formación psicoanalítica, de género y especialista en problemas de la infancia y adolescencia. Graduada de pregrado en la Universitaria del Valle y posgrado en la Universidad de Antioquia. Me desarrollo en el ámbito clínico con sesiones 1:1, utilizando herramientas psicoterapéuticas en el arte y la escritura. Procuro un espacio de confianza para ir más allá del tratamiento, de manera que se ofrezca un acompañamiento y atención singular en cada proceso.
+            Psicóloga con formación psicoanalítica, de género y especialista en problemas de la infancia y adolescencia. Graduada de pregrado en la universidad del Valle y posgrado en la Universidad de Antioquia. Me desarrollo en el ámbito clínico con sesiones 1:1, utilizando herramientas psicoterapéuticas en el arte y la escritura. Procuro un espacio de confianza para ir más allá del tratamiento, de manera que se ofrezca un acompañamiento y atención singular en cada proceso.
           </p>
           
           <p class="text-md md:text-lg text-white text-left md:px-5">
@@ -91,8 +91,8 @@
           <img src="./assets/therapy.jpg" class="object-fill max-h-full w-full absoulute">
     
   </div>
-  <div class="md:h-screen h-full flex justify-center items-center relative order-5">
-          <img src="./assets/andre_con_libro1.jpg" class="object-fill max-h-full w-full absoulute">
+  <div class="md:aspect-[4/3] md:w-full h-full flex justify-center items-center relative order-5">
+          <img src="./assets/andre_con_libro1.jpg" class="object-fill w-full">
     
   </div>
           
@@ -101,7 +101,7 @@
         
         
   
-  <div class="feminist-purple font-sans antialiased h-screen order-6 grid place-items-center">
+  <div class="feminist-purple font-sans antialiased h-full order-6 grid place-items-center">
 
     
       <AnimatedComponent>
