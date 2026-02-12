@@ -6,14 +6,14 @@
       <nav :class="computedClass">
         <div class="container mx-10 w-full">
           <div class="flex justify-between h-full items-center">
-            <router-link to="/"  class="block text-white my-1" >
+            <NuxtLink :to="localePath('/')"  class="block text-white my-1" >
               <h1 class="text-white text-5xl font-normal font-vintage-coquete italic">Creart Emotion</h1>
-            </router-link>
+            </NuxtLink>
             
             <div class="space-x-10 ml">
-              <router-link to="/acerca de mi" class="text-white text-2xl">Acerca de mí</router-link>
-              <router-link to="/sesiones" class="text-white text-2xl">Sesiones</router-link>
-              <router-link to="/reflexiones" class="text-white text-2xl">Reflexiones</router-link>
+              <NuxtLink :to="localePath('/acerca-de-mi')" class="text-white text-2xl">{{ $t('nav.about') }}</NuxtLink>
+              <NuxtLink :to="localePath('/sesiones')" class="text-white text-2xl">{{ $t('nav.sessions') }}</NuxtLink>
+              <NuxtLink :to="localePath('/reflexiones')" class="text-white text-2xl">{{ $t('nav.reflections') }}</NuxtLink>
             </div>
           </div>
         </div>
@@ -25,37 +25,38 @@
         <div class="invisible">
             <!-- Invisible duplicate of the burger icon for spacing -->
             <button class="text-white text-5xl opacity-0">
-                <img src="./assets/buerger-46.svg" alt="">
+                <img src="/assets/buerger-46.svg" alt="">
             </button>
         </div>
-        <routerLink to="/">
+        <NuxtLink :to="localePath('/')">
         <h1 class="text-white s:text-3xl text-3xl font-normal font-vintage-coquete italic">Creart Emotion</h1>
-      </routerLink>
+      </NuxtLink>
         <button @click="toggleMenu" class="text-white text-5xl">
-            <img src="./assets/buerger-46.svg" alt="">
+            <img src="/assets/buerger-46.svg" alt="">
         </button>
     </div>
 </nav>
 
-        
-        
-
-      ,
     </div>
     <div v-if="showMenu" :class="['flex', 'flex-col', 'mx-auto',  'w-full', 'h-screen', 'items-center', 'justify-normal', 'gap-5', computedClass2]" >
       
-          <router-link to="/" @click="toggleMenu" class="block text-white my-1 text-[42px] font-vintage-coquete"  >Inicio</router-link>
-          <router-link to="/acerca de mi" @click="toggleMenu" class="block text-white my-1 text-[42px] font-vintage-coquete" >Acerca de mí</router-link>
-          <router-link to="/sesiones" @click="toggleMenu" class="block text-white my-1 text-[42px] font-vintage-coquete">Terapia</router-link>
-          <router-link to="/reflexiones" @click="toggleMenu" class="block text-white my-1 text-[42px] font-vintage-coquete">Reflexiones</router-link>
+          <NuxtLink :to="localePath('/')" @click="toggleMenu" class="block text-white my-1 text-[42px] font-vintage-coquete"  >{{ $t('nav.home') }}</NuxtLink>
+          <NuxtLink :to="localePath('/acerca-de-mi')" @click="toggleMenu" class="block text-white my-1 text-[42px] font-vintage-coquete" >{{ $t('nav.about') }}</NuxtLink>
+          <NuxtLink :to="localePath('/sesiones')" @click="toggleMenu" class="block text-white my-1 text-[42px] font-vintage-coquete">{{ $t('nav.sessions') }}</NuxtLink>
+          <NuxtLink :to="localePath('/reflexiones')" @click="toggleMenu" class="block text-white my-1 text-[42px] font-vintage-coquete">{{ $t('nav.reflections') }}</NuxtLink>
         
         </div>
     
   </template>
   
   <script>
+  import { useLocalePath } from '#i18n'
 
   export default {
+    setup() {
+      const localePath = useLocalePath()
+      return { localePath }
+    },
     data() {
       return {
         showMenu: false
@@ -99,7 +100,6 @@
   case "green":
     return "bg-gradient-to-r from-emerald-500 to-purple-600";
   default:
-    console.log("si entra")
     return "nav-back";
 }
 

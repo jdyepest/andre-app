@@ -1,0 +1,18 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Acerca de mi",
+    "sessions": "Sesiones",
+    "reflections": "Reflexiones"
+  },
+  "buttons": {
+    "learnMore": "Conoce mas",
+    "contact": "Contacto",
+    "contactCta": "Contactar",
+    "readMore": "Leer..."
+  },
+  "sections": {
+    "contactTitle": "Contacto",
+    "contactText": "Puedes contactarme a traves de mis redes sociales, como Facebook, Instagram o WhatsApp, para obtener mas informacion al respecto."
+  }
+}

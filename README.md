@@ -1,7 +1,44 @@
-# Vue 3 + Vite
+# Nuxt 3 (SSG + i18n + Data-Driven Content)
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+This project is organized as a Nuxt 3 SSG-ready site with file-based routing, data-driven content, and ES/EN i18n.
 
-## Recommended IDE Setup
+## Setup
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+```bash
+npm install
+```
+
+## Local Development
+
+```bash
+npm run dev
+```
+
+## Build and Generate (SSG)
+
+```bash
+npm run build
+npm run generate
+```
+
+The static output lives in `.output/public`.
+
+## Preview Production Build
+
+```bash
+npm run preview
+```
+
+## Key Structure
+
+- Pages: `src/pages/*`
+- Shared UI: `src/components/*`
+- Data content (ES/EN): `src/data/content.ts`
+- i18n config: `i18n/i18n.config.ts`
+- Locales: `i18n/locales/es.json`, `i18n/locales/en.json`
+- Public assets: `src/public/assets/*` (referenced as `/assets/...` in templates)
+
+## i18n Behavior
+
+- Default locale: `es`
+- English: `/en/...`
