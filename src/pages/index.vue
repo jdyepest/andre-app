@@ -108,7 +108,7 @@
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import Navbar from '~/components/Navbar.vue'
-import Carousel from '~/components/Carousel.vue'
+import Carousel from '~/components/carousel.vue'
 import AnimatedComponent from '~/components/FadeA.vue'
 import { content } from '~/data/content'
 
