@@ -3,6 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "engines": {
+    "node": ">=20.19.0"
+  },
   "scripts": {
     "dev": "nuxt dev",
     "build": "nuxt build",
@@ -15,6 +18,9 @@
     "socket.io-client": "^4.7.4",
     "vue-carousel": "^0.18.0",
     "vue3-carousel": "^0.3.1"
+  },
+  "optionalDependencies": {
+    "@oxc-parser/binding-linux-x64-gnu": "^0.112.0"
   },
   "devDependencies": {
     "@nuxtjs/i18n": "^9.1.0",
