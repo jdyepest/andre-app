@@ -1,0 +1,18 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About me",
+    "sessions": "Sessions",
+    "reflections": "Reflections"
+  },
+  "buttons": {
+    "learnMore": "Learn more",
+    "contact": "Contact",
+    "contactCta": "Contact",
+    "readMore": "Read..."
+  },
+  "sections": {
+    "contactTitle": "Contact",
+    "contactText": "You can contact me through my social networks such as Facebook, Instagram, or WhatsApp for more information."
+  }
+}

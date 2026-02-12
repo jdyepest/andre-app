@@ -11,6 +11,13 @@ node_modules
 dist
 dist-ssr
 *.local
+.nuxt
+.output
+.nitro
+.cache
+.vite-ssg-temp
+.env
+.env.*
 
 # Editor directories and files
 .vscode/*

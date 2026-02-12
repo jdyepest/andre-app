@@ -9,7 +9,7 @@
 </template>
 
 <script lang="js">
-import { onMounted, ref } from 'vue';
+import { onBeforeUnmount, onMounted, ref } from 'vue';
 export default {
   name: 'AnimatedComponent',
   props: {
@@ -26,24 +26,30 @@ export default {
     
   },
   setup(props) {
-    const target = ref("target");
+    const target = ref(null);
     const animate = ref(false);
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        animate.value = entry.isIntersecting;
-        /*if (entry.isIntersecting && !animate.value) {
-          animate.value = true;
-          //observer.unobserve(target.value); // Stop observing after animation
-        }*/
-      },
-      {
-        root: null,
-        rootMargin: "0px",
-        threshold: props.t3
-      }
-    );
     onMounted(() => {
+      if (typeof window === 'undefined' || !('IntersectionObserver' in window)) {
+        animate.value = true;
+        return;
+      }
+
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          animate.value = entry.isIntersecting;
+        },
+        {
+          root: null,
+          rootMargin: "0px",
+          threshold: props.t3
+        }
+      );
+
       observer.observe(target.value);
+
+      onBeforeUnmount(() => {
+        observer.disconnect();
+      });
     });
     return {
       animate,
