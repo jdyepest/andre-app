@@ -14,5 +14,48 @@
   "sections": {
     "contactTitle": "Contacto",
     "contactText": "Puedes contactarme a traves de mis redes sociales, como Facebook, Instagram o WhatsApp, para obtener mas informacion al respecto."
+  },
+  "landing": {
+    "heroKicker": "Psicologia · Psicoanalisis · Bienestar",
+    "aboutHeadline": {
+      "lead": "Un camino hacia el",
+      "accent": "bienestar"
+    },
+    "aboutStats": {
+      "experience": "Anos de experiencia",
+      "commitment": "Acompanamiento singular"
+    },
+    "therapyHeadline": {
+      "lead": "Sesiones",
+      "accent": "personalizadas"
+    },
+    "therapyIntro": "Brindo sesiones de terapia psicoanalitica adaptadas a tus necesidades, disponibles en modalidad remota y presencial.",
+    "therapyCards": [
+      {
+        "title": "Terapia online",
+        "text": "Sesiones remotas para cualquier parte del mundo, con la misma calidez y profesionalismo desde la comodidad de tu espacio."
+      },
+      {
+        "title": "Terapia presencial",
+        "text": "Sesiones presenciales en la ciudad de Cali, Colombia. Un espacio fisico seguro y acogedor para tu proceso."
+      },
+      {
+        "title": "Pruebas estandarizadas",
+        "text": "Evaluaciones y procesos certificados para orientar el diagnostico y acompanar tu avance."
+      }
+    ],
+    "reflectionsHeadline": {
+      "lead": "Pensamientos &",
+      "accent": "sensaciones"
+    },
+    "bookHeadline": {
+      "lead": "El cajon de la",
+      "accent": "noche"
+    },
+    "contactHeadline": {
+      "lead": "Comienza tu",
+      "accent": "proceso"
+    },
+    "errorNotice": "Estamos cargando la informacion mas reciente."
   }
 }

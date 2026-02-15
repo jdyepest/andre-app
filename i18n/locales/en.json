@@ -14,5 +14,48 @@
   "sections": {
     "contactTitle": "Contact",
     "contactText": "You can contact me through my social networks such as Facebook, Instagram, or WhatsApp for more information."
+  },
+  "landing": {
+    "heroKicker": "Psychology · Psychoanalysis · Well-being",
+    "aboutHeadline": {
+      "lead": "A path to",
+      "accent": "well-being"
+    },
+    "aboutStats": {
+      "experience": "Years of experience",
+      "commitment": "Commitment to you"
+    },
+    "therapyHeadline": {
+      "lead": "Personalized",
+      "accent": "sessions"
+    },
+    "therapyIntro": "Psychoanalytic therapy sessions tailored to your needs, available remotely and in person.",
+    "therapyCards": [
+      {
+        "title": "Online therapy",
+        "text": "Remote sessions available worldwide, with the same warmth and professionalism from your own space."
+      },
+      {
+        "title": "In-person therapy",
+        "text": "Sessions in Cali, Colombia. A safe and welcoming physical space for your process."
+      },
+      {
+        "title": "Standardized tests",
+        "text": "Assessment tools and certified processes to guide evaluation and support your progress."
+      }
+    ],
+    "reflectionsHeadline": {
+      "lead": "Thoughts &",
+      "accent": "sensations"
+    },
+    "bookHeadline": {
+      "lead": "The drawer of the",
+      "accent": "night"
+    },
+    "contactHeadline": {
+      "lead": "Begin your",
+      "accent": "process"
+    },
+    "errorNotice": "We are loading the latest information."
   }
 }
