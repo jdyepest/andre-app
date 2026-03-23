@@ -8,6 +8,10 @@
         loading="eager"
         decoding="async"
         fetchpriority="high"
+        :width="imageSize.width"
+        :height="imageSize.height"
+        :srcset="imageSrcset || undefined"
+        sizes="100vw"
       >
       <div class="hero-overlay"></div>
       <div class="hero-fade"></div>
@@ -41,7 +45,10 @@
 </template>
 
 <script setup>
-defineProps({
+import { computed } from 'vue'
+import { getImageSize, getImageSrcset } from '~/utils/imageSizes'
+
+const props = defineProps({
   image: { type: String, required: true },
   imageAlt: { type: String, default: 'Hero image' },
   kicker: { type: String, required: true },
@@ -53,4 +60,7 @@ defineProps({
 })
 
 const emit = defineEmits(['contact', 'about'])
+
+const imageSize = computed(() => getImageSize(props.image))
+const imageSrcset = computed(() => getImageSrcset(props.image))
 </script>

@@ -12,14 +12,27 @@
         </p>
       </div>
       <div class="image-frame book-image">
-        <img :src="image" :alt="imageAlt" class="section-image" loading="lazy" decoding="async">
+        <img
+          :src="image"
+          :alt="imageAlt"
+          class="section-image"
+          loading="lazy"
+          decoding="async"
+          :width="imageSize.width"
+          :height="imageSize.height"
+          :srcset="imageSrcset || undefined"
+          sizes="(min-width: 1024px) 50vw, 90vw"
+        >
       </div>
     </div>
   </section>
 </template>
 
 <script setup>
-defineProps({
+import { computed } from 'vue'
+import { getImageSize, getImageSrcset } from '~/utils/imageSizes'
+
+const props = defineProps({
   kicker: { type: String, required: true },
   headlineLead: { type: String, required: true },
   headlineAccent: { type: String, required: true },
@@ -27,4 +40,7 @@ defineProps({
   image: { type: String, required: true },
   imageAlt: { type: String, default: 'Book cover' }
 })
+
+const imageSize = computed(() => getImageSize(props.image))
+const imageSrcset = computed(() => getImageSrcset(props.image))
 </script>

@@ -17,7 +17,16 @@
           class="reflection-card"
         >
           <div class="reflection-image">
-            <img :src="card.image" :alt="card.title" loading="lazy" decoding="async">
+            <img
+              :src="card.image"
+              :alt="card.title"
+              loading="lazy"
+              decoding="async"
+              :width="getSize(card.image).width"
+              :height="getSize(card.image).height"
+              :srcset="getSrcset(card.image) || undefined"
+              sizes="(min-width: 1024px) 33vw, 90vw"
+            >
           </div>
           <div class="reflection-body">
             <h3 class="reflection-title">{{ card.title }}</h3>
@@ -31,6 +40,8 @@
 </template>
 
 <script setup>
+import { getImageSize, getImageSrcset } from '~/utils/imageSizes'
+
 defineProps({
   kicker: { type: String, required: true },
   headlineLead: { type: String, required: true },
@@ -39,4 +50,7 @@ defineProps({
   cards: { type: Array, default: () => [] },
   readMoreLabel: { type: String, required: true }
 })
+
+const getSize = (src) => getImageSize(src)
+const getSrcset = (src) => getImageSrcset(src)
 </script>

@@ -2,7 +2,17 @@
   <section id="acerca" class="section section-soft">
     <div class="section-shell grid gap-12 md:grid-cols-2 items-center about-grid">
       <div class="image-frame">
-        <img :src="image" :alt="imageAlt" class="section-image" loading="lazy" decoding="async">
+        <img
+          :src="image"
+          :alt="imageAlt"
+          class="section-image"
+          loading="lazy"
+          decoding="async"
+          :width="imageSize.width"
+          :height="imageSize.height"
+          :srcset="imageSrcset || undefined"
+          sizes="(min-width: 1024px) 50vw, 90vw"
+        >
       </div>
       <div class="about-content">
         <p class="section-kicker">{{ kicker }}</p>
@@ -25,7 +35,10 @@
 </template>
 
 <script setup>
-defineProps({
+import { computed } from 'vue'
+import { getImageSize, getImageSrcset } from '~/utils/imageSizes'
+
+const props = defineProps({
   image: { type: String, required: true },
   imageAlt: { type: String, default: 'Portrait' },
   kicker: { type: String, required: true },
@@ -34,4 +47,7 @@ defineProps({
   paragraphs: { type: Array, default: () => [] },
   stats: { type: Array, default: () => [] }
 })
+
+const imageSize = computed(() => getImageSize(props.image))
+const imageSrcset = computed(() => getImageSrcset(props.image))
 </script>

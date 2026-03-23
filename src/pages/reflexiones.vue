@@ -5,12 +5,16 @@
     <header class="reflections-hero">
       <div class="reflections-hero-bg" aria-hidden="true">
         <img
-          src="/assets/DKS2.jpg"
+          :src="heroImage"
           alt="Collage artistico"
           class="reflections-hero-image"
           loading="eager"
           decoding="async"
           fetchpriority="high"
+          :width="heroSize.width"
+          :height="heroSize.height"
+          :srcset="heroSrcset || undefined"
+          sizes="100vw"
         >
         <div class="reflections-hero-overlay"></div>
         <div class="reflections-hero-glow"></div>
@@ -40,7 +44,16 @@
             class="reflection-card reflections-card"
           >
             <div class="reflection-image">
-              <img :src="card.image" :alt="card.title" loading="lazy" decoding="async">
+              <img
+                :src="card.image"
+                :alt="card.title"
+                loading="lazy"
+                decoding="async"
+                :width="getSize(card.image).width"
+                :height="getSize(card.image).height"
+                :srcset="getSrcset(card.image) || undefined"
+                sizes="(min-width: 1024px) 33vw, 90vw"
+              >
             </div>
             <div class="reflection-body">
               <h3 class="reflection-title">{{ card.title }}</h3>
@@ -71,11 +84,15 @@ import { useLocalePath } from '#i18n'
 import Navbar from '~/components/Navbar.vue'
 import ContactSection from '~/components/landing/ContactSection.vue'
 import { useContentData } from '~/composables/useContentData'
+import { getImageSize, getImageSrcset } from '~/utils/imageSizes'
 
 const { locale, t } = useI18n()
 const localePath = useLocalePath()
 const { contentData } = useContentData(locale)
 const page = computed(() => contentData.value.reflections || { title: '', intro: '', cards: [] })
+const heroImage = '/assets/DKS2.jpg'
+const heroSize = computed(() => getImageSize(heroImage))
+const heroSrcset = computed(() => getImageSrcset(heroImage))
 
 const heroIntro = computed(() => {
   const intro = page.value?.intro || ''
@@ -127,4 +144,7 @@ const contactLinks = [
     alt: 'WhatsApp'
   }
 ]
+
+const getSize = (src) => getImageSize(src)
+const getSrcset = (src) => getImageSrcset(src)
 </script>

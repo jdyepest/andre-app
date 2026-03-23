@@ -11,6 +11,10 @@
               :loading="index === 0 ? 'eager' : 'lazy'"
               decoding="async"
               :fetchpriority="index === 0 ? 'high' : 'auto'"
+              :width="getSize(slide.image).width"
+              :height="getSize(slide.image).height"
+              :srcset="getSrcset(slide.image) || undefined"
+              sizes="100vw"
             >
             <div class="absolute md:bottom-[15%] md:left-[13%] bottom-5 left-[13%] bg-white bg-opacity-50 md:bg-opacity-75 p-5 rounded-lg w-3/4 text-violet-950">
               <h2 class="text-[1.5rem] md:text-[30px] mb-4 text-center font-vintage-coquete font-bold">{{ slide.title }}</h2>
@@ -45,6 +49,7 @@ import { computed, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useLocalePath } from '#i18n'
 import { useContentData } from '~/composables/useContentData'
+import { getImageSize, getImageSrcset } from '~/utils/imageSizes'
 
 const { locale } = useI18n()
 const localePath = useLocalePath()
@@ -55,6 +60,9 @@ const currentSlide = ref(0)
 const slideDirection = ref('slide-right')
 const touchStartX = ref(0)
 const touchEndX = ref(0)
+
+const getSize = (src) => getImageSize(src)
+const getSrcset = (src) => getImageSrcset(src)
 
 let carousel = null
 
