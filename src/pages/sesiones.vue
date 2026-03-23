@@ -124,7 +124,7 @@
           <div v-if="page.mapEmbedUrl" class="sessions-map-embed">
             <iframe
               :src="page.mapEmbedUrl"
-              title="Mapa"
+              :title="mapFrameTitle"
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
@@ -156,50 +156,130 @@ import ContactSection from '~/components/landing/ContactSection.vue'
 import { useContentData } from '~/composables/useContentData'
 
 const { locale, t } = useI18n()
+const route = useRoute()
 const { contentData } = useContentData(locale)
 const page = computed(() => contentData.value.sessions || {})
 
-const heroAlt = computed(() =>
-  locale.value === 'en' ? 'Therapy sessions' : 'Sesiones terapeuticas'
+const seoSiteUrl = computed(() => t('seo.siteUrl'))
+const seoSiteName = computed(() => t('seo.siteName'))
+const seoTitle = computed(() => t('seo.sessions.title'))
+const seoDescription = computed(() => t('seo.sessions.description'))
+const seoKeywords = computed(() => t('seo.sessions.keywords'))
+const ogImagePath = computed(() => t('seo.sessions.ogImage'))
+const canonicalUrl = computed(() => `${seoSiteUrl.value}${route.path}`)
+const ogImageUrl = computed(() =>
+  ogImagePath.value.startsWith('http') ? ogImagePath.value : `${seoSiteUrl.value}${ogImagePath.value}`
 )
+
+useSeoMeta({
+  title: () => seoTitle.value,
+  description: () => seoDescription.value,
+  ogTitle: () => seoTitle.value,
+  ogDescription: () => seoDescription.value,
+  ogType: () => t('seo.ogType'),
+  ogUrl: () => canonicalUrl.value,
+  ogImage: () => ogImageUrl.value,
+  ogSiteName: () => seoSiteName.value,
+  twitterCard: () => t('seo.twitterCard'),
+  twitterTitle: () => seoTitle.value,
+  twitterDescription: () => seoDescription.value,
+  twitterImage: () => ogImageUrl.value
+})
+
+useHead({
+  link: [{ rel: 'canonical', href: canonicalUrl }],
+  meta: [
+    { name: 'keywords', content: seoKeywords },
+    { name: 'robots', content: () => t('seo.robots') }
+  ]
+})
+
+const heroAlt = computed(() => t('alts.sessionsHero'))
 
 const introImage = '/assets/imagen_sesiones_3.jpg'
 const focusImage = '/assets/imagen_sesiones_2.jpg'
 
-const introAlt = computed(() =>
-  locale.value === 'en' ? 'Guided sessions' : 'Acompanamiento terapeutico'
-)
-
-const focusAlt = computed(() =>
-  locale.value === 'en' ? 'Therapy space' : 'Espacio de terapia'
-)
+const introAlt = computed(() => t('alts.sessionsIntro'))
+const focusAlt = computed(() => t('alts.sessionsFocus'))
+const mapFrameTitle = computed(() => t('alts.mapFrame'))
 
 const contactHeadline = computed(() => ({
   lead: t('landing.contactHeadline.lead'),
   accent: t('landing.contactHeadline.accent')
 }))
 
-const contactLinks = [
+const contactLinks = computed(() => [
   {
     href: 'https://m.facebook.com/101364628375459?wtsid=rdr_0dPxI4AJkH3KylJhn',
     icon: '/assets/facebook.svg',
-    alt: 'Facebook'
+    alt: t('alts.socialFacebook')
   },
   {
     href: 'https://www.instagram.com/andrecreation_/',
     icon: '/assets/instagram.svg',
-    alt: 'Instagram'
+    alt: t('alts.socialInstagram')
   },
   {
     href: 'https://mail.google.com/mail/?view=cm&fs=1&to=crear.emotion.1998@gmail.com',
     icon: '/assets/mail.svg',
-    alt: 'Email',
+    alt: t('alts.socialEmail'),
     target: '_self'
   },
   {
     href: 'https://wa.me/+573187392384',
     icon: '/assets/whatsapp.svg',
-    alt: 'WhatsApp'
+    alt: t('alts.socialWhatsApp')
   }
-]
+])
+
+const sameAsLinks = computed(() => contactLinks.value.map((link) => link.href))
+const personSchema = computed(() => ({
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: t('seo.person.name'),
+  jobTitle: t('seo.person.jobTitle'),
+  description: seoDescription.value,
+  url: seoSiteUrl.value,
+  image: ogImageUrl.value,
+  sameAs: sameAsLinks.value
+}))
+const serviceSchema = computed(() => ({
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: seoTitle.value,
+  serviceType: t('seo.sessions.serviceType'),
+  description: seoDescription.value,
+  provider: {
+    '@type': 'Person',
+    name: t('seo.person.name'),
+    jobTitle: t('seo.person.jobTitle'),
+    url: seoSiteUrl.value
+  }
+}))
+const webpageSchema = computed(() => ({
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: seoTitle.value,
+  description: seoDescription.value,
+  url: canonicalUrl.value,
+  inLanguage: locale.value,
+  isPartOf: {
+    '@type': 'WebSite',
+    name: seoSiteName.value,
+    url: seoSiteUrl.value
+  }
+}))
+const jsonLd = computed(() =>
+  JSON.stringify([personSchema.value, serviceSchema.value, webpageSchema.value])
+)
+
+useHead({
+  script: [
+    {
+      key: 'ld-json-sessions',
+      type: 'application/ld+json',
+      children: jsonLd
+    }
+  ]
+})
 </script>

@@ -75,10 +75,45 @@ import { useLandingData } from '~/composables/useLandingData'
 
 const { locale, t, tm, rt } = useI18n()
 const localePath = useLocalePath()
+const route = useRoute()
 // Fetch landing data from the mock API and keep it reactive per locale.
 const { landing, pending, error } = useLandingData(locale)
 const isLandingLoading = computed(() => pending.value)
 const hasLandingError = computed(() => Boolean(error.value))
+
+const seoSiteUrl = computed(() => t('seo.siteUrl'))
+const seoSiteName = computed(() => t('seo.siteName'))
+const seoTitle = computed(() => t('seo.home.title'))
+const seoDescription = computed(() => t('seo.home.description'))
+const seoKeywords = computed(() => t('seo.home.keywords'))
+const ogImagePath = computed(() => t('seo.home.ogImage'))
+const canonicalUrl = computed(() => `${seoSiteUrl.value}${route.path}`)
+const ogImageUrl = computed(() =>
+  ogImagePath.value.startsWith('http') ? ogImagePath.value : `${seoSiteUrl.value}${ogImagePath.value}`
+)
+
+useSeoMeta({
+  title: () => seoTitle.value,
+  description: () => seoDescription.value,
+  ogTitle: () => seoTitle.value,
+  ogDescription: () => seoDescription.value,
+  ogType: () => t('seo.ogType'),
+  ogUrl: () => canonicalUrl.value,
+  ogImage: () => ogImageUrl.value,
+  ogSiteName: () => seoSiteName.value,
+  twitterCard: () => t('seo.twitterCard'),
+  twitterTitle: () => seoTitle.value,
+  twitterDescription: () => seoDescription.value,
+  twitterImage: () => ogImageUrl.value
+})
+
+useHead({
+  link: [{ rel: 'canonical', href: canonicalUrl }],
+  meta: [
+    { name: 'keywords', content: seoKeywords },
+    { name: 'robots', content: () => t('seo.robots') }
+  ]
+})
 
 const page = computed(() => landing.value?.home || {})
 const about = computed(() => landing.value?.about || { paragraphs: [] })
@@ -89,17 +124,9 @@ const heroIntroText = computed(() => {
   return paragraphs[0] || ''
 })
 
-const heroImageAlt = computed(() =>
-  locale.value === 'en' ? 'Therapy space' : 'Espacio terapeutico'
-)
-
-const aboutImageAlt = computed(() =>
-  locale.value === 'en' ? 'Portrait' : 'Retrato profesional'
-)
-
-const bookImageAlt = computed(() =>
-  locale.value === 'en' ? 'The drawer of the night' : 'El cajon de la noche'
-)
+const heroImageAlt = computed(() => t('alts.landingHero'))
+const aboutImageAlt = computed(() => t('alts.landingAbout'))
+const bookImageAlt = computed(() => t('alts.landingBook'))
 
 // tm() fetches non-string resources; rt() resolves message ASTs to plain strings.
 const aboutHeadline = computed(() => ({
@@ -179,29 +206,73 @@ const reflectionCards = computed(() => {
   }))
 })
 
-const contactLinks = [
+const contactLinks = computed(() => [
   {
     href: 'https://m.facebook.com/101364628375459?wtsid=rdr_0dPxI4AJkH3KylJhn',
     icon: '/assets/facebook.svg',
-    alt: 'Facebook'
+    alt: t('alts.socialFacebook')
   },
   {
     href: 'https://www.instagram.com/andrecreation_/',
     icon: '/assets/instagram.svg',
-    alt: 'Instagram'
+    alt: t('alts.socialInstagram')
   },
   {
     href: 'https://mail.google.com/mail/?view=cm&fs=1&to=crear.emotion.1998@gmail.com',
     icon: '/assets/mail.svg',
-    alt: 'Email',
+    alt: t('alts.socialEmail'),
     target: '_self'
   },
   {
     href: 'https://wa.me/+573187392384',
     icon: '/assets/whatsapp.svg',
-    alt: 'WhatsApp'
+    alt: t('alts.socialWhatsApp')
   }
-]
+])
+
+const sameAsLinks = computed(() => contactLinks.value.map((link) => link.href))
+const personSchema = computed(() => ({
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: t('seo.person.name'),
+  jobTitle: t('seo.person.jobTitle'),
+  description: seoDescription.value,
+  url: seoSiteUrl.value,
+  image: ogImageUrl.value,
+  sameAs: sameAsLinks.value
+}))
+const websiteSchema = computed(() => ({
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: seoSiteName.value,
+  url: seoSiteUrl.value
+}))
+const webpageSchema = computed(() => ({
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: seoTitle.value,
+  description: seoDescription.value,
+  url: canonicalUrl.value,
+  inLanguage: locale.value,
+  isPartOf: {
+    '@type': 'WebSite',
+    name: seoSiteName.value,
+    url: seoSiteUrl.value
+  }
+}))
+const jsonLd = computed(() =>
+  JSON.stringify([personSchema.value, websiteSchema.value, webpageSchema.value])
+)
+
+useHead({
+  script: [
+    {
+      key: 'ld-json-home',
+      type: 'application/ld+json',
+      children: jsonLd
+    }
+  ]
+})
 
 const scrollTo = (href) => {
   if (href === '#inicio') {

@@ -16,6 +16,43 @@
     "contactText": "You can contact me through my social networks such as Facebook, Instagram, or WhatsApp for more information.",
     "mapPlaceholder": "Add a Google Maps link to show your location."
   },
+  "seo": {
+    "siteName": "CreartTerapia",
+    "siteUrl": "https://creartemotion.com",
+    "twitterCard": "summary_large_image",
+    "ogType": "website",
+    "robots": "index, follow",
+    "person": {
+      "name": "Andrea Narváez",
+      "jobTitle": "Clinical psychologist"
+    },
+    "home": {
+      "title": "Psychologist in Cali | Psychoanalytic Therapy Online & In-Person | Andrea Narváez",
+      "description": "Psychoanalytic psychologist with a gender-informed approach. In-person therapy in Cali and online sessions for anxiety, grief, relationships, and life transitions.",
+      "keywords": "psychologist Cali, psychoanalytic therapy, online therapy, in-person therapy, mental health, anxiety, grief, self-esteem, couples therapy",
+      "ogImage": "/assets/therapy.jpg"
+    },
+    "sessions": {
+      "title": "Therapy Sessions | In-Person and Online in Cali | Andrea Narváez",
+      "description": "Personalized psychoanalytic therapy sessions with flexible schedules. Support for anxiety, stress, grief, relationships, and major life decisions.",
+      "keywords": "therapy sessions, psychotherapy Cali, online therapy Colombia, in-person therapy Cali, psychoanalysis, anxiety, stress, grief",
+      "serviceType": "Psychoanalytic psychotherapy",
+      "ogImage": "/assets/imagen_sesiones_3.jpg"
+    }
+  },
+  "alts": {
+    "landingHero": "Therapy space in Cali",
+    "landingAbout": "Professional portrait of Andrea Narváez",
+    "landingBook": "The Drawer of the Night book cover",
+    "sessionsHero": "Therapy sessions in Cali",
+    "sessionsIntro": "Personalized therapeutic support",
+    "sessionsFocus": "Therapy room",
+    "mapFrame": "Location map",
+    "socialFacebook": "Facebook",
+    "socialInstagram": "Instagram",
+    "socialEmail": "Email",
+    "socialWhatsApp": "WhatsApp"
+  },
   "landing": {
     "heroKicker": "Psychology · Psychoanalysis · Well-being",
     "aboutHeadline": {

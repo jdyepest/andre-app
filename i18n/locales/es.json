@@ -16,6 +16,43 @@
     "contactText": "Puedes contactarme a traves de mis redes sociales, como Facebook, Instagram o WhatsApp, para obtener mas informacion al respecto.",
     "mapPlaceholder": "Agrega el enlace de Google Maps para mostrar la ubicación."
   },
+  "seo": {
+    "siteName": "CreartTerapia",
+    "siteUrl": "https://creartemotion.com",
+    "twitterCard": "summary_large_image",
+    "ogType": "website",
+    "robots": "index, follow",
+    "person": {
+      "name": "Andrea Narváez",
+      "jobTitle": "Psicóloga clínica"
+    },
+    "home": {
+      "title": "Psicóloga en Cali | Psicoterapia psicoanalítica y online | Andrea Narváez",
+      "description": "Psicóloga con enfoque psicoanalítico y de género. Terapia presencial en Cali y online para acompañar ansiedad, duelos, vínculos y procesos de vida.",
+      "keywords": "psicóloga Cali, psicoterapia psicoanalítica, terapia online, terapia presencial, salud mental, ansiedad, duelo, autoestima, terapia de pareja",
+      "ogImage": "/assets/therapy.jpg"
+    },
+    "sessions": {
+      "title": "Sesiones de terapia | Presencial y online en Cali | Andrea Narváez",
+      "description": "Sesiones de psicoterapia psicoanalítica personalizadas, con horarios flexibles. Acompañamiento en ansiedad, estrés, duelo, relaciones y decisiones de vida.",
+      "keywords": "sesiones de terapia, psicoterapia Cali, terapia online Colombia, terapia presencial Cali, psicoanálisis, ansiedad, estrés, duelo",
+      "serviceType": "Psicoterapia psicoanalítica",
+      "ogImage": "/assets/imagen_sesiones_3.jpg"
+    }
+  },
+  "alts": {
+    "landingHero": "Espacio de terapia en Cali",
+    "landingAbout": "Retrato profesional de Andrea Narváez",
+    "landingBook": "Portada de El cajón de la noche",
+    "sessionsHero": "Sesiones de terapia en Cali",
+    "sessionsIntro": "Acompañamiento terapéutico personalizado",
+    "sessionsFocus": "Espacio de terapia",
+    "mapFrame": "Mapa de ubicación",
+    "socialFacebook": "Facebook",
+    "socialInstagram": "Instagram",
+    "socialEmail": "Correo electrónico",
+    "socialWhatsApp": "WhatsApp"
+  },
   "landing": {
     "heroKicker": "Psicologia · Psicoanalisis · Bienestar",
     "aboutHeadline": {
