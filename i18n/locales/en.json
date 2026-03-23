@@ -47,6 +47,7 @@
     "sessionsHero": "Therapy sessions in Cali",
     "sessionsIntro": "Personalized therapeutic support",
     "sessionsFocus": "Therapy room",
+    "paintings": "Vase still life",
     "mapFrame": "Location map",
     "socialFacebook": "Facebook",
     "socialInstagram": "Instagram",
@@ -148,7 +149,7 @@
       ],
       "paintingsTitle": "Paintings and memory",
       "paintingsText": "I paint as one who remembers: layers of color, silence, and light. Each stroke holds a memory and opens a space where the intimate can breathe; the image carries on what the word begins.",
-      "paintingsImage": "/assets/ai_painting_placeholder.svg",
+      "paintingsImage": "/assets/florero.jpeg",
       "education": [
         {
           "date": "2015-2021",
@@ -239,7 +240,7 @@
         "Life changes and important decisions"
       ],
       "mapTitle": "Location",
-      "mapNote": "Office at Colectivo Coworking Cali. Virtual sessions are also available.",
+      "mapNote": "Private office at Colectivo Coworking Cali: a calm and safe space. Virtual sessions are also available.",
       "mapEmbedUrl": "https://www.google.com/maps?q=Colectivo+Coworking+Cali&output=embed",
       "focusAreasTitle": "Types of therapy and reasons for consultation",
       "focusAreasText": "A warm space to talk calmly and find a path of support that fits your current moment.",

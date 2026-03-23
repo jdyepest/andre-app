@@ -285,9 +285,7 @@ const paintingsSize = computed(() => getImageSize(paintingsImage.value))
 const paintingsSrcset = computed(() => getImageSrcset(paintingsImage.value))
 const paintingsWebpSrcset = computed(() => getFormatSrcset(paintingsImage.value, 'webp'))
 const paintingsAvifSrcset = computed(() => getFormatSrcset(paintingsImage.value, 'avif'))
-const paintingsAlt = computed(() =>
-  locale.value === 'en' ? 'AI-generated painting' : 'Pintura generada por IA'
-)
+const paintingsAlt = computed(() => t('alts.paintings'))
 
 const artTimelineItems = computed(() => {
   const experience = experienceItems.value.slice(1)

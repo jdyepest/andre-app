@@ -47,6 +47,7 @@
     "sessionsHero": "Sesiones de terapia en Cali",
     "sessionsIntro": "Acompañamiento terapéutico personalizado",
     "sessionsFocus": "Espacio de terapia",
+    "paintings": "Bodegón con florero",
     "mapFrame": "Mapa de ubicación",
     "socialFacebook": "Facebook",
     "socialInstagram": "Instagram",
@@ -148,7 +149,7 @@
       ],
       "paintingsTitle": "Pinturas y memoria",
       "paintingsText": "Pinto como quien recuerda: capas de color, silencios y luz. Cada trazo guarda una memoria y abre un espacio donde lo íntimo respira; la imagen continúa lo que la palabra inicia.",
-      "paintingsImage": "/assets/ai_painting_placeholder.svg",
+      "paintingsImage": "/assets/florero.jpeg",
       "education": [
         {
           "date": "2015-2021",
@@ -239,7 +240,7 @@
         "Cambios de vida y decisiones importantes"
       ],
       "mapTitle": "Ubicación",
-      "mapNote": "Consultorio en Colectivo Coworking Cali. También atiendo de forma virtual.",
+      "mapNote": "Consultorio privado en Colectivo Coworking Cali: un espacio tranquilo y seguro. También atiendo de forma virtual.",
       "mapEmbedUrl": "https://www.google.com/maps?q=Colectivo+Coworking+Cali&output=embed",
       "focusAreasTitle": "Tipos de terapia y motivos de consulta",
       "focusAreasText": "Un espacio cercano para conversar con calma y encontrar formas de acompañamiento que se ajusten a tu momento vital.",
