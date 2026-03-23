@@ -7,7 +7,7 @@
     "node": ">=20.19.0"
   },
   "scripts": {
-    "dev": "nuxt dev",
+    "dev": "nuxt dev --port 3001",
     "build": "nuxt build",
     "generate": "nuxt generate",
     "preview": "nuxt preview",

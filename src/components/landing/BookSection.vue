@@ -1,0 +1,30 @@
+<template>
+  <section id="libro" class="section section-book">
+    <div class="section-shell grid gap-12 md:grid-cols-2 items-center book-grid">
+      <div class="book-content">
+        <p class="section-kicker">{{ kicker }}</p>
+        <h2 class="section-title font-display">
+          {{ headlineLead }}
+          <span class="section-title-accent">{{ headlineAccent }}</span>
+        </h2>
+        <p v-for="(paragraph, idx) in paragraphs" :key="`book-${idx}`" class="section-text">
+          {{ paragraph }}
+        </p>
+      </div>
+      <div class="image-frame book-image">
+        <img :src="image" :alt="imageAlt" class="section-image">
+      </div>
+    </div>
+  </section>
+</template>
+
+<script setup>
+defineProps({
+  kicker: { type: String, required: true },
+  headlineLead: { type: String, required: true },
+  headlineAccent: { type: String, required: true },
+  paragraphs: { type: Array, default: () => [] },
+  image: { type: String, required: true },
+  imageAlt: { type: String, default: 'Book cover' }
+})
+</script>

@@ -4,171 +4,59 @@
       <div class="landing-loader-bar"></div>
     </div>
     <Navbar></Navbar>
-
-    <section id="inicio" class="hero-section">
-      <div class="hero-bg">
-        <img src="/assets/therapy.jpg" alt="Espacio terapéutico" class="hero-image">
-        <div class="hero-overlay"></div>
-        <div class="hero-fade"></div>
-      </div>
-      <div class="hero-content">
-        <p class="hero-kicker animate-fade-up" style="animation-delay: 0.2s">
-          {{ $t('landing.heroKicker') }}
-        </p>
-        <h1 class="hero-title font-display animate-fade-up" style="animation-delay: 0.4s">
-          {{ page.heroTitleLine1 }}
-          <span class="hero-title-accent font-vintage-coquete">{{ page.heroTitleLine2 }}</span>
-        </h1>
-        <p class="hero-text animate-fade-up" style="animation-delay: 0.6s">
-          {{ heroIntroText }}
-        </p>
-        <div class="hero-actions animate-fade-up" style="animation-delay: 0.8s">
-          <button class="btn-primary" type="button" @click="scrollTo('#contacto')">
-            {{ $t('buttons.contactCta') }}
-          </button>
-          <button class="btn-ghost" type="button" @click="scrollTo('#acerca')">
-            {{ $t('buttons.learnMore') }}
-          </button>
-        </div>
-      </div>
-      <div class="scroll-indicator">
-        <div class="scroll-track">
-          <div class="scroll-dot"></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="acerca" class="section section-soft">
-      <div class="section-shell grid gap-12 md:grid-cols-2 items-center about-grid">
-        <div class="image-frame">
-          <img :src="aboutImage" alt="Andrea" class="section-image">
-        </div>
-        <div class="about-content">
-          <p class="section-kicker">{{ $t('nav.about') }}</p>
-          <h2 class="section-title font-display">
-            {{ aboutHeadline.lead }}
-            <span class="section-title-accent">{{ aboutHeadline.accent }}</span>
-          </h2>
-          <p v-for="(paragraph, idx) in aboutParagraphs" :key="`about-${idx}`" class="section-text">
-            {{ paragraph }}
-          </p>
-          <div class="section-stats">
-            <div class="stat">
-              <span class="stat-value">+5</span>
-              <span class="stat-label">{{ $t('landing.aboutStats.experience') }}</span>
-            </div>
-            <div class="stat">
-              <span class="stat-value">∞</span>
-              <span class="stat-label">{{ $t('landing.aboutStats.commitment') }}</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="terapia" class="section section-light">
-      <div class="section-shell">
-        <div class="section-header">
-          <p class="section-kicker">{{ $t('nav.sessions') }}</p>
-          <h2 class="section-title font-display">
-            {{ therapyHeadline.lead }}
-            <span class="section-title-accent">{{ therapyHeadline.accent }}</span>
-          </h2>
-          <p class="section-lead">
-            {{ therapyIntro }}
-          </p>
-        </div>
-        <div class="card-grid therapy-grid">
-          <div class="therapy-card" v-for="(card, idx) in therapyCards" :key="`therapy-${idx}`">
-            <div class="therapy-icon">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path v-for="(path, pIdx) in card.icon" :key="pIdx" :d="path" />
-              </svg>
-            </div>
-            <h3 class="therapy-title">{{ card.title }}</h3>
-            <p class="therapy-text">{{ card.text }}</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="reflexiones" class="section section-soft">
-      <div class="section-shell">
-        <div class="section-header">
-          <p class="section-kicker">{{ reflections.title }}</p>
-          <h2 class="section-title font-display">
-            {{ reflectionsHeadline.lead }}
-            <span class="section-title-accent">{{ reflectionsHeadline.accent }}</span>
-          </h2>
-          <p class="section-lead">{{ reflections.intro }}</p>
-        </div>
-        <div class="card-grid">
-          <NuxtLink
-            v-for="(card, idx) in reflections.cards"
-            :key="`reflection-${idx}`"
-            :to="localePath(card.route)"
-            class="reflection-card"
-          >
-            <div class="reflection-image">
-              <img :src="card.image" :alt="card.title">
-            </div>
-            <div class="reflection-body">
-              <h3 class="reflection-title">{{ card.title }}</h3>
-              <p class="reflection-text">{{ card.description }}</p>
-              <span class="reflection-link">{{ $t('buttons.readMore') }}</span>
-            </div>
-          </NuxtLink>
-        </div>
-      </div>
-    </section>
-
-    <section id="libro" class="section section-book">
-      <div class="section-shell grid gap-12 md:grid-cols-2 items-center book-grid">
-        <div class="book-content">
-          <p class="section-kicker">{{ page.bookTitleLine1 }}</p>
-          <h2 class="section-title font-display">
-            {{ bookHeadline.lead }}
-            <span class="section-title-accent">{{ bookHeadline.accent }}</span>
-          </h2>
-          <p v-for="(paragraph, idx) in page.bookParagraphs" :key="`book-${idx}`" class="section-text">
-            {{ paragraph }}
-          </p>
-        </div>
-        <div class="image-frame book-image">
-          <img :src="bookImage" alt="Libro El cajon de la noche" class="section-image">
-        </div>
-      </div>
-    </section>
-
-    <section id="contacto" class="section section-contact">
-      <div class="section-shell">
-        <div class="contact-card">
-          <p class="section-kicker">{{ $t('sections.contactTitle') }}</p>
-          <h2 class="section-title font-display">
-            {{ contactHeadline.lead }}
-            <span class="section-title-accent">{{ contactHeadline.accent }}</span>
-          </h2>
-          <p class="section-lead">{{ $t('sections.contactText') }}</p>
-          <p v-if="hasLandingError" class="landing-error">
-            {{ $t('landing.errorNotice') }}
-          </p>
-          <div class="contact-icons">
-            <a href="https://m.facebook.com/101364628375459?wtsid=rdr_0dPxI4AJkH3KylJhn" target="_blank" class="contact-icon" rel="noopener">
-              <img src="/assets/facebook.svg" alt="Facebook" class="h-6 w-6">
-            </a>
-            <a href="https://www.instagram.com/andrecreation_/" target="_blank" class="contact-icon" rel="noopener">
-              <img src="/assets/instagram.svg" alt="Instagram" class="h-6 w-6">
-            </a>
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=crear.emotion.1998@gmail.com" class="contact-icon" rel="noopener">
-              <img src="/assets/mail.svg" alt="Email" class="h-6 w-6">
-            </a>
-            <a href="https://wa.me/+573187392384" target="_blank" class="contact-icon" rel="noopener">
-              <img src="/assets/whatsapp.svg" alt="WhatsApp" class="h-6 w-6">
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+    <HeroSection
+      image="/assets/therapy.jpg"
+      :image-alt="heroImageAlt"
+      :kicker="$t('landing.heroKicker')"
+      :title-line1="page.heroTitleLine1 || ''"
+      :title-line2="page.heroTitleLine2 || ''"
+      :intro="heroIntroText"
+      :contact-label="$t('buttons.contactCta')"
+      :learn-more-label="$t('buttons.learnMore')"
+      @contact="scrollTo('#contacto')"
+      @about="scrollTo('#acerca')"
+    ></HeroSection>
+    <AboutSection
+      :image="aboutImage"
+      :image-alt="aboutImageAlt"
+      :kicker="$t('nav.about')"
+      :headline-lead="aboutHeadline.lead"
+      :headline-accent="aboutHeadline.accent"
+      :paragraphs="aboutParagraphs"
+      :stats="aboutStats"
+    ></AboutSection>
+    <TherapySection
+      :kicker="$t('nav.sessions')"
+      :headline-lead="therapyHeadline.lead"
+      :headline-accent="therapyHeadline.accent"
+      :intro="therapyIntro"
+      :cards="therapyCards"
+    ></TherapySection>
+    <ReflectionsSection
+      :kicker="reflections.title"
+      :headline-lead="reflectionsHeadline.lead"
+      :headline-accent="reflectionsHeadline.accent"
+      :intro="reflections.intro"
+      :cards="reflectionCards"
+      :read-more-label="$t('buttons.readMore')"
+    ></ReflectionsSection>
+    <BookSection
+      :kicker="page.bookTitleLine1 || ''"
+      :headline-lead="bookHeadline.lead"
+      :headline-accent="bookHeadline.accent"
+      :paragraphs="page.bookParagraphs || []"
+      :image="bookImage"
+      :image-alt="bookImageAlt"
+    ></BookSection>
+    <ContactSection
+      :kicker="$t('sections.contactTitle')"
+      :headline-lead="contactHeadline.lead"
+      :headline-accent="contactHeadline.accent"
+      :text="$t('sections.contactText')"
+      :error-notice="$t('landing.errorNotice')"
+      :show-error="hasLandingError"
+      :links="contactLinks"
+    ></ContactSection>
   </div>
 </template>
 
@@ -177,10 +65,17 @@ import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useLocalePath } from '#i18n'
 import Navbar from '~/components/Navbar.vue'
+import HeroSection from '~/components/landing/HeroSection.vue'
+import AboutSection from '~/components/landing/AboutSection.vue'
+import TherapySection from '~/components/landing/TherapySection.vue'
+import ReflectionsSection from '~/components/landing/ReflectionsSection.vue'
+import BookSection from '~/components/landing/BookSection.vue'
+import ContactSection from '~/components/landing/ContactSection.vue'
 import { useLandingData } from '~/composables/useLandingData'
 
 const { locale, t, tm, rt } = useI18n()
 const localePath = useLocalePath()
+// Fetch landing data from the mock API and keep it reactive per locale.
 const { landing, pending, error } = useLandingData(locale)
 const isLandingLoading = computed(() => pending.value)
 const hasLandingError = computed(() => Boolean(error.value))
@@ -193,6 +88,18 @@ const heroIntroText = computed(() => {
   const paragraphs = page.value?.heroParagraphs || []
   return paragraphs[0] || ''
 })
+
+const heroImageAlt = computed(() =>
+  locale.value === 'en' ? 'Therapy space' : 'Espacio terapeutico'
+)
+
+const aboutImageAlt = computed(() =>
+  locale.value === 'en' ? 'Portrait' : 'Retrato profesional'
+)
+
+const bookImageAlt = computed(() =>
+  locale.value === 'en' ? 'The drawer of the night' : 'El cajon de la noche'
+)
 
 // tm() fetches non-string resources; rt() resolves message ASTs to plain strings.
 const aboutHeadline = computed(() => ({
@@ -245,6 +152,11 @@ const therapyCards = computed(() => {
 const aboutImage = '/assets/andre1.jpg'
 const bookImage = '/assets/libros.jpg'
 
+const aboutStats = computed(() => [
+  { value: '+5', label: t('landing.aboutStats.experience') },
+  { value: '∞', label: t('landing.aboutStats.commitment') }
+])
+
 const aboutParagraphs = computed(() => {
   const paragraphs = about.value?.paragraphs || []
   if (!paragraphs.length) return []
@@ -255,6 +167,41 @@ const aboutParagraphs = computed(() => {
     : ''
   return [firstText, secondText].filter(Boolean)
 })
+
+const reflectionCards = computed(() => {
+  const cards = reflections.value?.cards || []
+  return cards.map((card) => ({
+    ...card,
+    to: {
+      path: localePath(card.route || '/reflexion'),
+      query: card.id ? { id: card.id } : {}
+    }
+  }))
+})
+
+const contactLinks = [
+  {
+    href: 'https://m.facebook.com/101364628375459?wtsid=rdr_0dPxI4AJkH3KylJhn',
+    icon: '/assets/facebook.svg',
+    alt: 'Facebook'
+  },
+  {
+    href: 'https://www.instagram.com/andrecreation_/',
+    icon: '/assets/instagram.svg',
+    alt: 'Instagram'
+  },
+  {
+    href: 'https://mail.google.com/mail/?view=cm&fs=1&to=crear.emotion.1998@gmail.com',
+    icon: '/assets/mail.svg',
+    alt: 'Email',
+    target: '_self'
+  },
+  {
+    href: 'https://wa.me/+573187392384',
+    icon: '/assets/whatsapp.svg',
+    alt: 'WhatsApp'
+  }
+]
 
 const scrollTo = (href) => {
   if (href === '#inicio') {

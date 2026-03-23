@@ -1,66 +1,123 @@
 <template>
-    <div class="h-screen">
-      <Navbar bck="pink"></Navbar>
+  <div class="reflections-page font-body">
+    <Navbar></Navbar>
 
-      <div class="md:h-[74%] h-[74%] relative">
-          <img src="/assets/DKS2.jpg" alt="Slide image" class="object-fill w-full h-full">
-          <div class="absolute bottom-[75%] left-[10%] w-4/5 text-white">
-            <h2 class="text-center text-[61px] md:text-[86px] font-vintage-coquete ">{{ page.title }}</h2>
+    <header class="reflections-hero">
+      <div class="reflections-hero-bg" aria-hidden="true">
+        <img src="/assets/DKS2.jpg" alt="Collage artistico" class="reflections-hero-image">
+        <div class="reflections-hero-overlay"></div>
+        <div class="reflections-hero-glow"></div>
+      </div>
+      <div class="reflections-hero-content">
+        <p class="hero-kicker">{{ $t('nav.reflections') }}</p>
+        <h1 class="reflections-hero-title font-display">{{ page.title }}</h1>
+        <p class="reflections-hero-text">{{ heroIntro }}</p>
+      </div>
+    </header>
+
+    <section class="section reflections-section">
+      <div class="section-shell">
+        <div class="section-header reflections-header">
+          <p class="section-kicker">{{ $t('nav.reflections') }}</p>
+          <h2 class="section-title font-display">
+            {{ reflectionsHeadline.lead }}
+            <span class="section-title-accent">{{ reflectionsHeadline.accent }}</span>
+          </h2>
+          <p class="section-lead">{{ page.intro }}</p>
+        </div>
+        <div class="card-grid reflections-grid">
+          <NuxtLink
+            v-for="(card, idx) in reflectionCards"
+            :key="`reflection-${idx}`"
+            :to="card.to"
+            class="reflection-card reflections-card"
+          >
+            <div class="reflection-image">
+              <img :src="card.image" :alt="card.title">
             </div>
-            <div class="absolute bottom-[20%] md:bottom-[35%] left-[20%] w-3/5 text-white">
-              <p class="mt-4  md:text-[22px] text-[16px] text-justify leading-normal">
-                {{ page.intro }}
-              </p>
-          </div>
+            <div class="reflection-body">
+              <h3 class="reflection-title">{{ card.title }}</h3>
+              <p class="reflection-text">{{ card.description }}</p>
+              <span class="reflection-link">{{ $t('buttons.readMore') }}</span>
+            </div>
+          </NuxtLink>
+        </div>
       </div>
+    </section>
 
-      <div class="grid md:grid-cols-3 grid-cols-1 mt-10">
-    <div v-for="item in page.cards" :key="item.title" class="thumbnail-item px-5">
-      <div class="aspect-[0.9]">
-        <img :src="item.image" :alt="item.title" class="object-fit w-full h-full" />
-      </div>
-      <h2 class="text-center text-xl my-5 text-violet-900">{{ item.title }}</h2>
-      <p class="text-center mb-2 ">{{ item.description }}</p>
-      <div class="flex justify-center items-center mb-10">
-        <NuxtLink :to="localePath(item.route)" class="text-center underline hoover:no-underline">{{ $t('buttons.readMore') }}</NuxtLink>
-      </div>
-    </div>
+    <ContactSection
+      :kicker="$t('sections.contactTitle')"
+      :headline-lead="contactHeadline.lead"
+      :headline-accent="contactHeadline.accent"
+      :text="$t('sections.contactText')"
+      :error-notice="$t('landing.errorNotice')"
+      :show-error="false"
+      :links="contactLinks"
+    ></ContactSection>
   </div>
-  <div class="contact-section bg-[#360269] h-2/5 w-full flex justify-center absolute">
-    <div class="my-auto w-4/5">
-      <div class="text-center">
-        <h2 class="text-[24px] text-white">{{ $t('sections.contactTitle') }}</h2>
-        <div class="text-center   text-white" >
-          {{ $t('sections.contactText') }}
-        </div>
-        <div class="flex justify-center mt-4">
-          <a href="https://m.facebook.com/101364628375459?wtsid=rdr_0dPxI4AJkH3KylJhn" target="_blank" class="mx-2">
-            <img src="/assets/facebook.svg" alt="Facebook" class="h-8 w-8">
-          </a>
-          <a href="https://www.instagram.com/andrecreation_/" target="_blank" class="mx-2">
-            <img src="/assets/instagram.svg" alt="Instagram" class="h-8 w-8">
-          </a>
-          <a href="mailto:crear.emotion.1998@gmail.com" class="mx-2">
-            <img src="/assets/mail.svg" alt="Email" class="h-8 w-8">
-          </a>
-          <a href="https://wa.me/+573187392384" target="_blank" class="mx-2">
-            <img src="/assets/whatsapp.svg" alt="WhatsApp" class="h-8 w-8">
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-    </div>
-  </template>
+</template>
 
 <script setup>
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useLocalePath } from '#i18n'
 import Navbar from '~/components/Navbar.vue'
-import { content } from '~/data/content'
+import ContactSection from '~/components/landing/ContactSection.vue'
+import { useContentData } from '~/composables/useContentData'
 
-const { locale } = useI18n()
+const { locale, t } = useI18n()
 const localePath = useLocalePath()
-const page = computed(() => content.reflections[locale.value] || content.reflections.es)
+const { contentData } = useContentData(locale)
+const page = computed(() => contentData.value.reflections || { title: '', intro: '', cards: [] })
+
+const heroIntro = computed(() => {
+  const intro = page.value?.intro || ''
+  const sentences = intro.split('. ').filter(Boolean).slice(0, 2).join('. ')
+  return sentences ? `${sentences}.` : intro
+})
+
+const reflectionsHeadline = computed(() => ({
+  lead: t('landing.reflectionsHeadline.lead'),
+  accent: t('landing.reflectionsHeadline.accent')
+}))
+
+const reflectionCards = computed(() => {
+  const cards = page.value?.cards || []
+  return cards.map((card) => ({
+    ...card,
+    to: {
+      path: localePath(card.route || '/reflexion'),
+      query: card.id ? { id: card.id } : {}
+    }
+  }))
+})
+
+const contactHeadline = computed(() => ({
+  lead: t('landing.contactHeadline.lead'),
+  accent: t('landing.contactHeadline.accent')
+}))
+
+const contactLinks = [
+  {
+    href: 'https://m.facebook.com/101364628375459?wtsid=rdr_0dPxI4AJkH3KylJhn',
+    icon: '/assets/facebook.svg',
+    alt: 'Facebook'
+  },
+  {
+    href: 'https://www.instagram.com/andrecreation_/',
+    icon: '/assets/instagram.svg',
+    alt: 'Instagram'
+  },
+  {
+    href: 'https://mail.google.com/mail/?view=cm&fs=1&to=crear.emotion.1998@gmail.com',
+    icon: '/assets/mail.svg',
+    alt: 'Email',
+    target: '_self'
+  },
+  {
+    href: 'https://wa.me/+573187392384',
+    icon: '/assets/whatsapp.svg',
+    alt: 'WhatsApp'
+  }
+]
 </script>

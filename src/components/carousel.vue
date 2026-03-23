@@ -37,12 +37,13 @@
 import { computed, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useLocalePath } from '#i18n'
-import { content } from '~/data/content'
+import { useContentData } from '~/composables/useContentData'
 
 const { locale } = useI18n()
 const localePath = useLocalePath()
 
-const slides = computed(() => content.carousel[locale.value] || content.carousel.es)
+const { contentData } = useContentData(locale)
+const slides = computed(() => contentData.value.carousel || [])
 const currentSlide = ref(0)
 const slideDirection = ref('slide-right')
 const touchStartX = ref(0)

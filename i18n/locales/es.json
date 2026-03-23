@@ -13,7 +13,8 @@
   },
   "sections": {
     "contactTitle": "Contacto",
-    "contactText": "Puedes contactarme a traves de mis redes sociales, como Facebook, Instagram o WhatsApp, para obtener mas informacion al respecto."
+    "contactText": "Puedes contactarme a traves de mis redes sociales, como Facebook, Instagram o WhatsApp, para obtener mas informacion al respecto.",
+    "mapPlaceholder": "Agrega el enlace de Google Maps para mostrar la ubicación."
   },
   "landing": {
     "heroKicker": "Psicologia · Psicoanalisis · Bienestar",
@@ -57,5 +58,366 @@
       "accent": "proceso"
     },
     "errorNotice": "Estamos cargando la informacion mas reciente."
+  },
+  "content": {
+    "home": {
+      "quote": "\"El equilibrio no significa evitar conflictos, implica la fuerza para tolerar emociones dolorosas y poder manejarlas. Si disociamos excesivamente las emociones dolorosas restringimos la personalidad y provocamos inhibiciones variadas. De esto se desprende que la salud mental no es compatible con la superficialidad, puesto que esta se vincula con renegacion del conflicto interior y de las dificultades externas. Se utiliza la renegacion de manera excesiva porque el Yo no es suficientemente fuerte para tolerar el dolor\"",
+      "quoteAuthor": "Melanie Klein",
+      "heroTitleLine1": "Andrea Narvaez",
+      "heroTitleLine2": "'CreartTerapia'",
+      "heroParagraphs": [
+        "Psicologa con formacion psicoanalitica y enfoque de genero. Sesiones 1:1 que integran arte y escritura para acompanar tu proceso. Empecemos cuando quieras.",
+        "Apasionada por la poesia, la escritura y el arte, integro la creatividad en mi practica terapeutica para explorar y sanar, ofreciendo un espacio de acogida y comprension para el bienestar y el autoconocimiento de mis pacientes."
+      ],
+      "therapyTitle": "Terapia",
+      "therapyParagraphs": [
+        "Ofrezco consultas presenciales en Cali, asi como terapia en linea para pacientes de todo el mundo. Mi enfoque se centra en la adaptacion del psicoanalisis a la era digital, manteniendo un espacio seguro y empatico para el crecimiento personal de mis pacientes.",
+        "Comprometida con la accesibilidad y la flexibilidad, utilizo herramientas tecnologicas avanzadas para garantizar una experiencia terapeutica profunda y significativa, sin importar la distancia."
+      ],
+      "bookTitleLine1": "Mi libro",
+      "bookTitleLine2": "'el cajon de la noche'",
+      "bookParagraphs": [
+        "Hace unos anos publique un poemario sobre los micro universos esteticos de la cotidianidad, a traves de un simbolismo y alusion a las figuras concretas, me permiti expresar los cambios, las revelaciones y las vivencias de infancia.",
+        "Esta obra significo mucho para mi en el contexto en que vivia en aquel entonces, y espero poder compartirla con el mundo. Si deseas saber mas o quieres una copia virtual o fisica, hazmelo saber. Se envia a cualquier parte del mundo."
+      ]
+    },
+    "about": {
+      "title": "Mi Experiencia profesional",
+      "paragraphs": [
+        "Desde mi adolescencia, la psicologia capturo mi interes y me llevo a formarme en la Universidad del Valle. En paralelo, la literatura siempre ha sido un refugio creativo, y de ahi nacio mi poemario El Cajon de la noche, un proyecto donde busque transformar lo cotidiano en experiencias esteticas y sensibles.",
+        "Mis primeros pasos en la psicologia clinica los di en el centro de atencion de la universidad, donde recibi reconocimientos por los resultados y evaluaciones positivas de mis pacientes durante las practicas. Este recorrido inicial marco mi compromiso con una escucha cuidadosa y con procesos terapeuticos que respeten el ritmo de cada persona.",
+        "Profundice mi especializacion en Psicologia de la Infancia y Adolescencia en la Universidad de Antioquia, con una mirada psicoanalitica. En ese camino, obtuve una experiencia muy importante acompanando a ninos autistas y brindando terapia a ninos en CINEV, lo que fortalecio mi sensibilidad clinica y mi trabajo con las familias.",
+        "Tambien he participado en voluntariados con mujeres victimas de abuso, un trabajo que me reafirmo la importancia de crear espacios seguros y dignos. Actualmente curso la maestria en Psicologia Clinica en la Universidad de San Buenaventura, mientras mantengo mi practica independiente de atencion virtual y presencial."
+      ],
+      "image": "/assets/andre_pintura.jpg",
+      "artisticTitle": "Arte, escritura y sensibilidad",
+      "artisticLead": "un espacio personal",
+      "artisticParagraphs": [
+        "La pintura y la escritura han sido parte esencial de mi camino. En el acto de crear encuentro un lenguaje íntimo que complementa mi trabajo clínico y me permite mirar la experiencia humana desde otros matices.",
+        "He explorado la expresión artística como un espacio de contemplación y de sentido. De ahí nace mi poemario El Cajón de la noche, una búsqueda de lo cotidiano y lo simbólico a través de la palabra."
+      ],
+      "poemTitle": "Nostalgia",
+      "poemLines": [
+        "Había vuelto a mirar viejas fotos",
+        "He caído en la ilusión de un tiempo mejor",
+        "El ayer, a la distancia, parece un tesoro perdido",
+        "bajo la tierra que propicia el olvido",
+        "en medio de nieblas, doy vueltas alrededor",
+        "Ni avanzo ni retrocedo, el pasado es otro espejo",
+        "cómo desnudar las pieles envueltas en mi cariño",
+        "cómo soltar de mis brazos la vida fugaz",
+        "oír ese caudal, llevo historias conmigo",
+        "que hace de mi camino un amable lugar"
+      ],
+      "paintingsTitle": "Pinturas y memoria",
+      "paintingsText": "Pinto como quien recuerda: capas de color, silencios y luz. Cada trazo guarda una memoria y abre un espacio donde lo íntimo respira; la imagen continúa lo que la palabra inicia.",
+      "paintingsImage": "/assets/ai_painting_placeholder.svg",
+      "education": [
+        {
+          "date": "2015-2021",
+          "title": "Psicología",
+          "subtitle": "Universidad del Valle",
+          "text": "Formación en Psicología con base psicoanalítica y énfasis en enfoque de género y adolescencia, orientada a comprender la subjetividad y los vínculos en etapas vitales clave."
+        },
+        {
+          "date": "2023",
+          "title": "Especialización en Infancia y Adolescencia",
+          "subtitle": "Universidad de Antioquia",
+          "text": "Especialización con enfoque psicoanalítico en infancia y adolescencia, profundizando en la lectura clínica, la evaluación y el acompañamiento terapéutico en estas etapas."
+        },
+        {
+          "date": "2025-2027",
+          "title": "Maestría en Psicología Clínica",
+          "subtitle": "Universidad de San Buenaventura (Cali)",
+          "text": "Maestría en Psicología Clínica con enfoque psicoanalítico, fortaleciendo el abordaje clínico, el diagnóstico y los procesos terapéuticos."
+        }
+      ],
+      "experience": [
+        {
+          "date": "2020-actualidad",
+          "title": "Psicóloga clínica",
+          "subtitle": "Práctica particular",
+          "text": "Atención clínica independiente con enfoque psicoanalítico, acompañando procesos individuales en modalidad presencial y virtual."
+        },
+        {
+          "date": "2021-2022",
+          "title": "Terapeuta",
+          "subtitle": "Impronta IPS",
+          "text": "Acompañamiento psicoterapéutico en contexto institucional, con seguimiento clínico y orientación a pacientes en proceso."
+        },
+        {
+          "date": "2023",
+          "title": "Terapeuta",
+          "subtitle": "Delamano Centro Psicopedagógico",
+          "text": "Psicoterapia con apoyo psicoanalítico orientada a profesionales, fortaleciendo recursos emocionales y bienestar integral."
+        },
+        {
+          "date": "2024",
+          "title": "Intaker terapeuta",
+          "subtitle": "Meneses Law",
+          "text": "Entrevista de entrada y apoyo psicológico a migrantes en procesos de regularización, acompañando la historia personal y las necesidades emocionales."
+        },
+        {
+          "date": "2025",
+          "title": "Terapeuta",
+          "subtitle": "CINEV",
+          "text": "Acompañamiento terapéutico a niños y adolescentes en contexto escolar, con trabajo articulado con familias y docentes."
+        }
+      ],
+      "complementaryEducation": [
+        {
+          "date": "2026",
+          "title": "Certificación en Violencia de Género",
+          "subtitle": "Cruz Roja",
+          "text": "Formación orientada a la identificación, prevención y abordaje de violencias basadas en género, con enfoque psicosocial y de cuidado."
+        }
+      ]
+    },
+    "sessions": {
+      "heroTitle": "Terapia",
+      "introTitle": "sesiones",
+      "introText": "Brindo sesiones de terapia psicoanalitica personalizadas, disponibles tanto en remoto para aquellos en distintas partes del mundo, con horarios flexibles que se adaptan a tu ritmo de vida, como presenciales en la ciudad de Cali, Colombia. Enfrenta una variedad de desafios emocionales, desde ansiedad y depresion hasta problemas de relacion y transiciones de vida, en un espacio seguro y acogedor. Me esfuerzo por hacer la terapia accesible, ofreciendo precios asequibles y multiples opciones de pago, incluyendo transferencia bancaria, PayPal y tarjeta de credito. Empieza con una sesion de evaluacion y descubre el camino hacia tu bienestar, sin importar donde te encuentres.",
+      "focusSubtitle": "Mi enfoque terapeutico",
+      "focusTitle": "Psicoterapia",
+      "focusParagraphs": [
+        "En mi practica como psicoterapeuta, me especializo en explorar como nuestras experiencias y creencias pasadas pueden afectarnos de forma consciente e inconsciente desde un enfoque psicoanalitico y cultural, entendiendo el impacto del trauma y las formas en como se transforman los significados del mismo. Desde herramientas narrativas y artisticas, busco ofrecer un espacio compasivo y libre para que experiencias y emociones puedan ser expresadas y procesadas. Este enfoque se enriquece con la inclusion de la poesia y discursos en torno al genero, para poder abordar problematicas a nivel psicosocial de una manera creativa y resiliente.",
+        "Desde Cali, Colombia, y a traves de plataformas virtuales, extiendo mi apoyo terapeutico a personas alrededor del mundo. Este es un espacio de acogida y comprension, donde se fomenta la liberacion de creencias limitantes y se abren nuevas formas de conexion con uno mismo, con los demas y con nuestro entorno, celebrando nuestra identidad cultural en el proceso de sanacion y crecimiento personal."
+      ],
+      "therapyTypesTitle": "Tipos de terapia",
+      "therapyTypes": [
+        "Terapia de pareja",
+        "Terapia presencial",
+        "Terapia online",
+        "Arteterapia",
+        "Terapia para niños",
+        "Terapia de familia"
+      ],
+      "issuesTitle": "Motivos de consulta",
+      "issues": [
+        "Ansiedad y estrés",
+        "Desánimo y agotamiento emocional",
+        "Duelo y pérdidas",
+        "Conflictos de pareja y familiares",
+        "Autoestima y cuidado personal",
+        "Cambios de vida y decisiones importantes"
+      ],
+      "mapTitle": "Ubicación",
+      "mapNote": "Consultorio en Colectivo Coworking Cali. También atiendo de forma virtual.",
+      "mapEmbedUrl": "https://www.google.com/maps?q=Colectivo+Coworking+Cali&output=embed",
+      "focusAreasTitle": "Tipos de terapia y motivos de consulta",
+      "focusAreasText": "Un espacio cercano para conversar con calma y encontrar formas de acompañamiento que se ajusten a tu momento vital.",
+      "focusAreasItems": [
+        "Terapia individual, presencial y online",
+        "Terapia de pareja y terapia familiar",
+        "Terapia infantil y acompañamiento a adolescentes",
+        "Arteterapia y recursos creativos",
+        "Ansiedad, estrés y sobrecarga emocional",
+        "Desánimo, apatía y cansancio interior",
+        "Duelo, pérdidas y procesos de despedida",
+        "Conflictos vinculares y comunicación",
+        "Autoestima, identidad y cuidado personal",
+        "Cambios de vida, decisiones y transiciones",
+        "Acompañamiento en crisis y momentos sensibles",
+        "Espacios para mujeres y cuidado emocional"
+      ],
+      "certificationsTitle": "Certificaciones y evaluaciones",
+      "certificationsText": "Los certificados y evaluaciones se emiten con base en la valoración profesional y las necesidades de cada proceso.",
+      "certificationsItems": [
+        "Constancia de proceso psicoterapéutico",
+        "Certificado de asistencia a psicoterapia",
+        "Informe psicológico y conceptos clínicos",
+        "Valoración psicológica y orientación vocacional",
+        "Aplicación de pruebas psicométricas (IQ infantil)",
+        "Informe de habilidades socioemocionales",
+        "Carta de apoyo emocional para mascotas (según valoración)",
+        "Acompañamiento para procesos escolares y familiares"
+      ],
+      "scheduleTitle": "Horarios de atención",
+      "scheduleNote": "Disponibilidad sujeta a agenda. Escríbeme para confirmar horarios.",
+      "scheduleItems": [
+        {
+          "label": "Lunes a viernes",
+          "value": "9:00 a.m. – 5:00 p.m."
+        },
+        {
+          "label": "Sábados",
+          "value": "En la mañana (según disponibilidad)"
+        }
+      ],
+      "pricingTitle": "Tarifas",
+      "pricingItems": [
+        {
+          "label": "Psicoterapia virtual (1 hora)",
+          "price": "70.000 COP"
+        },
+        {
+          "label": "Psicoterapia presencial (1 hora)",
+          "price": "80.000 COP"
+        },
+        {
+          "label": "Terapia de pareja",
+          "price": "90.000 COP"
+        }
+      ]
+    },
+    "reflections": {
+      "title": "Reflexiones",
+      "intro": "En estas paginas me complace compartir algunos textos a partir de mi experiencia personal como psicologa con pasion a la poesia, interesada en los dialogos de genero, feministas y culturales, y comprometida con brindar espacios seguros en los acompanamientos psicoterapeuticos con enfoque psicoanalitico. Busco poder trasmitir a traves de pensamientos y sensaciones vividas una proximidad de conocerme en mi labor.",
+      "cards": [
+        {
+          "title": "Sobre los cuerpos y el exceso",
+          "description": "Me impresiona como los cuerpos femeninos son un \"atractivo turistico\" en muchas culturas occidentales. En cada oportunidad, interrogo sobre que piensan de esa situacion. Recibo...",
+          "image": "/assets/libros.jpg",
+          "route": "/reflexion",
+          "id": "cuerpos"
+        },
+        {
+          "title": "Carta al psicoanalisis",
+          "description": "Cuando lei con demasiado desverguenza sobre las fantasias inconscientes de las mujeres abusadas, consideradas \"histericas\", paso tiempo para ver ante mi los invisibles lentes masculinos...",
+          "image": "/assets/remedios.jpeg",
+          "route": "/reflexion",
+          "id": "carta"
+        },
+        {
+          "title": "El control",
+          "description": "Sin esa sensacion, parece que la voluntad se hace trizas asi como cualquier alusion a poder y querer son suficientes. Hoy en dia que tanto se fomenta el control que ya ni...",
+          "image": "/assets/refle3.jpg",
+          "route": "/reflexion",
+          "id": "control"
+        }
+      ]
+    },
+    "bodies": {
+      "title1": "Sobre el exceso",
+      "paragraphs1": [
+        "Lo complicado de algunos procesos puede nombrarse desde la evasion al vacio o incluso de aquello que viene de la realidad.",
+        "Para afrontar que la falta es precisamente aquello que nunca se satisface, es posible empezar por soltar unos vacios y goces, para dar lugar a las palabras desde el deseo. Incluso en el silencio atribuimos ruido para querer abarcar un conocimiento. Me gusta caer en cuenta que gracias a esa incomprension, se abre una ventana existencial del lenguaje: lo indecible. Somos intolerantes a la incertidumbre aun cuando al sentirla afirmamos lo limitantes que son algunas determinaciones: \"ser buena en algo, el mejor, ser feliz, etc\" Hoy en dia muchos sienten culpa por no ser lo suficientemente \"alguien\", y esa lucha puede ser a veces desgastante cuando no se acepta la posibilidad de que no estamos alienados a las interpretaciones del Otro social, solo se carga con un saber que a veces se escapa, y que con mucho esfuerzo, logramos coincidir en las ataduras que impone la lengua y la dificultad ser comprendidos satisfactoriamente. El deseo confronta la eleccion.",
+        "Pienso en un Todo intolerable para la mente cuya cadena de significantes no alcanza el cumplimiento de deseo, sino el encuentro con la palabra y el bucle de ideas que no cesan de cerrarse e impiden concluir. Un exceso de pensamiento que oscila entre la certeza, la duda y una serie de actos que alivian la angustia. Pienso en la obsesion que va mas alla del objeto perseguido para negar la satisfaccion, pues busca un final Imposible."
+      ],
+      "title2": "Sobre los cuerpos",
+      "paragraphs2": [
+        "Me impresiona como los cuerpos femeninos son un \"atractivo turistico\" en muchas culturas occidentales. En cada oportunidad, interrogo sobre que piensan de esa situacion. Recibo respuestas como una \"tension\", y casi siempre toco una fibra nerviosa y delicada de una culpabilidad muda. Aun se critica a medias esta vulneracion del cuerpo. No es suficiente normalizar con frases de \"ella eligio ese camino\" y reduciendo a una mera culpabilizacion. Decir que es una \"eleccion\" posible, ante una experiencia disruptiva capaz de generar un trauma, puede negar la carga estructural que hay detras."
+      ]
+    },
+    "control": {
+      "title": "El control",
+      "paragraphs": [
+        "Sin esa sensacion, parece que la voluntad se hace trizas asi como cualquier alusion a poder y querer son suficientes. Hoy en dia que tanto se fomenta el control que ya ni parece posible sentir el cuerpo sin una leve alarma y temor a perderlo. Las dietas, el ejercicio y las imagenes que intentan moldearlo. He sugerido intercambiar tal palabra por \"conectar\". Al controlar las emociones, se sugiere que poco se soporta esa espontanea expresion al conectar con ellas por un momento, de percibir como el cuerpo actua ante alguna alteracion. Cada plan, cada objetivo, parece no contemplar las contingencias.",
+        "El mandato dice: \"controlate\". La memoria tiene la cualidad de atar los logros, y decimos con placer: \"tengo el control de mi vida\", mientras que en los vacios se escapan los intentos fallidos. Seguimos atados como si las palabras hicieran cosas directas a lo real. Por que entonces cuando cumplimos un deseo, no llega la satisfaccion como se imaginaba y asi se escapa la verdad, el saber. La vigilancia constante en las acciones, la hiperexigencia, aisla la satisfaccion cuya raiz habla de hacer lo suficiente, reconocerlo. Pienso en quien calla sus esfuerzos hasta no verlos consumidos en el resultado, y cuando falla, mejor no decirlo, y se olvida al no traducir su vivencia. Hoy en dia hay pocos resortes para afrontar el sin control, la sin-razon, que cuando estos encuentros \"intolerables\" se acumulan, quedamos sin palabras con que atar, porque precisamente se deslizaron del discurso, para forzar un sentimiento u otras emociones al parecer mas validas que la frustracion."
+      ]
+    },
+    "carta": {
+      "title": "Carta al psicoanalisis",
+      "paragraphs": [
+        "Cuando lei con demasiado desverguenza sobre las fantasias inconscientes de las mujeres abusadas, consideradas \"histericas\", paso tiempo para ver ante mi los invisibles lentes masculinos que por no comprender el sufrimiento o intentar negociar sobre un punto inexpresable, otorgaba una descripcion apresurada de las reacciones emocionales de feminidades encarnadas que se hallaba en una situacion insoportable de asumir, la feminidad, la sexualidad y la maternidad. Nunca ningun hombre habia hablado tanto de estos temas esencialmente ajenos a su cuerpo, por mas idealismo y cientificidad que pretenda, su prejuicio le hace considerar \"oscuro\" u \"oculto\" el mundo incomprensible por narcisismos de un ego falico. Como podria comprender a un hombre anacronico sin antes saber decir \"yo creo...\", \"yo pienso\"? No hay nada mas nocivo que pretender curar las neurosis que dan un sentido de vida; haciendola cuestionar su propia cordura frente a hechos de una realidad.",
+        "No estaban locas las histericas; habia una injusticia estructural que hacia confundir el ser de la mujer con un objeto sujeta a la mirada masculina. Puedo poner aqui en palabras del padre al referir a ella y ellas como un \"continente oscuro\" sintiendo la incapacidad de renunciar a los ideales de una sociedad que causan malestares profundos particularmente en las mujeres. Entonces cuando el eclipse de un machismo ha escondido a muchas en un silente martirio y a la senalada irracionalidad, parece que no fuera suficiente de una historia antagonica que ha condenado al ostracismo, a la pureza y a ideales que son contradictorios cuando se busca la satisfaccion psicologica. Resulta imposible negar que ante la confinacion de mujeres al hogar, la pobreza que predomina en ciertos generos que en otros y la limitado campo de sus habilidades en entornos sociales, queda entonces la fantasia como unico escape de libertad para expresarse sin miedo a ser juzgadas y, con prisa, determinadas.",
+        "Callar para irse y no volver a ser miradas con coercion, violencia y victimizacion. requiere de una fuerza poderosa que las hace duenas de si mismas, de su cuerpo comprendiendo una insatisfaccion necesaria y a veces deseable para un inicio etico del cuidado. El simbolo de resguardarse dentro del circulo significa estar dentro del abrazo calido de una conexion solitaria y espiritual con otras voces mas justas.",
+        "Las diferencias anatomicas todavia no han podido desprenderse del acto egoista por controlar sus destinos; por penetrar el mundo, le piden a la mujer que este quieta, estatica y fija; mientras este mandato, hace subvertir su imaginacion a un movimiento y flujo de oleajes que nunca paran; y se disparan sobre un cuerpo obediente. La escision no es mas que el primer paso para una psicosis que dejara de serlo cuando encuentro a otras valientes que han podido escribir contra todo pronostico, desde su carencia, han sembrado y abierto campos para sus hermanas de espiritu.",
+        "Pienso en las pintoras Remedios Varo y Leonora Carrigton que supieron conectar a pesar de grandes tensiones que imponia el surrealismo; aceptaban como se acepta un lenguaje materno para escribir, pero al mismo tiempo se reconocen insuficiente porque la burbuja sigue reflejando los rostros masculinos. Las escritoras inglesas fueron grandes pioneras de los primeros manifiestos del sufrimiento femenino al mirar de cara al amor, pobre amor. Quizas sea este modo de expresar con tanta fuerza reactiva que era la unica manera de ser escuchadas; quien mas que la sociedad enfurecida haciendo histeria sobre un sistemas insoportable de vida, frente a una tension rigida de polos opuestos que no dan todavia paso al nombre que aqueja, quizas porque ha sido mas abarcado en palabras ajenas, de ellos. El lenguaje impuesto hace balbucear, tartamudear y casi comodamente preferir estar calladas, pero aun asi hay quienes expresan su posicion sin renunciar al cuidado. Hay una irritacion misma de la quietud, que moviliza la critica necesaria para salvarnos de alienacion por espejos de miradas del Otro.",
+        "Aqui el psicoanalisis es un vehiculo que permite cuestionar significantes, mas no reproducir un saber autoritario de los destinos femeninos sino de las sujetas que pueda encontrar nuevos caminos de identificaciones y elecciones singulares, sin desconocer la cadena de imaginarios que sugiere un genero especifico."
+      ]
+    },
+    "carousel": [
+      {
+        "image": "/assets/image4.png",
+        "title": "Acerca de mi",
+        "description": "Psicologa con formacion psicoanalitica, de genero y especialista en problemas de la infancia y adolescencia. Graduada de pregrado en la Universidad del Valle y posgrado en la Universidad de Antioquia. Procuro un espacio de confianza para ir mas alla del tratamiento de manera que se ofrezca un acompanamiento y atencion singular en cada proceso.",
+        "buttonText": "Conoce mas",
+        "link": "/acerca-de-mi"
+      },
+      {
+        "image": "/assets/image2.png",
+        "title": "Terapia",
+        "description": "Brindo sesiones de terapia psicoanalitica personalizadas, disponibles tanto en remoto para aquellos en distintas partes del mundo, con horarios flexibles que se adaptan a tu ritmo de vida, como presenciales en la ciudad de Cali, Colombia.",
+        "buttonText": "Conoce mas",
+        "link": "/sesiones"
+      },
+      {
+        "image": "/assets/image2.png",
+        "title": "Reflexiones",
+        "description": "En estas paginas me complace compartir algunos textos a partir de mi experiencia personal como psicologa con pasion a la poesia, interesada en los dialogos de genero, feministas y culturales, y comprometida con brindar espacios seguros en los acompanamientos psicoterapeuticos con enfoque psicoanalitico. Busco poder trasmitir a traves de pensamientos y sensaciones vividas una proximidad de conocerme en mi labor.",
+        "buttonText": "Conoce mas",
+        "link": "/reflexiones"
+      },
+      {
+        "image": "/assets/image5.png",
+        "title": "Contacto",
+        "description": "Puedes contactarme a traves de cualquiera de mis redes sociales si requieres mas informacion o tienes alguna pregunta al respecto.",
+        "buttonText": "Contacto",
+        "link": "https://wa.me/+573187392384",
+        "external": true
+      }
+    ],
+    "reflectionArticles": [
+      {
+        "id": "cuerpos",
+        "title": "Sobre los cuerpos y el exceso",
+        "excerpt": "Me impresiona como los cuerpos femeninos son un \"atractivo turistico\" en muchas culturas occidentales. En cada oportunidad, interrogo sobre que piensan de esa situacion. Recibo...",
+        "image": "/assets/libros.jpg",
+        "sections": [
+          {
+            "title": "Sobre el exceso",
+            "paragraphs": [
+              "Lo complicado de algunos procesos puede nombrarse desde la evasion al vacio o incluso de aquello que viene de la realidad.",
+              "Para afrontar que la falta es precisamente aquello que nunca se satisface, es posible empezar por soltar unos vacios y goces, para dar lugar a las palabras desde el deseo. Incluso en el silencio atribuimos ruido para querer abarcar un conocimiento. Me gusta caer en cuenta que gracias a esa incomprension, se abre una ventana existencial del lenguaje: lo indecible. Somos intolerantes a la incertidumbre aun cuando al sentirla afirmamos lo limitantes que son algunas determinaciones: \"ser buena en algo, el mejor, ser feliz, etc\" Hoy en dia muchos sienten culpa por no ser lo suficientemente \"alguien\", y esa lucha puede ser a veces desgastante cuando no se acepta la posibilidad de que no estamos alienados a las interpretaciones del Otro social, solo se carga con un saber que a veces se escapa, y que con mucho esfuerzo, logramos coincidir en las ataduras que impone la lengua y la dificultad ser comprendidos satisfactoriamente. El deseo confronta la eleccion.",
+              "Pienso en un Todo intolerable para la mente cuya cadena de significantes no alcanza el cumplimiento de deseo, sino el encuentro con la palabra y el bucle de ideas que no cesan de cerrarse e impiden concluir. Un exceso de pensamiento que oscila entre la certeza, la duda y una serie de actos que alivian la angustia. Pienso en la obsesion que va mas alla del objeto perseguido para negar la satisfaccion, pues busca un final Imposible."
+            ]
+          },
+          {
+            "title": "Sobre los cuerpos",
+            "paragraphs": [
+              "Me impresiona como los cuerpos femeninos son un \"atractivo turistico\" en muchas culturas occidentales. En cada oportunidad, interrogo sobre que piensan de esa situacion. Recibo respuestas como una \"tension\", y casi siempre toco una fibra nerviosa y delicada de una culpabilidad muda. Aun se critica a medias esta vulneracion del cuerpo. No es suficiente normalizar con frases de \"ella eligio ese camino\" y reduciendo a una mera culpabilizacion. Decir que es una \"eleccion\" posible, ante una experiencia disruptiva capaz de generar un trauma, puede negar la carga estructural que hay detras."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "carta",
+        "title": "Carta al psicoanalisis",
+        "excerpt": "Cuando lei con demasiado desverguenza sobre las fantasias inconscientes de las mujeres abusadas, consideradas \"histericas\", paso tiempo para ver ante mi los invisibles lentes masculinos...",
+        "image": "/assets/remedios.jpeg",
+        "sections": [
+          {
+            "paragraphs": [
+              "Cuando lei con demasiado desverguenza sobre las fantasias inconscientes de las mujeres abusadas, consideradas \"histericas\", paso tiempo para ver ante mi los invisibles lentes masculinos que por no comprender el sufrimiento o intentar negociar sobre un punto inexpresable, otorgaba una descripcion apresurada de las reacciones emocionales de feminidades encarnadas que se hallaba en una situacion insoportable de asumir, la feminidad, la sexualidad y la maternidad. Nunca ningun hombre habia hablado tanto de estos temas esencialmente ajenos a su cuerpo, por mas idealismo y cientificidad que pretenda, su prejuicio le hace considerar \"oscuro\" u \"oculto\" el mundo incomprensible por narcisismos de un ego falico. Como podria comprender a un hombre anacronico sin antes saber decir \"yo creo...\", \"yo pienso\"? No hay nada mas nocivo que pretender curar las neurosis que dan un sentido de vida; haciendola cuestionar su propia cordura frente a hechos de una realidad.",
+              "No estaban locas las histericas; habia una injusticia estructural que hacia confundir el ser de la mujer con un objeto sujeta a la mirada masculina. Puedo poner aqui en palabras del padre al referir a ella y ellas como un \"continente oscuro\" sintiendo la incapacidad de renunciar a los ideales de una sociedad que causan malestares profundos particularmente en las mujeres. Entonces cuando el eclipse de un machismo ha escondido a muchas en un silente martirio y a la senalada irracionalidad, parece que no fuera suficiente de una historia antagonica que ha condenado al ostracismo, a la pureza y a ideales que son contradictorios cuando se busca la satisfaccion psicologica. Resulta imposible negar que ante la confinacion de mujeres al hogar, la pobreza que predomina en ciertos generos que en otros y la limitado campo de sus habilidades en entornos sociales, queda entonces la fantasia como unico escape de libertad para expresarse sin miedo a ser juzgadas y, con prisa, determinadas.",
+              "Callar para irse y no volver a ser miradas con coercion, violencia y victimizacion. requiere de una fuerza poderosa que las hace duenas de si mismas, de su cuerpo comprendiendo una insatisfaccion necesaria y a veces deseable para un inicio etico del cuidado. El simbolo de resguardarse dentro del circulo significa estar dentro del abrazo calido de una conexion solitaria y espiritual con otras voces mas justas.",
+              "Las diferencias anatomicas todavia no han podido desprenderse del acto egoista por controlar sus destinos; por penetrar el mundo, le piden a la mujer que este quieta, estatica y fija; mientras este mandato, hace subvertir su imaginacion a un movimiento y flujo de oleajes que nunca paran; y se disparan sobre un cuerpo obediente. La escision no es mas que el primer paso para una psicosis que dejara de serlo cuando encuentro a otras valientes que han podido escribir contra todo pronostico, desde su carencia, han sembrado y abierto campos para sus hermanas de espiritu.",
+              "Pienso en las pintoras Remedios Varo y Leonora Carrigton que supieron conectar a pesar de grandes tensiones que imponia el surrealismo; aceptaban como se acepta un lenguaje materno para escribir, pero al mismo tiempo se reconocen insuficiente porque la burbuja sigue reflejando los rostros masculinos. Las escritoras inglesas fueron grandes pioneras de los primeros manifiestos del sufrimiento femenino al mirar de cara al amor, pobre amor. Quizas sea este modo de expresar con tanta fuerza reactiva que era la unica manera de ser escuchadas; quien mas que la sociedad enfurecida haciendo histeria sobre un sistemas insoportable de vida, frente a una tension rigida de polos opuestos que no dan todavia paso al nombre que aqueja, quizas porque ha sido mas abarcado en palabras ajenas, de ellos. El lenguaje impuesto hace balbucear, tartamudear y casi comodamente preferir estar calladas, pero aun asi hay quienes expresan su posicion sin renunciar al cuidado. Hay una irritacion misma de la quietud, que moviliza la critica necesaria para salvarnos de alienacion por espejos de miradas del Otro.",
+              "Aqui el psicoanalisis es un vehiculo que permite cuestionar significantes, mas no reproducir un saber autoritario de los destinos femeninos sino de las sujetas que pueda encontrar nuevos caminos de identificaciones y elecciones singulares, sin desconocer la cadena de imaginarios que sugiere un genero especifico."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "control",
+        "title": "El control",
+        "excerpt": "Sin esa sensacion, parece que la voluntad se hace trizas asi como cualquier alusion a poder y querer son suficientes. Hoy en dia que tanto se fomenta el control que ya ni...",
+        "image": "/assets/refle3.jpg",
+        "sections": [
+          {
+            "paragraphs": [
+              "Sin esa sensacion, parece que la voluntad se hace trizas asi como cualquier alusion a poder y querer son suficientes. Hoy en dia que tanto se fomenta el control que ya ni parece posible sentir el cuerpo sin una leve alarma y temor a perderlo. Las dietas, el ejercicio y las imagenes que intentan moldearlo. He sugerido intercambiar tal palabra por \"conectar\". Al controlar las emociones, se sugiere que poco se soporta esa espontanea expresion al conectar con ellas por un momento, de percibir como el cuerpo actua ante alguna alteracion. Cada plan, cada objetivo, parece no contemplar las contingencias.",
+              "El mandato dice: \"controlate\". La memoria tiene la cualidad de atar los logros, y decimos con placer: \"tengo el control de mi vida\", mientras que en los vacios se escapan los intentos fallidos. Seguimos atados como si las palabras hicieran cosas directas a lo real. Por que entonces cuando cumplimos un deseo, no llega la satisfaccion como se imaginaba y asi se escapa la verdad, el saber. La vigilancia constante en las acciones, la hiperexigencia, aisla la satisfaccion cuya raiz habla de hacer lo suficiente, reconocerlo. Pienso en quien calla sus esfuerzos hasta no verlos consumidos en el resultado, y cuando falla, mejor no decirlo, y se olvida al no traducir su vivencia. Hoy en dia hay pocos resortes para afrontar el sin control, la sin-razon, que cuando estos encuentros \"intolerables\" se acumulan, quedamos sin palabras con que atar, porque precisamente se deslizaron del discurso, para forzar un sentimiento u otras emociones al parecer mas validas que la frustracion."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "aboutPage": {
+    "timelineTitle": "Recorrido profesional",
+    "studiesTitle": "Estudios formales",
+    "recognitionsTitle": "Estudios complementarios",
+    "artisticKicker": "Faceta creativa",
+    "poemKicker": "Poema",
+    "paintingsKicker": "Pintura",
+    "profileKicker": "Trayectoria",
+    "profileTitle": "Mi carta profesional",
+    "profileLead": "Una mirada clara a mis estudios y al camino clínico recorrido.",
+    "educationTitle": "Educación",
+    "experienceTitle": "Experiencia profesional",
+    "complementaryTitle": "Educación adicional y certificaciones",
+    "timelineKicker": "Línea de tiempo"
   }
 }

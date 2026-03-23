@@ -16,6 +16,7 @@ export interface LandingAbout {
 }
 
 export interface LandingReflectionCard {
+  id?: string
   title: string
   description: string
   image: string

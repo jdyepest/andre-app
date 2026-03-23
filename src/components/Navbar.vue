@@ -1,9 +1,9 @@
 <template>
-  <nav :class="navClass">
+  <nav :class="navClass" :style="navStyle">
     <div class="nav-shell">
       <NuxtLink :to="localePath('/')" class="nav-brand">
-        <span :class="['nav-brand-primary', { 'nav-brand-primary--scrolled': scrolled }]">Creart</span>
-        <span :class="['nav-brand-secondary', { 'nav-brand-secondary--scrolled': scrolled }]">Emotion</span>
+        <span :class="['nav-brand-primary', { 'nav-brand-primary--scrolled': scrolled }]">Crear</span>
+        <span :class="['nav-brand-secondary', { 'nav-brand-secondary--scrolled': scrolled }]">Terapia</span>
       </NuxtLink>
 
       <ul class="nav-links">
@@ -46,6 +46,10 @@ import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useLocalePath } from '#i18n'
 
+const props = defineProps({
+  topBg: { type: String, default: '' }
+})
+
 const localePath = useLocalePath()
 const { t } = useI18n()
 
@@ -63,6 +67,11 @@ const navClass = computed(() => [
   'nav-root',
   scrolled.value ? 'nav-root--scrolled' : 'nav-root--top'
 ])
+
+const navStyle = computed(() => {
+  if (scrolled.value || !props.topBg) return {}
+  return { background: props.topBg }
+})
 
 const toggleMenu = () => {
   showMenu.value = !showMenu.value

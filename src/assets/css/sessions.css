@@ -1,0 +1,338 @@
+.sessions-page {
+  background: var(--paper-100);
+  color: var(--plum-950);
+}
+
+.sessions-hero {
+  position: relative;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7rem 0 4rem;
+  overflow: hidden;
+}
+
+.sessions-hero-bg {
+  position: absolute;
+  inset: 0;
+}
+
+.sessions-hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(1.15) brightness(1.05) sepia(0.18);
+}
+
+.sessions-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(23, 12, 43, 0.92), rgba(146, 68, 55, 0.7), rgba(235, 126, 74, 0.65));
+}
+
+.sessions-hero-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 20% 18%, rgba(255, 219, 190, 0.55), transparent 58%);
+}
+
+.sessions-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 780px;
+  text-align: center;
+  padding: 0 1.5rem;
+  color: #fff;
+}
+
+.sessions-hero-title {
+  font-size: clamp(2.6rem, 6vw, 4.6rem);
+  line-height: 1.05;
+  margin-bottom: 1.1rem;
+}
+
+.sessions-intro {
+  background: linear-gradient(135deg, #fff1e3 0%, #ffe6f2 35%, #e6fff4 100%);
+}
+
+.sessions-kicker {
+  color: rgba(33, 124, 112, 0.85);
+}
+
+.sessions-intro-grid,
+.sessions-focus-grid {
+  display: grid;
+  gap: 3rem;
+  align-items: center;
+}
+
+.sessions-intro-text,
+.sessions-focus-text {
+  max-width: 620px;
+}
+
+.sessions-intro-image,
+.sessions-focus-image {
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.sessions-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.8rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #6d28d9, #ec4899 55%, #fb923c);
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  box-shadow: 0 18px 30px rgba(91, 33, 182, 0.28);
+  transition: transform 200ms ease, box-shadow 200ms ease, background 200ms ease;
+}
+
+.sessions-cta:hover {
+  transform: translateY(-1px);
+  background: linear-gradient(135deg, #6d28d9, #ec4899 55%, #fb923c);
+}
+
+.sessions-focus {
+  background: #ffffff;
+}
+
+.sessions-focus .section-title-accent {
+  color: #4c7a6b;
+}
+
+.sessions-focuslist {
+  background: linear-gradient(135deg, #fff7f1 0%, #fdf3ff 55%, #f1fff8 100%);
+}
+
+.sessions-focuslist-grid {
+  display: grid;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.sessions-focuslist-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.9rem;
+}
+
+.sessions-focuslist-item {
+  padding: 0.85rem 1.1rem;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(236, 72, 153, 0.18);
+  box-shadow: 0 14px 26px rgba(27, 18, 36, 0.08);
+  color: rgba(34, 22, 43, 0.78);
+}
+
+.sessions-certifications {
+  background: #ffffff;
+}
+
+.sessions-cert-grid {
+  display: grid;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.sessions-cert-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.9rem;
+}
+
+.sessions-cert-item {
+  padding: 0.85rem 1.1rem;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(91, 33, 182, 0.12);
+  box-shadow: 0 14px 26px rgba(27, 18, 36, 0.08);
+}
+
+.sessions-info {
+  background: #f8f4ff;
+}
+
+.sessions-info-grid {
+  display: grid;
+  gap: 2.5rem;
+}
+
+.sessions-info-card {
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 2rem 2.2rem;
+  border: 1px solid rgba(124, 58, 237, 0.12);
+  box-shadow: 0 20px 40px rgba(18, 4, 35, 0.12);
+}
+
+.sessions-info-title {
+  font-size: 1.5rem;
+  margin-bottom: 1.4rem;
+  color: var(--plum-900);
+}
+
+.sessions-info-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.8rem;
+}
+
+.sessions-info-label {
+  display: block;
+  font-size: 0.85rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(91, 33, 182, 0.6);
+}
+
+.sessions-info-value {
+  font-size: 1.05rem;
+  color: rgba(34, 22, 43, 0.78);
+}
+
+.sessions-info-note {
+  margin-top: 1.2rem;
+  color: rgba(34, 22, 43, 0.6);
+  font-size: 0.95rem;
+}
+
+.sessions-price-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.sessions-price-row {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.sessions-price-note {
+  font-size: 0.9rem;
+  color: rgba(34, 22, 43, 0.6);
+}
+
+.sessions-header {
+  margin-bottom: 2.5rem;
+}
+
+.sessions-list-title {
+  font-size: 1.4rem;
+  color: var(--plum-900);
+  margin-bottom: 1rem;
+}
+
+.sessions-chip-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.sessions-chip {
+  padding: 0.55rem 1rem;
+  border-radius: 999px;
+  background: rgba(236, 72, 153, 0.12);
+  color: #3a0f2b;
+  font-size: 0.9rem;
+  border: 1px solid rgba(236, 72, 153, 0.2);
+}
+
+.sessions-chip.is-alt {
+  background: rgba(59, 130, 246, 0.12);
+  border-color: rgba(59, 130, 246, 0.25);
+  color: #1e3a8a;
+}
+
+.sessions-map {
+  background: #ffffff;
+}
+
+.sessions-map-grid {
+  display: grid;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.sessions-map-frame {
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid rgba(124, 58, 237, 0.12);
+  box-shadow: 0 20px 40px rgba(18, 4, 35, 0.14);
+  background: #fff;
+}
+
+.sessions-map-embed iframe {
+  width: 100%;
+  height: 320px;
+  border: 0;
+  display: block;
+}
+
+.sessions-map-placeholder {
+  padding: 2.5rem;
+  text-align: center;
+  color: rgba(22, 6, 44, 0.6);
+}
+
+@media (min-width: 1024px) {
+  .sessions-hero {
+    min-height: 78vh;
+  }
+
+  .sessions-intro-grid {
+    grid-template-columns: 1.1fr 0.9fr;
+  }
+
+  .sessions-focus-grid {
+    grid-template-columns: 0.9fr 1.1fr;
+  }
+
+  .sessions-focuslist-grid {
+    grid-template-columns: 0.9fr 1.1fr;
+  }
+
+  .sessions-cert-grid {
+    grid-template-columns: 0.9fr 1.1fr;
+  }
+
+  .sessions-map-grid {
+    grid-template-columns: 0.9fr 1.1fr;
+  }
+
+  .sessions-info-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .sessions-hero {
+    min-height: 64vh;
+    padding-top: 6.5rem;
+  }
+
+  .sessions-intro-text,
+  .sessions-focus-text {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .sessions-cta {
+    margin: 0 auto;
+  }
+}
