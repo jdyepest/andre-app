@@ -33,11 +33,13 @@
       <div class="section-shell sessions-intro-grid">
         <div class="sessions-intro-text">
           <p class="section-kicker sessions-kicker">{{ $t('nav.sessions') }}</p>
-          <h2 class="section-title font-display">{{ page.introTitle }}</h2>
+          <h2 class="section-title">{{ page.introTitle }}</h2>
           <p class="section-text">{{ page.introText }}</p>
-          <a href="https://wa.me/+573187392384" target="_blank" class="sessions-cta">
-            {{ $t('buttons.contactCta') }}
-          </a>
+          <div class="sessions-cta-row">
+            <a href="https://wa.me/+573187392384" target="_blank" class="sessions-cta">
+              {{ $t('buttons.contactCta') }}
+            </a>
+          </div>
         </div>
         <div class="sessions-intro-image">
           <div class="image-frame">
@@ -84,7 +86,7 @@
         </div>
         <div class="sessions-focus-text">
           <p class="section-kicker sessions-kicker">{{ page.focusSubtitle }}</p>
-          <h2 class="section-title font-display">
+          <h2 class="section-title">
             {{ page.focusTitle }}
           </h2>
           <p
@@ -94,9 +96,11 @@
           >
             {{ paragraph }}
           </p>
-          <a href="https://wa.me/+573187392384" target="_blank" class="sessions-cta">
-            {{ $t('buttons.contactCta') }}
-          </a>
+          <div class="sessions-cta-row">
+            <a href="https://wa.me/+573187392384" target="_blank" class="sessions-cta">
+              {{ $t('buttons.contactCta') }}
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -105,7 +109,7 @@
       <div class="section-shell sessions-focuslist-grid">
         <div class="sessions-focuslist-text">
           <p class="section-kicker sessions-kicker">{{ $t('nav.sessions') }}</p>
-          <h2 class="section-title font-display">{{ page.focusAreasTitle }}</h2>
+          <h2 class="section-title">{{ page.focusAreasTitle }}</h2>
           <p class="section-text">{{ page.focusAreasText }}</p>
         </div>
         <ul class="sessions-focuslist-items">
@@ -120,7 +124,7 @@
       <div class="section-shell sessions-cert-grid">
         <div>
           <p class="section-kicker sessions-kicker">{{ $t('nav.sessions') }}</p>
-          <h2 class="section-title font-display">{{ page.certificationsTitle }}</h2>
+          <h2 class="section-title">{{ page.certificationsTitle }}</h2>
           <p class="section-text">{{ page.certificationsText }}</p>
         </div>
         <ul class="sessions-cert-list">
@@ -160,7 +164,7 @@
       <div class="section-shell sessions-map-grid">
         <div>
           <p class="section-kicker sessions-kicker">{{ $t('nav.sessions') }}</p>
-          <h2 class="section-title font-display">{{ page.mapTitle }}</h2>
+          <h2 class="section-title">{{ page.mapTitle }}</h2>
           <p class="section-text">{{ page.mapNote }}</p>
         </div>
         <div class="sessions-map-frame">

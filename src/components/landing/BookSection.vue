@@ -3,7 +3,7 @@
     <div class="section-shell grid gap-12 md:grid-cols-2 items-center book-grid">
       <div class="book-content">
         <p class="section-kicker">{{ kicker }}</p>
-        <h2 class="section-title font-display">
+        <h2 class="section-title">
           {{ headlineLead }}
           <span class="section-title-accent">{{ headlineAccent }}</span>
         </h2>

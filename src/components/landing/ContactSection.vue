@@ -3,7 +3,7 @@
     <div class="section-shell">
       <div class="contact-card">
         <p class="section-kicker">{{ kicker }}</p>
-        <h2 class="section-title font-display">
+        <h2 class="section-title">
           {{ headlineLead }}
           <span class="section-title-accent">{{ headlineAccent }}</span>
         </h2>

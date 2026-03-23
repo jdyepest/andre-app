@@ -51,11 +51,10 @@
         </div>
         <div class="about-story">
           <p class="section-kicker">{{ $t('nav.about') }}</p>
-          <h2 class="section-title font-display">
+          <h2 class="section-title">
             {{ aboutHeadline.lead }}
             <span class="section-title-accent">{{ aboutHeadline.accent }}</span>
           </h2>
-          <p class="section-lead">{{ page.title }}</p>
           <div class="about-copy">
             <p
               v-for="(paragraph, idx) in page.paragraphs"
@@ -74,7 +73,7 @@
       <div class="section-shell about-art-grid">
         <div class="about-art-content">
           <p class="section-kicker">{{ $t('aboutPage.artisticKicker') }}</p>
-          <h2 class="section-title font-display">
+          <h2 class="section-title">
             {{ artisticTitle }}
             <span v-if="artisticLead" class="section-title-accent">{{ artisticLead }}</span>
           </h2>
@@ -119,7 +118,7 @@
         </div>
         <div class="paintings-content">
           <p class="section-kicker">{{ $t('aboutPage.paintingsKicker') }}</p>
-          <h2 class="section-title font-display">{{ paintingsTitle }}</h2>
+          <h2 class="section-title">{{ paintingsTitle }}</h2>
           <p class="section-text">{{ paintingsText }}</p>
         </div>
       </div>
@@ -127,7 +126,7 @@
 
     <section class="section section-light">
       <div class="section-shell about-lists-section">
-        <h2 class="section-title font-display about-title-center">{{ $t('aboutPage.profileTitle') }}</h2>
+        <h2 class="section-title about-title-center">{{ $t('aboutPage.profileTitle') }}</h2>
         <div class="about-simple-lists">
           <div class="about-simple-list">
             <h3 class="about-subtitle font-display">{{ $t('aboutPage.educationTitle') }}</h3>

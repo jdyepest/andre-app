@@ -94,6 +94,12 @@
   transition: transform 200ms ease, box-shadow 200ms ease, background 200ms ease;
 }
 
+.sessions-cta-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.25rem;
+}
+
 .sessions-cta:hover {
   transform: translateY(-1px);
   background: linear-gradient(135deg, #6d28d9, #ec4899 55%, #fb923c);

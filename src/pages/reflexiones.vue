@@ -34,7 +34,7 @@
       <div class="section-shell">
         <div class="section-header reflections-header">
           <p class="section-kicker">{{ $t('nav.reflections') }}</p>
-          <h2 class="section-title font-display">
+          <h2 class="section-title">
             {{ reflectionsHeadline.lead }}
             <span class="section-title-accent">{{ reflectionsHeadline.accent }}</span>
           </h2>
