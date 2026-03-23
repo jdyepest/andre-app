@@ -1,9 +1,30 @@
 export default defineNuxtConfig({
   srcDir: 'src',
   modules: ['@nuxtjs/tailwindcss', '@nuxtjs/i18n'],
-  css: ['~/assets/css/main.css'],
+  css: ['~/assets/css/main.css', '~/assets/css/landing.css'],
   app: {
     baseURL: '/',
+    head: {
+      link: [
+        { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
+        { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
+        { rel: 'icon', type: 'image/png', href: '/favicon.png' },
+        { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
+        { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+        { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
+        {
+          rel: 'preload',
+          as: 'style',
+          href:
+            'https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap&family=Happy+Monkey&display=swap&family=Cormorant+Garamond:wght@400;500;600;700&display=swap&family=Manrope:wght@300;400;500;600;700&display=swap&family=Playfair+Display:wght@500;600;700&display=swap'
+        },
+        {
+          rel: 'stylesheet',
+          href:
+            'https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap&family=Happy+Monkey&display=swap&family=Cormorant+Garamond:wght@400;500;600;700&display=swap&family=Manrope:wght@300;400;500;600;700&display=swap&family=Playfair+Display:wght@500;600;700&display=swap'
+        }
+      ]
+    }
   },
   i18n: {
     strategy: 'no_prefix',

@@ -1,0 +1,96 @@
+.article-page {
+  background: #fbf7f2;
+  color: #22162b;
+}
+
+
+.article-title {
+  font-size: clamp(2.4rem, 5vw, 3.8rem);
+  line-height: 1.12;
+  margin-bottom: 0.8rem;
+  text-align: center;
+}
+
+.article-subtitle {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: rgba(34, 22, 43, 0.7);
+  max-width: 640px;
+}
+
+.article-section {
+  padding: 7rem 0 6rem;
+}
+
+.article-shell {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.article-card {
+  background: #fffdfa;
+  border-radius: 22px;
+  padding: 2.6rem 2.8rem 3.2rem;
+  border: 1px solid rgba(60, 45, 78, 0.12);
+  box-shadow: 0 20px 40px rgba(27, 18, 36, 0.12);
+}
+
+.article-header {
+  text-align: center;
+  margin-bottom: 2.4rem;
+}
+
+.article-kicker {
+  font-size: 0.7rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: rgba(60, 45, 78, 0.6);
+  margin-bottom: 0.9rem;
+}
+
+.article-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: rgba(60, 45, 78, 0.6);
+  margin-bottom: 2.4rem;
+}
+
+.article-body {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.article-heading {
+  font-size: 1.9rem;
+  color: #2b1c3c;
+  margin: 2.6rem 0 1rem;
+  letter-spacing: 0.01em;
+}
+
+.article-paragraph {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.15rem;
+  line-height: 2.05;
+  color: rgba(34, 22, 43, 0.78);
+  margin-top: 1.4rem;
+}
+
+.article-body .article-paragraph:first-of-type::first-letter {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3.8rem;
+  float: left;
+  line-height: 1;
+  margin-right: 0.5rem;
+  color: #6d3b8b;
+}
+
+@media (max-width: 768px) {
+  .article-card {
+    padding: 2rem 1.8rem 2.4rem;
+  }
+}

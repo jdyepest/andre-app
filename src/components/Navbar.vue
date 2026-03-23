@@ -1,124 +1,222 @@
 <template>
-  
-    <div class="md:h-[13vh] h-[13vh] z-5">
-      
-      <!-- Desktop Navbar -->
-      <nav :class="computedClass">
-        <div class="container mx-10 w-full">
-          <div class="flex justify-between h-full items-center">
-            <NuxtLink :to="localePath('/')"  class="block text-white my-1" >
-              <h1 class="text-white text-5xl font-normal font-vintage-coquete italic">Creart Emotion</h1>
-            </NuxtLink>
-            
-            <div class="space-x-10 ml">
-              <NuxtLink :to="localePath('/acerca-de-mi')" class="text-white text-2xl">{{ $t('nav.about') }}</NuxtLink>
-              <NuxtLink :to="localePath('/sesiones')" class="text-white text-2xl">{{ $t('nav.sessions') }}</NuxtLink>
-              <NuxtLink :to="localePath('/reflexiones')" class="text-white text-2xl">{{ $t('nav.reflections') }}</NuxtLink>
-            </div>
-          </div>
-        </div>
-      </nav>
-    
-      <!-- Mobile Navbar -->
-      <nav :class="['h-full', 'md:hidden', computedClass2]">
-    <div class="container mx-auto flex justify-between h-full items-center">
-        <div class="invisible">
-            <!-- Invisible duplicate of the burger icon for spacing -->
-            <button class="text-white text-5xl opacity-0">
-                <img src="/assets/buerger-46.svg" alt="">
-            </button>
-        </div>
-        <NuxtLink :to="localePath('/')">
-        <h1 class="text-white s:text-3xl text-3xl font-normal font-vintage-coquete italic">Creart Emotion</h1>
+  <nav :class="navClass" :style="navStyle">
+    <div class="nav-shell">
+      <NuxtLink :to="localePath('/')" class="nav-brand">
+        <span :class="['nav-brand-primary', { 'nav-brand-primary--scrolled': scrolled }]">Crear</span>
+        <span :class="['nav-brand-secondary', { 'nav-brand-secondary--scrolled': scrolled }]">Terapia</span>
       </NuxtLink>
-        <button @click="toggleMenu" class="text-white text-5xl">
-            <img src="/assets/buerger-46.svg" alt="">
-        </button>
+
+      <ul class="nav-links">
+        <li v-for="item in navItems" :key="item.href">
+          <NuxtLink
+            :to="item.href"
+            class="nav-link"
+            :class="{ 'nav-link--scrolled': scrolled }"
+          >
+            {{ item.label }}
+          </NuxtLink>
+        </li>
+      </ul>
+
+      <button
+        type="button"
+        class="nav-toggle"
+        :class="{ 'nav-toggle--scrolled': scrolled }"
+        @click="toggleMenu"
+        aria-label="Toggle menu"
+      >
+        <img src="/assets/buerger-46.svg" alt="Menu" class="h-6 w-6">
+      </button>
     </div>
-</nav>
 
+    <div v-if="showMenu" class="nav-mobile">
+      <ul class="nav-mobile-links">
+        <li v-for="item in navItems" :key="`mobile-${item.href}`">
+          <NuxtLink :to="item.href" class="nav-mobile-link" @click="showMenu = false">
+            {{ item.label }}
+          </NuxtLink>
+        </li>
+      </ul>
     </div>
-    <div v-if="showMenu" :class="['flex', 'flex-col', 'mx-auto',  'w-full', 'h-screen', 'items-center', 'justify-normal', 'gap-5', computedClass2]" >
-      
-          <NuxtLink :to="localePath('/')" @click="toggleMenu" class="block text-white my-1 text-[42px] font-vintage-coquete"  >{{ $t('nav.home') }}</NuxtLink>
-          <NuxtLink :to="localePath('/acerca-de-mi')" @click="toggleMenu" class="block text-white my-1 text-[42px] font-vintage-coquete" >{{ $t('nav.about') }}</NuxtLink>
-          <NuxtLink :to="localePath('/sesiones')" @click="toggleMenu" class="block text-white my-1 text-[42px] font-vintage-coquete">{{ $t('nav.sessions') }}</NuxtLink>
-          <NuxtLink :to="localePath('/reflexiones')" @click="toggleMenu" class="block text-white my-1 text-[42px] font-vintage-coquete">{{ $t('nav.reflections') }}</NuxtLink>
-        
-        </div>
-    
-  </template>
-  
-  <script>
-  import { useLocalePath } from '#i18n'
+  </nav>
+</template>
 
-  export default {
-    setup() {
-      const localePath = useLocalePath()
-      return { localePath }
-    },
-    data() {
-      return {
-        showMenu: false
-      }
-    },
-    methods: {
-      toggleMenu() {
-        this.showMenu = !this.showMenu;
-        
-      }
-    },
-    props: ['bck'], // Define the prop
-  computed: {
-    computedClass() {
-      switch (this.bck) {
-  case "pink":
-    return "h-full hidden md:flex justify-center w-full bg-gradient-to-r from-purple-900 to-purple-500";
-  case "blue": // Replace 'newTheme' with your theme name
-    return "h-full hidden md:flex justify-center w-full bg-gradient-to-r from-purple-700 to-emerald-400";
-  case "golden":
-    return "h-full hidden md:flex justify-center w-full bg-gradient-to-r from-yellow-400 to-purple-700";
-  case "green":
-    return "h-full hidden md:flex justify-center w-full bg-gradient-to-r from-emerald-500 to-purple-600";
-  // add more cases as needed
-  default:
-    return "nav-back h-full hidden md:flex justify-center w-full";
+<script setup>
+import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
+import { useI18n } from 'vue-i18n'
+import { useLocalePath } from '#i18n'
+
+const props = defineProps({
+  topBg: { type: String, default: '' }
+})
+
+const localePath = useLocalePath()
+const { t } = useI18n()
+
+const showMenu = ref(false)
+const scrolled = ref(false)
+
+const navItems = computed(() => [
+  { label: t('nav.home'), href: localePath('/') },
+  { label: t('nav.about'), href: localePath('/acerca-de-mi') },
+  { label: t('nav.sessions'), href: localePath('/sesiones') },
+  { label: t('nav.reflections'), href: localePath('/reflexiones') }
+])
+
+const navClass = computed(() => [
+  'nav-root',
+  scrolled.value ? 'nav-root--scrolled' : 'nav-root--top'
+])
+
+const navStyle = computed(() => {
+  if (scrolled.value || !props.topBg) return {}
+  return { background: props.topBg }
+})
+
+const toggleMenu = () => {
+  showMenu.value = !showMenu.value
 }
 
-
-    },
-    computedClass2() {
-      // You can add logic here if needed
-
-      switch (this.bck) {
-  case "pink":
-    return "bg-gradient-to-r from-purple-900 to-purple-500";
-  case "blue":
-    return "bg-gradient-to-r from-blue-500 to-indigo-500";
-  case "golden":
-    return "bg-gradient-to-r from-yellow-400 to-purple-700";
-  case "green":
-    return "bg-gradient-to-r from-emerald-500 to-purple-600";
-  default:
-    return "nav-back";
+const handleScroll = () => {
+  scrolled.value = window.scrollY > 50
 }
 
-    }
+onMounted(() => {
+  handleScroll()
+  window.addEventListener('scroll', handleScroll, { passive: true })
+})
 
-  },
+onBeforeUnmount(() => {
+  window.removeEventListener('scroll', handleScroll)
+})
+</script>
 
-}
-   
-  
-  </script>
 <style scoped>
-.nav-back{
-  background: rgb(71,7,71);
-background: linear-gradient(90deg, rgba(71,7,71,1) 0%, rgba(188,159,200,1) 50%, rgba(71,7,71,1) 100%);
-
+.nav-root {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  transition: all 400ms ease;
 }
-.nav-back2{
-  background-image: linear-gradient(to right, #a855f7, #ec4899);
+
+.nav-root--top {
+  background: transparent;
+  padding: 1.25rem 0;
+}
+
+.nav-root--scrolled {
+  background: rgba(20, 7, 36, 0.78);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 18px 40px rgba(12, 3, 24, 0.35);
+  padding: 0.75rem 0;
+}
+
+.nav-shell {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-brand {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  display: flex;
+  gap: 0.15rem;
+  color: #fff;
+}
+
+.nav-brand-primary {
+  color: rgba(234, 219, 255, 0.95);
+}
+
+.nav-brand-primary--scrolled {
+  color: #f2e9ff;
+}
+
+.nav-brand-secondary {
+  font-style: italic;
+  color: rgba(234, 219, 255, 0.7);
+}
+
+.nav-brand-secondary--scrolled {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.nav-links {
+  list-style: none;
+  display: none;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-link {
+  font-size: 0.85rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+  transition: color 250ms ease;
+}
+
+.nav-link:hover {
+  color: #eadbff;
+}
+
+.nav-link--scrolled {
+  color: #f8f2ff;
+}
+
+.nav-toggle {
+  background: transparent;
+  border: none;
+  color: #fff;
+  display: inline-flex;
+}
+
+.nav-toggle--scrolled {
+  color: #f8f2ff;
+}
+
+.nav-mobile {
+  background: rgba(20, 7, 36, 0.92);
+  backdrop-filter: blur(12px);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  animation: navFadeIn 300ms ease;
+}
+
+.nav-mobile-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1.5rem 0 2rem;
+}
+
+.nav-mobile-link {
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.85);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+@media (min-width: 768px) {
+  .nav-links {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+}
+
+@keyframes navFadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 </style>
-  

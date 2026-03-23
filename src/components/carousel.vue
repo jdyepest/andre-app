@@ -4,7 +4,22 @@
     <div class="carousel-inner  h-full">
     <TransitionGroup :name="slideDirection" tag="div">
       <div v-for="(slide, index) in slides" :key="slide.title" class="flex-none w-full h-full carousel-slider" v-show="index === currentSlide">
-            <img :src="slide.image" alt="Slide image" class="object-fill w-full h-full">
+            <picture>
+              <source v-if="getAvif(slide.image)" type="image/avif" :srcset="getAvif(slide.image)" sizes="100vw">
+              <source v-if="getWebp(slide.image)" type="image/webp" :srcset="getWebp(slide.image)" sizes="100vw">
+              <img
+                :src="slide.image"
+                :alt="slide.title"
+                class="object-fill w-full h-full"
+                :loading="index === 0 ? 'eager' : 'lazy'"
+                decoding="async"
+                :fetchpriority="index === 0 ? 'high' : 'auto'"
+                :width="getSize(slide.image).width"
+                :height="getSize(slide.image).height"
+                :srcset="getSrcset(slide.image) || undefined"
+                sizes="100vw"
+              >
+            </picture>
             <div class="absolute md:bottom-[15%] md:left-[13%] bottom-5 left-[13%] bg-white bg-opacity-50 md:bg-opacity-75 p-5 rounded-lg w-3/4 text-violet-950">
               <h2 class="text-[1.5rem] md:text-[30px] mb-4 text-center font-vintage-coquete font-bold">{{ slide.title }}</h2>
               <p class="mb-4 text-[0.9rem] text-center md:text-xl font-sans">{{ slide.description }}</p>
@@ -37,16 +52,23 @@
 import { computed, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useLocalePath } from '#i18n'
-import { content } from '~/data/content'
+import { useContentData } from '~/composables/useContentData'
+import { getFormatSrcset, getImageSize, getImageSrcset } from '~/utils/imageSizes'
 
 const { locale } = useI18n()
 const localePath = useLocalePath()
 
-const slides = computed(() => content.carousel[locale.value] || content.carousel.es)
+const { contentData } = useContentData(locale)
+const slides = computed(() => contentData.value.carousel || [])
 const currentSlide = ref(0)
 const slideDirection = ref('slide-right')
 const touchStartX = ref(0)
 const touchEndX = ref(0)
+
+const getSize = (src) => getImageSize(src)
+const getSrcset = (src) => getImageSrcset(src)
+const getWebp = (src) => getFormatSrcset(src, 'webp')
+const getAvif = (src) => getFormatSrcset(src, 'avif')
 
 let carousel = null
 

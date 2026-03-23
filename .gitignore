@@ -19,6 +19,11 @@ dist-ssr
 .env
 .env.*
 
+# Generated SEO files (built per environment)
+src/public/robots.txt
+src/public/sitemap.xml
+src/public/_headers
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
@@ -29,3 +34,4 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+*.toml

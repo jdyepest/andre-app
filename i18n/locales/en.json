@@ -13,6 +13,450 @@
   },
   "sections": {
     "contactTitle": "Contact",
-    "contactText": "You can contact me through my social networks such as Facebook, Instagram, or WhatsApp for more information."
+    "contactText": "You can contact me through my social networks such as Facebook, Instagram, or WhatsApp for more information.",
+    "mapPlaceholder": "Add a Google Maps link to show your location."
+  },
+  "seo": {
+    "siteName": "CreartTerapia",
+    "siteUrl": "https://creartemotion.com",
+    "twitterCard": "summary_large_image",
+    "ogType": "website",
+    "robots": "index, follow",
+    "person": {
+      "name": "Andrea Narváez",
+      "jobTitle": "Clinical psychologist"
+    },
+    "home": {
+      "title": "Psychologist in Cali | Psychoanalytic Therapy Online & In-Person | Andrea Narváez",
+      "description": "Psychoanalytic psychologist with a gender-informed approach. In-person therapy in Cali and online sessions for anxiety, grief, relationships, and life transitions.",
+      "keywords": "psychologist Cali, psychoanalytic therapy, online therapy, in-person therapy, mental health, anxiety, grief, self-esteem, couples therapy",
+      "ogImage": "/assets/therapy.jpg"
+    },
+    "sessions": {
+      "title": "Therapy Sessions | In-Person and Online in Cali | Andrea Narváez",
+      "description": "Personalized psychoanalytic therapy sessions with flexible schedules. Support for anxiety, stress, grief, relationships, and major life decisions.",
+      "keywords": "therapy sessions, psychotherapy Cali, online therapy Colombia, in-person therapy Cali, psychoanalysis, anxiety, stress, grief",
+      "serviceType": "Psychoanalytic psychotherapy",
+      "ogImage": "/assets/imagen_sesiones_3.jpg"
+    }
+  },
+  "alts": {
+    "landingHero": "Therapy space in Cali",
+    "landingAbout": "Professional portrait of Andrea Narváez",
+    "landingBook": "The Drawer of the Night book cover",
+    "sessionsHero": "Therapy sessions in Cali",
+    "sessionsIntro": "Personalized therapeutic support",
+    "sessionsFocus": "Therapy room",
+    "paintings": "Vase still life",
+    "mapFrame": "Location map",
+    "socialFacebook": "Facebook",
+    "socialInstagram": "Instagram",
+    "socialEmail": "Email",
+    "socialWhatsApp": "WhatsApp"
+  },
+  "landing": {
+    "heroKicker": "Psychology · Psychoanalysis · Well-being",
+    "aboutHeadline": {
+      "lead": "A path to",
+      "accent": "well-being"
+    },
+    "aboutStats": {
+      "experience": "Years of experience",
+      "commitment": "Commitment to you"
+    },
+    "therapyHeadline": {
+      "lead": "Personalized",
+      "accent": "sessions"
+    },
+    "therapyIntro": "Psychoanalytic therapy sessions tailored to your needs, available remotely and in person.",
+    "therapyCards": [
+      {
+        "title": "Online therapy",
+        "text": "Remote sessions available worldwide, with the same warmth and professionalism from your own space."
+      },
+      {
+        "title": "In-person therapy",
+        "text": "Sessions in Cali, Colombia. A safe and welcoming physical space for your process."
+      },
+      {
+        "title": "Standardized tests",
+        "text": "Assessment tools and certified processes to guide evaluation and support your progress."
+      }
+    ],
+    "reflectionsHeadline": {
+      "lead": "Thoughts &",
+      "accent": "sensations"
+    },
+    "bookHeadline": {
+      "lead": "The drawer of the",
+      "accent": "night"
+    },
+    "contactHeadline": {
+      "lead": "Begin your",
+      "accent": "process"
+    },
+    "errorNotice": "We are loading the latest information."
+  },
+  "content": {
+    "home": {
+      "quote": "\"Balance does not mean avoiding conflicts; it implies the strength to tolerate painful emotions and to be able to manage them. If we overly dissociate painful emotions, we restrict the personality and provoke various inhibitions. From this it follows that mental health is not compatible with superficiality, since it is linked to a denial of inner conflict and external difficulties. Denial is used excessively because the ego is not strong enough to tolerate pain.\"",
+      "quoteAuthor": "Melanie Klein",
+      "heroTitleLine1": "Andrea Narvaez",
+      "heroTitleLine2": "'Path'",
+      "heroParagraphs": [
+        "Psychologist with psychoanalytic training and a gender perspective. 1:1 sessions that integrate art and writing to support your process. Start whenever you are ready.",
+        "Passionate about poetry, writing, and art, I integrate creativity into my therapeutic practice to explore and heal, offering a space of welcome and understanding for the well-being and self-knowledge of my patients."
+      ],
+      "therapyTitle": "Therapy",
+      "therapyParagraphs": [
+        "I offer in-person consultations in Cali, as well as online therapy for patients around the world. My approach focuses on adapting psychoanalysis to the digital era while maintaining a safe and empathic space for personal growth.",
+        "Committed to accessibility and flexibility, I use advanced technological tools to ensure a deep and meaningful therapeutic experience, regardless of distance."
+      ],
+      "bookTitleLine1": "My book",
+      "bookTitleLine2": "'the drawer of the night'",
+      "bookParagraphs": [
+        "A few years ago I published a poetry book about the micro aesthetic universes of everyday life. Through symbolism and allusion to concrete figures, I allowed myself to express change, revelation, and childhood experiences.",
+        "This work meant a lot to me in the context of my life at the time, and I hope to share it with the world. If you want to know more or would like a virtual or physical copy, let me know. It can be shipped anywhere in the world."
+      ]
+    },
+    "about": {
+      "title": "My Professional Experience",
+      "paragraphs": [
+        "Since adolescence, psychology and literature have accompanied me, and in their meeting point I find a creative refuge where the everyday becomes sensitivity.",
+        "My first steps in clinical psychology were at the university care center, where I received recognition for the results and positive evaluations from my patients during my internships. That early path shaped my commitment to careful listening and to therapeutic processes that respect each person's rhythm.",
+        "I deepened my specialization in Child and Adolescent Psychology at Universidad de Antioquia with a psychoanalytic lens. Along the way, I gained very important experience supporting autistic children and providing therapy to children at CINEV, which strengthened my clinical sensitivity and work with families.",
+        "I have also participated in volunteer work with women who are victims of abuse, which reaffirmed the importance of creating safe and dignified spaces. I am currently pursuing a master's degree in Clinical Psychology at Universidad de San Buenaventura, while maintaining my independent virtual and in-person practice."
+      ],
+      "image": "/assets/andre_pintura.jpg",
+      "artisticTitle": "Art, writing, and sensitivity",
+      "artisticLead": "a personal space",
+      "artisticParagraphs": [
+        "Painting and writing have been an essential part of my path. In the act of creating I find an intimate language that complements my clinical work and lets me see human experience from different shades.",
+        "I have explored artistic expression as a space of contemplation and meaning. From there comes my poetry book The Drawer of the Night, a search for the everyday and the symbolic through words."
+      ],
+      "poemTitle": "Nostalgia",
+      "poemLines": [
+        "I had gone back to look at old photos",
+        "I have fallen into the illusion of a better time",
+        "Yesterday, in the distance, seems a lost treasure",
+        "beneath the earth that fosters forgetting",
+        "amid the mists, I wander in circles",
+        "I neither move forward nor back; the past is another mirror",
+        "how to undress the skins wrapped in my affection",
+        "how to release from my arms the fleeting life",
+        "to hear that current, I carry stories with me",
+        "that make my path a gentle place"
+      ],
+      "paintingsTitle": "Paintings and memory",
+      "paintingsText": "I paint as one who remembers: layers of color, silence, and light. Each stroke holds a memory and opens a space where the intimate can breathe; the image carries on what the word begins.",
+      "paintingsImage": "/assets/florero.jpeg",
+      "education": [
+        {
+          "date": "2015-2021",
+          "title": "Psychology",
+          "subtitle": "Universidad del Valle",
+          "text": "Undergraduate training in Psychology with a psychoanalytic foundation and an emphasis on gender perspectives and adolescence, focused on understanding subjectivity and relationships in key life stages."
+        },
+        {
+          "date": "2023",
+          "title": "Specialization in Child and Adolescent Psychology",
+          "subtitle": "Universidad de Antioquia",
+          "text": "Specialization with a psychoanalytic approach in childhood and adolescence, strengthening clinical understanding, assessment, and therapeutic support in these stages."
+        },
+        {
+          "date": "2025-2027",
+          "title": "Master's in Clinical Psychology",
+          "subtitle": "Universidad de San Buenaventura (Cali)",
+          "text": "Master's in Clinical Psychology with a psychoanalytic approach, strengthening clinical practice, diagnosis, and therapeutic processes."
+        }
+      ],
+      "experience": [
+        {
+          "date": "2020-present",
+          "title": "Clinical psychologist",
+          "subtitle": "Private practice",
+          "text": "Independent clinical practice with a psychoanalytic approach, supporting individual processes in both in-person and virtual settings."
+        },
+        {
+          "date": "2021-2022",
+          "title": "Therapist",
+          "subtitle": "Impronta IPS",
+          "text": "Psychotherapeutic support in an institutional setting, with clinical follow-up and patient guidance throughout the process."
+        },
+        {
+          "date": "2023",
+          "title": "Therapist",
+          "subtitle": "Delamano Psychopedagogical Center",
+          "text": "Psychoanalytic-informed psychotherapy for professionals, strengthening emotional resources and overall well-being."
+        },
+        {
+          "date": "2024",
+          "title": "Intake therapist",
+          "subtitle": "Meneses Law",
+          "text": "Intake interviews and psychological support for migrants in regularization processes, accompanying their personal history and emotional needs."
+        },
+        {
+          "date": "2025",
+          "title": "Therapist",
+          "subtitle": "CINEV",
+          "text": "Therapeutic support for children and adolescents in a school setting, working in coordination with families and teachers."
+        }
+      ],
+      "complementaryEducation": [
+        {
+          "date": "2026",
+          "title": "Gender Violence Certification",
+          "subtitle": "Red Cross",
+          "text": "Training focused on identifying, preventing, and addressing gender-based violence, with a psychosocial and care-oriented approach."
+        }
+      ]
+    },
+    "sessions": {
+      "heroTitle": "Therapy",
+      "introTitle": "sessions",
+      "introText": "Psychoanalytic sessions in person or online, a warm space to listen to what hurts and transform what weighs.",
+      "introText2": "Psychoanalytic sessions in person or online, a warm space to listen to what hurts and transform what weighs.",
+      "focusSubtitle": "My therapeutic approach",
+      "focusTitle": "Psychotherapy",
+      "focusParagraphs": [
+        "In my practice as a psychotherapist, I specialize in exploring how our past experiences and beliefs can affect us consciously and unconsciously from a psychoanalytic and cultural approach, understanding the impact of trauma and how its meanings transform. Through narrative and artistic tools, I seek to offer a compassionate and free space where experiences and emotions can be expressed and processed. This approach is enriched with the inclusion of poetry and gender discourses, in order to address psychosocial issues in a creative and resilient way.",
+        "From Cali, Colombia, and through virtual platforms, I extend my therapeutic support to people around the world. This is a space of welcome and understanding, where the release of limiting beliefs is encouraged and new forms of connection with oneself, with others, and with our environment are opened, celebrating our cultural identity in the process of healing and personal growth."
+      ],
+      "therapyTypesTitle": "Types of therapy",
+      "therapyTypes": [
+        "Couples therapy",
+        "In-person therapy",
+        "Online therapy",
+        "Art therapy",
+        "Therapy for children",
+        "Family therapy"
+      ],
+      "issuesTitle": "Reasons for consultation",
+      "issues": [
+        "Anxiety and stress",
+        "Low mood and emotional fatigue",
+        "Grief and loss",
+        "Couple and family conflicts",
+        "Self-esteem and personal care",
+        "Life changes and important decisions"
+      ],
+      "mapTitle": "Location",
+      "mapNote": "Private office at Colectivo Coworking Cali: a calm and safe space. Virtual sessions are also available.",
+      "mapEmbedUrl": "https://www.google.com/maps?q=Colectivo+Coworking+Cali&output=embed",
+      "focusAreasTitle": "Types of therapy and reasons for consultation",
+      "focusAreasText": "A warm space to talk calmly and find a path of support that fits your current moment.",
+      "focusAreasItems": [
+        "Individual therapy, in-person and online",
+        "Couples therapy and family therapy",
+        "Child therapy and support for adolescents",
+        "Art therapy and creative resources",
+        "Anxiety, stress, and emotional overload",
+        "Low mood, apathy, and inner fatigue",
+        "Grief, loss, and farewell processes",
+        "Relational conflicts and communication",
+        "Self-esteem, identity, and self-care",
+        "Life changes, decisions, and transitions",
+        "Support in crisis and sensitive moments",
+        "Spaces for women and emotional care"
+      ],
+      "certificationsTitle": "Certificates and assessments",
+      "certificationsText": "Certificates and assessments are issued based on professional evaluation and each person’s needs.",
+      "certificationsItems": [
+        "Psychotherapy process certificate",
+        "Proof of therapy attendance",
+        "Psychological report and clinical notes",
+        "Psychological assessment and vocational guidance",
+        "Psychometric testing (child IQ)",
+        "Socio-emotional skills report",
+        "Emotional support animal letter (based on assessment)",
+        "Support for school and family processes"
+      ],
+      "scheduleTitle": "Office hours",
+      "scheduleNote": "Availability depends on schedule. Message me to confirm times.",
+      "scheduleItems": [
+        {
+          "label": "Monday to Friday",
+          "value": "9:00 a.m. – 5:00 p.m."
+        },
+        {
+          "label": "Saturdays",
+          "value": "Morning hours (subject to availability)"
+        }
+      ],
+      "pricingTitle": "Rates",
+      "pricingItems": [
+        {
+          "label": "Virtual psychotherapy (1 hour)",
+          "price": "COP 70,000"
+        },
+        {
+          "label": "In-person psychotherapy (1 hour)",
+          "price": "COP 80,000"
+        },
+        {
+          "label": "Couples therapy",
+          "price": "COP 90,000"
+        }
+      ]
+    },
+    "reflections": {
+      "title": "Reflections",
+      "intro": "These pages hold texts born between clinic and poetry, where gender, culture, and listening meet.",
+      "cards": [
+        {
+          "title": "On bodies and excess",
+          "description": "It strikes me how female bodies are a \"tourist attraction\" in many Western cultures. On each occasion, I ask what they think about that situation. I receive...",
+          "image": "/assets/libros.jpg",
+          "route": "/reflexion",
+          "id": "cuerpos"
+        },
+        {
+          "title": "Letter to psychoanalysis",
+          "description": "When I read, with too much shamelessness, about the unconscious fantasies of abused women, considered \"hysterical\", time passed before I could see the invisible lenses...",
+          "image": "/assets/remedios.jpeg",
+          "route": "/reflexion",
+          "id": "carta"
+        },
+        {
+          "title": "Control",
+          "description": "Without that sensation, it seems the will is torn to pieces as any allusion to power and wanting is enough. Today control is so encouraged that it seems...",
+          "image": "/assets/refle3.jpg",
+          "route": "/reflexion",
+          "id": "control"
+        }
+      ]
+    },
+    "bodies": {
+      "title1": "On excess",
+      "paragraphs1": [
+        "The complexity of certain processes can be named through the evasion of emptiness or even of that which comes from reality.",
+        "To face the fact that lack is precisely what is never satisfied, it is possible to begin by letting go of certain voids and pleasures, to make room for words from desire. Even in silence we attribute noise in order to grasp knowledge. I like to realize that thanks to this incomprehension, an existential window of language opens: the unsayable. We are intolerant of uncertainty even when, by feeling it, we affirm how limiting certain determinations are: \"being good at something, the best, being happy, etc.\" Today many feel guilt for not being \"someone\" enough, and that struggle can be exhausting when one does not accept the possibility that we are not alienated to the interpretations of the social Other; we only carry a knowledge that sometimes slips away, and with great effort we manage to coincide with the bonds imposed by language and the difficulty of being understood satisfactorily. Desire confronts choice.",
+        "I think of an intolerable Whole for the mind whose chain of signifiers does not reach the fulfillment of desire, but rather the encounter with the word and the loop of ideas that never stop closing and prevent conclusion. An excess of thought that oscillates between certainty, doubt, and a series of acts that relieve anguish. I think of the obsession that goes beyond the pursued object to deny satisfaction, because it seeks an Impossible end."
+      ],
+      "title2": "On bodies",
+      "paragraphs2": [
+        "It strikes me how female bodies are a \"tourist attraction\" in many Western cultures. On each occasion, I ask what they think about that situation. I receive answers such as a \"tension,\" and I almost always touch a delicate nerve of silent guilt. This violation of the body is still only half-criticized. It is not enough to normalize it with phrases like \"she chose that path\" and reduce it to mere blame. Saying it is a possible \"choice\" in the face of a disruptive experience capable of generating trauma can deny the structural weight behind it."
+      ]
+    },
+    "control": {
+      "title": "Control",
+      "paragraphs": [
+        "Without that sensation, it seems the will is torn to pieces, as any allusion to power and wanting is enough. Today control is so encouraged that it seems impossible to feel the body without a slight alarm and fear of losing it. Diets, exercise, and images that try to shape it. I have suggested exchanging that word for \"connect.\" By controlling emotions, it is suggested that one hardly tolerates that spontaneous expression when connecting with them for a moment, perceiving how the body acts before some alteration. Each plan, each objective, seems not to contemplate contingencies.",
+        "The mandate says: \"control yourself.\" Memory has the quality of tying achievements, and we say with pleasure: \"I have control of my life,\" while in the voids failed attempts slip away. We remain bound as if words did things directly to the real. Why then, when we fulfill a desire, does satisfaction not arrive as imagined and the truth, the knowledge, slips away. Constant vigilance in actions, hyper-demand, isolates satisfaction whose root speaks of doing enough, of recognizing it. I think of those who silence their efforts until they do not see them consumed in the result, and when they fail, they had better not say it, and it is forgotten by not translating their lived experience. Today there are few levers to face the without-control, the without-reason; when these \"intolerable\" encounters accumulate, we are left without words to tie them, because they precisely slid out of discourse, to force a feeling or other emotions that seem more valid than frustration."
+      ]
+    },
+    "carta": {
+      "title": "Letter to psychoanalysis",
+      "paragraphs": [
+        "When I read, with too much shamelessness, about the unconscious fantasies of abused women, considered \"hysterical,\" time passed before I could see the invisible masculine lenses that, for not understanding suffering or attempting to negotiate an inexpressible point, offered a hasty description of the emotional reactions of embodied femininities who found themselves in an unbearable situation to assume: femininity, sexuality, and maternity. No man had ever spoken so much about these essentially body-alien topics; no matter how much idealism and scientism he claims, his prejudice makes him consider the incomprehensible world \"dark\" or \"hidden\" through the narcissisms of a phallic ego. How could one understand an anachronistic man without first knowing how to say \"I believe...\", \"I think\"? There is nothing more harmful than trying to cure the neuroses that give life meaning, making her question her own sanity in the face of facts of reality.",
+        "The hysterics were not crazy; there was a structural injustice that confused the being of the woman with an object subject to the male gaze. I can put here the words of the father referring to her and to them as a \"dark continent,\" feeling the incapacity to renounce the ideals of a society that cause deep discomfort, particularly in women. Then, when the eclipse of machismo has hidden many in silent martyrdom and in the marked irrationality, it seems not enough of an antagonistic history that has condemned them to ostracism, to purity, and to ideals that are contradictory when psychological satisfaction is sought. It is impossible to deny that before the confinement of women to the home, the poverty that predominates in some genders over others, and the limited field of their abilities in social environments, fantasy remains the only escape of freedom to express themselves without fear of being judged and, in haste, determined.",
+        "To be silent in order to leave and not be looked at again with coercion, violence, and victimization requires a powerful strength that makes them owners of themselves, of their bodies, understanding a necessary and sometimes desirable dissatisfaction for an ethical beginning of care. The symbol of taking refuge within the circle means being within the warm embrace of a solitary and spiritual connection with other more just voices.",
+        "Anatomical differences still have not been able to detach themselves from the selfish act of controlling their destinies; to penetrate the world, they ask the woman to be still, static, and fixed; while this mandate subverts her imagination into a movement and flow of waves that never stop and are fired upon an obedient body. The split is no more than the first step toward a psychosis that will cease to be when I encounter other brave women who have been able to write against all odds; from their lack, they have sown and opened fields for their sisters of spirit.",
+        "I think of the painters Remedios Varo and Leonora Carrington who knew how to connect despite the great tensions imposed by surrealism; they accepted it as one accepts a mother tongue in order to write, but at the same time they recognized themselves as insufficient because the bubble continues to reflect masculine faces. The English writers were great pioneers of the first manifestos of female suffering when looking love in the face, poor love. Perhaps it was this way of expressing with such reactive force that was the only way to be heard; who else but an enraged society, making hysteria about an unbearable system of life, before a rigid tension of opposite poles that still do not give way to the name of what ails us, perhaps because it has been more encompassed in others words, in theirs. Imposed language makes us babble, stutter, and almost comfortably prefer to remain silent, but even so there are those who express their position without renouncing care. There is an irritation in stillness itself that mobilizes the necessary critique to save us from alienation by mirrors of the Others gaze.",
+        "Here psychoanalysis is a vehicle that allows us to question signifiers, but not to reproduce an authoritarian knowledge of female destinies, rather of the subjects who can find new paths of identifications and singular choices, without ignoring the chain of imaginaries that suggests a specific gender."
+      ]
+    },
+    "carousel": [
+      {
+        "image": "/assets/image4.jpg",
+        "title": "About me",
+        "description": "Psychologist with psychoanalytic training, gender perspective, and a specialization in childhood and adolescence issues. I graduated from Universidad del Valle and completed postgraduate studies at Universidad de Antioquia. I offer a space of trust that goes beyond treatment, providing singular support and attention in each process.",
+        "buttonText": "Learn more",
+        "link": "/acerca-de-mi"
+      },
+      {
+        "image": "/assets/image2.jpg",
+        "title": "Therapy",
+        "description": "I provide personalized psychoanalytic therapy sessions, available online for people around the world with flexible schedules, as well as in-person in Cali, Colombia.",
+        "buttonText": "Learn more",
+        "link": "/sesiones"
+      },
+      {
+        "image": "/assets/image2.jpg",
+        "title": "Reflections",
+        "description": "In these pages I share texts from my personal experience as a psychologist with a passion for poetry, interested in gender, feminist and cultural dialogues, and committed to providing safe spaces in psychoanalytic accompaniment.",
+        "buttonText": "Learn more",
+        "link": "/reflexiones"
+      },
+      {
+        "image": "/assets/image5.jpg",
+        "title": "Contact",
+        "description": "You can contact me through any of my social networks if you need more information or have questions.",
+        "buttonText": "Contact",
+        "link": "https://wa.me/+573187392384",
+        "external": true
+      }
+    ],
+    "reflectionArticles": [
+      {
+        "id": "cuerpos",
+        "title": "On bodies and excess",
+        "excerpt": "It strikes me how female bodies are a \"tourist attraction\" in many Western cultures. On each occasion, I ask what they think about that situation. I receive...",
+        "image": "/assets/libros.jpg",
+        "sections": [
+          {
+            "title": "On excess",
+            "paragraphs": [
+              "The complexity of certain processes can be named through the evasion of emptiness or even of that which comes from reality.",
+              "To face the fact that lack is precisely what is never satisfied, it is possible to begin by letting go of certain voids and pleasures, to make room for words from desire. Even in silence we attribute noise in order to grasp knowledge. I like to realize that thanks to this incomprehension, an existential window of language opens: the unsayable. We are intolerant of uncertainty even when, by feeling it, we affirm how limiting certain determinations are: \"being good at something, the best, being happy, etc.\" Today many feel guilt for not being \"someone\" enough, and that struggle can be exhausting when one does not accept the possibility that we are not alienated to the interpretations of the social Other; we only carry a knowledge that sometimes slips away, and with great effort we manage to coincide with the bonds imposed by language and the difficulty of being understood satisfactorily. Desire confronts choice.",
+              "I think of an intolerable Whole for the mind whose chain of signifiers does not reach the fulfillment of desire, but rather the encounter with the word and the loop of ideas that never stop closing and prevent conclusion. An excess of thought that oscillates between certainty, doubt, and a series of acts that relieve anguish. I think of the obsession that goes beyond the pursued object to deny satisfaction, because it seeks an Impossible end."
+            ]
+          },
+          {
+            "title": "On bodies",
+            "paragraphs": [
+              "It strikes me how female bodies are a \"tourist attraction\" in many Western cultures. On each occasion, I ask what they think about that situation. I receive answers such as a \"tension,\" and I almost always touch a delicate nerve of silent guilt. This violation of the body is still only half-criticized. It is not enough to normalize it with phrases like \"she chose that path\" and reduce it to mere blame. Saying it is a possible \"choice\" in the face of a disruptive experience capable of generating trauma can deny the structural weight behind it."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "carta",
+        "title": "Letter to psychoanalysis",
+        "excerpt": "When I read, with too much shamelessness, about the unconscious fantasies of abused women, considered \"hysterical\", time passed before I could see the invisible lenses...",
+        "image": "/assets/remedios.jpeg",
+        "sections": [
+          {
+            "paragraphs": [
+              "When I read, with too much shamelessness, about the unconscious fantasies of abused women, considered \"hysterical,\" time passed before I could see the invisible masculine lenses that, for not understanding suffering or attempting to negotiate an inexpressible point, offered a hasty description of the emotional reactions of embodied femininities who found themselves in an unbearable situation to assume: femininity, sexuality, and maternity. No man had ever spoken so much about these essentially body-alien topics; no matter how much idealism and scientism he claims, his prejudice makes him consider the incomprehensible world \"dark\" or \"hidden\" through the narcissisms of a phallic ego. How could one understand an anachronistic man without first knowing how to say \"I believe...\", \"I think\"? There is nothing more harmful than trying to cure the neuroses that give life meaning, making her question her own sanity in the face of facts of reality.",
+              "The hysterics were not crazy; there was a structural injustice that confused the being of the woman with an object subject to the male gaze. I can put here the words of the father referring to her and to them as a \"dark continent,\" feeling the incapacity to renounce the ideals of a society that cause deep discomfort, particularly in women. Then, when the eclipse of machismo has hidden many in silent martyrdom and in the marked irrationality, it seems not enough of an antagonistic history that has condemned them to ostracism, to purity, and to ideals that are contradictory when psychological satisfaction is sought. It is impossible to deny that before the confinement of women to the home, the poverty that predominates in some genders over others, and the limited field of their abilities in social environments, fantasy remains the only escape of freedom to express themselves without fear of being judged and, in haste, determined.",
+              "To be silent in order to leave and not be looked at again with coercion, violence, and victimization requires a powerful strength that makes them owners of themselves, of their bodies, understanding a necessary and sometimes desirable dissatisfaction for an ethical beginning of care. The symbol of taking refuge within the circle means being within the warm embrace of a solitary and spiritual connection with other more just voices.",
+              "Anatomical differences still have not been able to detach themselves from the selfish act of controlling their destinies; to penetrate the world, they ask the woman to be still, static, and fixed; while this mandate subverts her imagination into a movement and flow of waves that never stop and are fired upon an obedient body. The split is no more than the first step toward a psychosis that will cease to be when I encounter other brave women who have been able to write against all odds; from their lack, they have sown and opened fields for their sisters of spirit.",
+              "I think of the painters Remedios Varo and Leonora Carrington who knew how to connect despite the great tensions imposed by surrealism; they accepted it as one accepts a mother tongue in order to write, but at the same time they recognized themselves as insufficient because the bubble continues to reflect masculine faces. The English writers were great pioneers of the first manifestos of female suffering when looking love in the face, poor love. Perhaps it was this way of expressing with such reactive force that was the only way to be heard; who else but an enraged society, making hysteria about an unbearable system of life, before a rigid tension of opposite poles that still do not give way to the name of what ails us, perhaps because it has been more encompassed in others words, in theirs. Imposed language makes us babble, stutter, and almost comfortably prefer to remain silent, but even so there are those who express their position without renouncing care. There is an irritation in stillness itself that mobilizes the necessary critique to save us from alienation by mirrors of the Others gaze.",
+              "Here psychoanalysis is a vehicle that allows us to question signifiers, but not to reproduce an authoritarian knowledge of female destinies, rather of the subjects who can find new paths of identifications and singular choices, without ignoring the chain of imaginaries that suggests a specific gender."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "control",
+        "title": "Control",
+        "excerpt": "Without that sensation, it seems the will is torn to pieces as any allusion to power and wanting is enough. Today control is so encouraged that it seems...",
+        "image": "/assets/refle3.jpg",
+        "sections": [
+          {
+            "paragraphs": [
+              "Without that sensation, it seems the will is torn to pieces, as any allusion to power and wanting is enough. Today control is so encouraged that it seems impossible to feel the body without a slight alarm and fear of losing it. Diets, exercise, and images that try to shape it. I have suggested exchanging that word for \"connect.\" By controlling emotions, it is suggested that one hardly tolerates that spontaneous expression when connecting with them for a moment, perceiving how the body acts before some alteration. Each plan, each objective, seems not to contemplate contingencies.",
+              "The mandate says: \"control yourself.\" Memory has the quality of tying achievements, and we say with pleasure: \"I have control of my life,\" while in the voids failed attempts slip away. We remain bound as if words did things directly to the real. Why then, when we fulfill a desire, does satisfaction not arrive as imagined and the truth, the knowledge, slips away. Constant vigilance in actions, hyper-demand, isolates satisfaction whose root speaks of doing enough, of recognizing it. I think of those who silence their efforts until they do not see them consumed in the result, and when they fail, they had better not say it, and it is forgotten by not translating their lived experience. Today there are few levers to face the without-control, the without-reason; when these \"intolerable\" encounters accumulate, we are left without words to tie them, because they precisely slid out of discourse, to force a feeling or other emotions that seem more valid than frustration."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "aboutPage": {
+    "timelineTitle": "Professional journey",
+    "studiesTitle": "Formal studies",
+    "recognitionsTitle": "Complementary studies",
+    "artisticKicker": "Creative side",
+    "poemKicker": "Poem",
+    "paintingsKicker": "Painting",
+    "profileKicker": "Trajectory",
+    "profileTitle": "My professional letter",
+    "profileLead": "A clear view of my studies and clinical journey.",
+    "educationTitle": "Education",
+    "experienceTitle": "Professional experience",
+    "complementaryTitle": "Additional education and certifications",
+    "timelineKicker": "Timeline"
   }
 }

@@ -1,0 +1,22 @@
+<svg width="900" height="1200" viewBox="0 0 900 1200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5e9ff"/>
+      <stop offset="55%" stop-color="#c9a6f5"/>
+      <stop offset="100%" stop-color="#7b3bd3"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="25%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="900" height="1200" fill="url(#bg)"/>
+  <rect width="900" height="1200" fill="url(#glow)"/>
+  <circle cx="160" cy="240" r="140" fill="#fdf7ff" opacity="0.55"/>
+  <circle cx="720" cy="320" r="180" fill="#5f22b8" opacity="0.35"/>
+  <path d="M100 780C220 690 320 700 420 760C520 820 640 840 800 760" fill="none" stroke="#f5d7ff" stroke-width="32" stroke-linecap="round" opacity="0.6"/>
+  <path d="M120 930C260 860 380 860 520 930C660 1000 760 1040 820 1000" fill="none" stroke="#3a1461" stroke-width="26" stroke-linecap="round" opacity="0.5"/>
+  <text x="50%" y="50%" text-anchor="middle" fill="#2b0f3e" font-size="28" font-family="Cormorant Garamond, serif" opacity="0.8">
+    AI Painting Placeholder
+  </text>
+</svg>

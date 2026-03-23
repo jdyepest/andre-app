@@ -8,7 +8,9 @@ export default {
     extend: {
       fontFamily:{
         'vintage-coquete': ['Great Vibes','cursive', 'sans-serif'],
-        'fun2': ['Happy Monkey', "system-ui", 'sans-serif']
+        'fun2': ['Happy Monkey', "system-ui", 'sans-serif'],
+        'display': ['Cormorant Garamond', 'serif'],
+        'body': ['Manrope', 'sans-serif']
 
       }
       

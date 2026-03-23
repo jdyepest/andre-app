@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap');
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+  --plum-950: #1f0b2e;
+  --plum-900: #2b0f3e;
+  --plum-800: #3a1461;
+  --plum-700: #4f1d7a;
+  --plum-600: #6b2fa0;
+  --plum-500: #7c3aed;
+  --plum-300: #c29bf5;
+  --plum-200: #eadbff;
+  --paper-100: #f8f2ff;
+  --paper-200: #f1e7ff;
+}
+
+.feminist-purple {
+  background-color: #9b51e0;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #E3b9ff;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: purple;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(21, 21, 73, 0.4);
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+  opacity: 0;
+}
+
+.section-shell {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section {
+  padding: 6rem 0;
+}
+
+.section-soft {
+  background: linear-gradient(180deg, var(--paper-100), var(--paper-200));
+}
+
+.section-light {
+  background: #ffffff;
+}
+
+.section-book {
+  background: linear-gradient(120deg, #ffffff, #f4edff);
+}
+
+.section-contact {
+  background: linear-gradient(135deg, #f4edff, #efe2ff);
+}
+
+.section-kicker {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: var(--plum-600);
+  margin-bottom: 0.75rem;
+}
+
+.section-kicker-light {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.section-title {
+  font-size: clamp(2.4rem, 4.8vw, 3.8rem);
+  margin-bottom: 1.5rem;
+  color: var(--plum-900);
+  font-family: 'Playfair Display', serif;
+}
+
+.section-title-accent {
+  color: var(--plum-600);
+}
+
+.section-lead {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: rgba(22, 6, 44, 0.7);
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 3rem;
+}
+
+.section-text {
+  margin-top: 1rem;
+  line-height: 1.8;
+  color: rgba(22, 6, 44, 0.75);
+}
+
+.hero-kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.35em;
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 1.5rem;
+}
+
+.image-frame {
+  position: relative;
+  padding: 12px;
+  border-radius: 32px;
+  background: rgba(124, 58, 237, 0.12);
+  box-shadow: 0 30px 60px rgba(18, 4, 35, 0.22);
+}
+
+.image-frame::before {
+  content: "";
+  position: absolute;
+  inset: -16px;
+  border-radius: 36px;
+  background: rgba(124, 58, 237, 0.18);
+  filter: blur(24px);
+  z-index: 0;
+}
+
+.section-image {
+  width: 100%;
+  border-radius: 22px;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.info-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 1.8rem;
+  box-shadow: 0 18px 30px rgba(18, 4, 35, 0.12);
+  border: 1px solid rgba(124, 58, 237, 0.12);
+}
+
+.info-card-text {
+  color: rgba(22, 6, 44, 0.75);
+  line-height: 1.8;
+}
+
+.contact-card {
+  text-align: center;
+  border-radius: 28px;
+  border: 1px solid rgba(124, 58, 237, 0.2);
+  background: rgba(255, 255, 255, 0.92);
+  padding: 2.5rem;
+  box-shadow: 0 24px 50px rgba(18, 4, 35, 0.18);
+}
+
+.landing-error {
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  color: rgba(91, 33, 182, 0.8);
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.contact-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  background: rgba(124, 58, 237, 0.12);
+  border: 1px solid rgba(124, 58, 237, 0.2);
+  transition: transform 200ms ease, background 200ms ease;
+}
+
+.contact-icon:hover {
+  transform: translateY(-2px);
+  background: rgba(124, 58, 237, 0.2);
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

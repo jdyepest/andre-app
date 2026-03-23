@@ -14,10 +14,11 @@
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import Navbar from '~/components/Navbar.vue'
-import { content } from '~/data/content'
+import { useContentData } from '~/composables/useContentData'
 
 const { locale } = useI18n()
-const page = computed(() => content.control[locale.value] || content.control.es)
+const { contentData } = useContentData(locale)
+const page = computed(() => contentData.value.control)
 </script>
 
 <style scoped>
