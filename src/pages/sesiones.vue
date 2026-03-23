@@ -26,6 +26,7 @@
       <div class="sessions-hero-content">
         <p class="hero-kicker">{{ $t('nav.sessions') }}</p>
         <h1 class="sessions-hero-title font-display">{{ page.heroTitle }}</h1>
+        <p v-if="page.introText2" class="sessions-hero-text">{{ page.introText2 }}</p>
       </div>
     </header>
 

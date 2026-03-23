@@ -122,7 +122,7 @@
     "about": {
       "title": "My Professional Experience",
       "paragraphs": [
-        "Since adolescence, psychology captured my interest and led me to train at Universidad del Valle. In parallel, literature has always been a creative refuge, and from that came my poetry book The Drawer of the Night, a project where I sought to transform everyday life into aesthetic and sensitive experiences.",
+        "Since adolescence, psychology and literature have accompanied me, and in their meeting point I find a creative refuge where the everyday becomes sensitivity.",
         "My first steps in clinical psychology were at the university care center, where I received recognition for the results and positive evaluations from my patients during my internships. That early path shaped my commitment to careful listening and to therapeutic processes that respect each person's rhythm.",
         "I deepened my specialization in Child and Adolescent Psychology at Universidad de Antioquia with a psychoanalytic lens. Along the way, I gained very important experience supporting autistic children and providing therapy to children at CINEV, which strengthened my clinical sensitivity and work with families.",
         "I have also participated in volunteer work with women who are victims of abuse, which reaffirmed the importance of creating safe and dignified spaces. I am currently pursuing a master's degree in Clinical Psychology at Universidad de San Buenaventura, while maintaining my independent virtual and in-person practice."
@@ -214,7 +214,8 @@
     "sessions": {
       "heroTitle": "Therapy",
       "introTitle": "sessions",
-      "introText": "I provide personalized psychoanalytic therapy sessions, available both online for those in different parts of the world with flexible schedules that fit your rhythm of life, and in person in the city of Cali, Colombia. Face a variety of emotional challenges, from anxiety and depression to relationship issues and life transitions, in a safe and welcoming space. I strive to make therapy accessible, offering affordable prices and multiple payment options including bank transfer, PayPal, and credit card. Start with an assessment session and discover the path to your well-being, no matter where you are.",
+      "introText": "Psychoanalytic sessions in person or online, a warm space to listen to what hurts and transform what weighs.",
+      "introText2": "Psychoanalytic sessions in person or online, a warm space to listen to what hurts and transform what weighs.",
       "focusSubtitle": "My therapeutic approach",
       "focusTitle": "Psychotherapy",
       "focusParagraphs": [
@@ -300,7 +301,7 @@
     },
     "reflections": {
       "title": "Reflections",
-      "intro": "In these pages I am pleased to share some texts drawn from my personal experience as a psychologist with a passion for poetry, interested in gender, feminist and cultural dialogues, and committed to providing safe spaces in psychoanalytic psychotherapeutic accompaniment. I seek to convey, through lived thoughts and sensations, a closer sense of who I am in my work.",
+      "intro": "These pages hold texts born between clinic and poetry, where gender, culture, and listening meet.",
       "cards": [
         {
           "title": "On bodies and excess",

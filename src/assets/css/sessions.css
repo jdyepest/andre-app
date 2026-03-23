@@ -5,7 +5,7 @@
 
 .sessions-hero {
   position: relative;
-  min-height: 70vh;
+  min-height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -50,6 +50,12 @@
   font-size: clamp(2.6rem, 6vw, 4.6rem);
   line-height: 1.05;
   margin-bottom: 1.1rem;
+}
+
+.sessions-hero-text {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.85);
 }
 
 .sessions-intro {
@@ -298,7 +304,7 @@
 
 @media (min-width: 1024px) {
   .sessions-hero {
-    min-height: 78vh;
+    min-height: 90vh;
   }
 
   .sessions-intro-grid {
@@ -328,7 +334,7 @@
 
 @media (max-width: 768px) {
   .sessions-hero {
-    min-height: 64vh;
+    min-height: 90vh;
     padding-top: 6.5rem;
   }
 

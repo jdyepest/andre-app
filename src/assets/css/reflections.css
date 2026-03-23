@@ -5,7 +5,7 @@
 
 .reflections-hero {
   position: relative;
-  min-height: 75vh;
+  min-height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -89,13 +89,13 @@
 
 @media (min-width: 1024px) {
   .reflections-hero {
-    min-height: 80vh;
+    min-height: 90vh;
   }
 }
 
 @media (max-width: 768px) {
   .reflections-hero {
-    min-height: 66vh;
+    min-height: 90vh;
     padding-top: 6.5rem;
   }
 }

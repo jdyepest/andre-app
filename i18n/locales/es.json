@@ -122,7 +122,7 @@
     "about": {
       "title": "Mi Experiencia profesional",
       "paragraphs": [
-        "Desde mi adolescencia, la psicologia capturo mi interes y me llevo a formarme en la Universidad del Valle. En paralelo, la literatura siempre ha sido un refugio creativo, y de ahi nacio mi poemario El Cajon de la noche, un proyecto donde busque transformar lo cotidiano en experiencias esteticas y sensibles.",
+        "Desde mi adolescencia, la psicologia y la literatura me acompanian, y en su cruce encuentro un refugio creativo donde lo cotidiano se vuelve sensibilidad.",
         "Mis primeros pasos en la psicologia clinica los di en el centro de atencion de la universidad, donde recibi reconocimientos por los resultados y evaluaciones positivas de mis pacientes durante las practicas. Este recorrido inicial marco mi compromiso con una escucha cuidadosa y con procesos terapeuticos que respeten el ritmo de cada persona.",
         "Profundice mi especializacion en Psicologia de la Infancia y Adolescencia en la Universidad de Antioquia, con una mirada psicoanalitica. En ese camino, obtuve una experiencia muy importante acompanando a ninos autistas y brindando terapia a ninos en CINEV, lo que fortalecio mi sensibilidad clinica y mi trabajo con las familias.",
         "Tambien he participado en voluntariados con mujeres victimas de abuso, un trabajo que me reafirmo la importancia de crear espacios seguros y dignos. Actualmente curso la maestria en Psicologia Clinica en la Universidad de San Buenaventura, mientras mantengo mi practica independiente de atencion virtual y presencial."
@@ -214,6 +214,7 @@
     "sessions": {
       "heroTitle": "Terapia",
       "introTitle": "sesiones",
+      "introText2": "Sesiones psicoanaliticas presenciales u online, un espacio calido para escuchar lo que duele y transformar lo que pesa.",
       "introText": "Brindo sesiones de terapia psicoanalitica personalizadas, disponibles tanto en remoto para aquellos en distintas partes del mundo, con horarios flexibles que se adaptan a tu ritmo de vida, como presenciales en la ciudad de Cali, Colombia. Enfrenta una variedad de desafios emocionales, desde ansiedad y depresion hasta problemas de relacion y transiciones de vida, en un espacio seguro y acogedor. Me esfuerzo por hacer la terapia accesible, ofreciendo precios asequibles y multiples opciones de pago, incluyendo transferencia bancaria, PayPal y tarjeta de credito. Empieza con una sesion de evaluacion y descubre el camino hacia tu bienestar, sin importar donde te encuentres.",
       "focusSubtitle": "Mi enfoque terapeutico",
       "focusTitle": "Psicoterapia",
@@ -300,7 +301,7 @@
     },
     "reflections": {
       "title": "Reflexiones",
-      "intro": "En estas paginas me complace compartir algunos textos a partir de mi experiencia personal como psicologa con pasion a la poesia, interesada en los dialogos de genero, feministas y culturales, y comprometida con brindar espacios seguros en los acompanamientos psicoterapeuticos con enfoque psicoanalitico. Busco poder trasmitir a traves de pensamientos y sensaciones vividas una proximidad de conocerme en mi labor.",
+      "intro": "En estas paginas laten textos nacidos entre la clinica y la poesia, donde el genero, la cultura y la escucha se encuentran.",
       "cards": [
         {
           "title": "Sobre los cuerpos y el exceso",

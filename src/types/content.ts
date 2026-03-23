@@ -39,6 +39,7 @@ export interface ContentSessions {
   heroTitle: string
   introTitle: string
   introText: string
+  introText2?: string
   focusSubtitle: string
   focusTitle: string
   focusParagraphs: string[]

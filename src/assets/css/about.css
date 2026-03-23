@@ -5,7 +5,7 @@
 
 .about-hero {
   position: relative;
-  min-height: 70vh;
+  min-height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -347,7 +347,7 @@
 
 @media (min-width: 1024px) {
   .about-hero {
-    min-height: 75vh;
+    min-height: 90vh;
   }
 
   .about-story-grid {
@@ -365,7 +365,7 @@
 
 @media (max-width: 768px) {
   .about-hero {
-    min-height: 66vh;
+    min-height: 90vh;
     padding-top: 6.5rem;
   }
 
