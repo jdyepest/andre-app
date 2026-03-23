@@ -12,17 +12,21 @@
         </p>
       </div>
       <div class="image-frame book-image">
-        <img
-          :src="image"
-          :alt="imageAlt"
-          class="section-image"
-          loading="lazy"
-          decoding="async"
-          :width="imageSize.width"
-          :height="imageSize.height"
-          :srcset="imageSrcset || undefined"
-          sizes="(min-width: 1024px) 50vw, 90vw"
-        >
+        <picture>
+          <source v-if="imageAvifSrcset" type="image/avif" :srcset="imageAvifSrcset" sizes="(min-width: 1024px) 50vw, 90vw">
+          <source v-if="imageWebpSrcset" type="image/webp" :srcset="imageWebpSrcset" sizes="(min-width: 1024px) 50vw, 90vw">
+          <img
+            :src="image"
+            :alt="imageAlt"
+            class="section-image"
+            loading="lazy"
+            decoding="async"
+            :width="imageSize.width"
+            :height="imageSize.height"
+            :srcset="imageSrcset || undefined"
+            sizes="(min-width: 1024px) 50vw, 90vw"
+          >
+        </picture>
       </div>
     </div>
   </section>
@@ -30,7 +34,7 @@
 
 <script setup>
 import { computed } from 'vue'
-import { getImageSize, getImageSrcset } from '~/utils/imageSizes'
+import { getFormatSrcset, getImageSize, getImageSrcset } from '~/utils/imageSizes'
 
 const props = defineProps({
   kicker: { type: String, required: true },
@@ -43,4 +47,6 @@ const props = defineProps({
 
 const imageSize = computed(() => getImageSize(props.image))
 const imageSrcset = computed(() => getImageSrcset(props.image))
+const imageWebpSrcset = computed(() => getFormatSrcset(props.image, 'webp'))
+const imageAvifSrcset = computed(() => getFormatSrcset(props.image, 'avif'))
 </script>

@@ -2,17 +2,21 @@
   <section id="acerca" class="section section-soft">
     <div class="section-shell grid gap-12 md:grid-cols-2 items-center about-grid">
       <div class="image-frame">
-        <img
-          :src="image"
-          :alt="imageAlt"
-          class="section-image"
-          loading="lazy"
-          decoding="async"
-          :width="imageSize.width"
-          :height="imageSize.height"
-          :srcset="imageSrcset || undefined"
-          sizes="(min-width: 1024px) 50vw, 90vw"
-        >
+        <picture>
+          <source v-if="imageAvifSrcset" type="image/avif" :srcset="imageAvifSrcset" sizes="(min-width: 1024px) 50vw, 90vw">
+          <source v-if="imageWebpSrcset" type="image/webp" :srcset="imageWebpSrcset" sizes="(min-width: 1024px) 50vw, 90vw">
+          <img
+            :src="image"
+            :alt="imageAlt"
+            class="section-image"
+            loading="lazy"
+            decoding="async"
+            :width="imageSize.width"
+            :height="imageSize.height"
+            :srcset="imageSrcset || undefined"
+            sizes="(min-width: 1024px) 50vw, 90vw"
+          >
+        </picture>
       </div>
       <div class="about-content">
         <p class="section-kicker">{{ kicker }}</p>
@@ -36,7 +40,7 @@
 
 <script setup>
 import { computed } from 'vue'
-import { getImageSize, getImageSrcset } from '~/utils/imageSizes'
+import { getFormatSrcset, getImageSize, getImageSrcset } from '~/utils/imageSizes'
 
 const props = defineProps({
   image: { type: String, required: true },
@@ -50,4 +54,6 @@ const props = defineProps({
 
 const imageSize = computed(() => getImageSize(props.image))
 const imageSrcset = computed(() => getImageSrcset(props.image))
+const imageWebpSrcset = computed(() => getFormatSrcset(props.image, 'webp'))
+const imageAvifSrcset = computed(() => getFormatSrcset(props.image, 'avif'))
 </script>

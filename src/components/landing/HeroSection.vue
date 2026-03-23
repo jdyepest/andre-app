@@ -1,18 +1,22 @@
 <template>
   <section id="inicio" class="hero-section">
     <div class="hero-bg">
-      <img
-        :src="image"
-        :alt="imageAlt"
-        class="hero-image"
-        loading="eager"
-        decoding="async"
-        fetchpriority="high"
-        :width="imageSize.width"
-        :height="imageSize.height"
-        :srcset="imageSrcset || undefined"
-        sizes="100vw"
-      >
+      <picture>
+        <source v-if="imageAvifSrcset" type="image/avif" :srcset="imageAvifSrcset" sizes="100vw">
+        <source v-if="imageWebpSrcset" type="image/webp" :srcset="imageWebpSrcset" sizes="100vw">
+        <img
+          :src="image"
+          :alt="imageAlt"
+          class="hero-image"
+          loading="eager"
+          decoding="async"
+          fetchpriority="high"
+          :width="imageSize.width"
+          :height="imageSize.height"
+          :srcset="imageSrcset || undefined"
+          sizes="100vw"
+        >
+      </picture>
       <div class="hero-overlay"></div>
       <div class="hero-fade"></div>
     </div>
@@ -46,7 +50,7 @@
 
 <script setup>
 import { computed } from 'vue'
-import { getImageSize, getImageSrcset } from '~/utils/imageSizes'
+import { getFormatSrcset, getImageSize, getImageSrcset } from '~/utils/imageSizes'
 
 const props = defineProps({
   image: { type: String, required: true },
@@ -63,4 +67,6 @@ const emit = defineEmits(['contact', 'about'])
 
 const imageSize = computed(() => getImageSize(props.image))
 const imageSrcset = computed(() => getImageSrcset(props.image))
+const imageWebpSrcset = computed(() => getFormatSrcset(props.image, 'webp'))
+const imageAvifSrcset = computed(() => getFormatSrcset(props.image, 'avif'))
 </script>

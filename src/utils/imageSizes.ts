@@ -40,6 +40,18 @@ const withVariant = (src: string, width: number) => {
   return `${match[1]}-${width}${match[2]}`
 }
 
+const withFormat = (src: string, format: string) => {
+  const match = src.match(/^(.*)(\.[^.]+)$/)
+  if (!match) return src
+  return `${match[1]}.${format}`
+}
+
+const withVariantFormat = (src: string, width: number, format: string) => {
+  const match = src.match(/^(.*)(\.[^.]+)$/)
+  if (!match) return src
+  return `${match[1]}-${width}.${format}`
+}
+
 export const getImageSize = (src: string, fallback: ImageSize = { width: 1200, height: 800 }) =>
   imageSizes[src] || fallback
 
@@ -47,4 +59,13 @@ export const getImageSrcset = (src: string) => {
   const size = imageSizes[src]
   if (!size || size.width <= SRCSET_WIDTH || !SRCSET_IMAGES.has(src)) return ''
   return `${withVariant(src, SRCSET_WIDTH)} ${SRCSET_WIDTH}w, ${src} ${size.width}w`
+}
+
+export const getFormatSrc = (src: string, format: string) =>
+  SRCSET_IMAGES.has(src) ? withFormat(src, format) : ''
+
+export const getFormatSrcset = (src: string, format: string) => {
+  const size = imageSizes[src]
+  if (!size || size.width <= SRCSET_WIDTH || !SRCSET_IMAGES.has(src)) return ''
+  return `${withVariantFormat(src, SRCSET_WIDTH, format)} ${SRCSET_WIDTH}w, ${withFormat(src, format)} ${size.width}w`
 }

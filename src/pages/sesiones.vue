@@ -4,18 +4,22 @@
 
     <header class="sessions-hero">
       <div class="sessions-hero-bg" aria-hidden="true">
-        <img
-          src="/assets/solecito.webp"
-          :alt="heroAlt"
-          class="sessions-hero-image"
-          loading="eager"
-          decoding="async"
-          fetchpriority="high"
-          :width="heroSize.width"
-          :height="heroSize.height"
-          :srcset="heroSrcset || undefined"
-          sizes="100vw"
-        >
+        <picture>
+          <source v-if="heroAvifSrcset" type="image/avif" :srcset="heroAvifSrcset" sizes="100vw">
+          <source v-if="heroWebpSrcset" type="image/webp" :srcset="heroWebpSrcset" sizes="100vw">
+          <img
+            src="/assets/solecito.webp"
+            :alt="heroAlt"
+            class="sessions-hero-image"
+            loading="eager"
+            decoding="async"
+            fetchpriority="high"
+            :width="heroSize.width"
+            :height="heroSize.height"
+            :srcset="heroSrcset || undefined"
+            sizes="100vw"
+          >
+        </picture>
         <div class="sessions-hero-overlay"></div>
         <div class="sessions-hero-glow"></div>
       </div>
@@ -37,17 +41,21 @@
         </div>
         <div class="sessions-intro-image">
           <div class="image-frame">
-            <img
-              :src="introImage"
-              :alt="introAlt"
-              class="section-image"
-              loading="lazy"
-              decoding="async"
-              :width="introSize.width"
-              :height="introSize.height"
-              :srcset="introSrcset || undefined"
-              sizes="(min-width: 1024px) 50vw, 90vw"
-            >
+            <picture>
+              <source v-if="introAvifSrcset" type="image/avif" :srcset="introAvifSrcset" sizes="(min-width: 1024px) 50vw, 90vw">
+              <source v-if="introWebpSrcset" type="image/webp" :srcset="introWebpSrcset" sizes="(min-width: 1024px) 50vw, 90vw">
+              <img
+                :src="introImage"
+                :alt="introAlt"
+                class="section-image"
+                loading="lazy"
+                decoding="async"
+                :width="introSize.width"
+                :height="introSize.height"
+                :srcset="introSrcset || undefined"
+                sizes="(min-width: 1024px) 50vw, 90vw"
+              >
+            </picture>
           </div>
         </div>
       </div>
@@ -57,17 +65,21 @@
       <div class="section-shell sessions-focus-grid">
         <div class="sessions-focus-image">
           <div class="image-frame">
-            <img
-              :src="focusImage"
-              :alt="focusAlt"
-              class="section-image"
-              loading="lazy"
-              decoding="async"
-              :width="focusSize.width"
-              :height="focusSize.height"
-              :srcset="focusSrcset || undefined"
-              sizes="(min-width: 1024px) 50vw, 90vw"
-            >
+            <picture>
+              <source v-if="focusAvifSrcset" type="image/avif" :srcset="focusAvifSrcset" sizes="(min-width: 1024px) 50vw, 90vw">
+              <source v-if="focusWebpSrcset" type="image/webp" :srcset="focusWebpSrcset" sizes="(min-width: 1024px) 50vw, 90vw">
+              <img
+                :src="focusImage"
+                :alt="focusAlt"
+                class="section-image"
+                loading="lazy"
+                decoding="async"
+                :width="focusSize.width"
+                :height="focusSize.height"
+                :srcset="focusSrcset || undefined"
+                sizes="(min-width: 1024px) 50vw, 90vw"
+              >
+            </picture>
           </div>
         </div>
         <div class="sessions-focus-text">
@@ -185,7 +197,7 @@ import { useI18n } from 'vue-i18n'
 import Navbar from '~/components/Navbar.vue'
 import ContactSection from '~/components/landing/ContactSection.vue'
 import { useContentData } from '~/composables/useContentData'
-import { getImageSize, getImageSrcset } from '~/utils/imageSizes'
+import { getFormatSrcset, getImageSize, getImageSrcset } from '~/utils/imageSizes'
 
 const { locale, t } = useI18n()
 const route = useRoute()
@@ -229,6 +241,8 @@ useHead({
 const heroAlt = computed(() => t('alts.sessionsHero'))
 const heroSize = computed(() => getImageSize('/assets/solecito.webp'))
 const heroSrcset = computed(() => getImageSrcset('/assets/solecito.webp'))
+const heroWebpSrcset = computed(() => getFormatSrcset('/assets/solecito.webp', 'webp'))
+const heroAvifSrcset = computed(() => getFormatSrcset('/assets/solecito.webp', 'avif'))
 
 const introImage = '/assets/imagen_sesiones_3.jpg'
 const focusImage = '/assets/imagen_sesiones_2.jpg'
@@ -236,6 +250,10 @@ const introSize = computed(() => getImageSize(introImage))
 const focusSize = computed(() => getImageSize(focusImage))
 const introSrcset = computed(() => getImageSrcset(introImage))
 const focusSrcset = computed(() => getImageSrcset(focusImage))
+const introWebpSrcset = computed(() => getFormatSrcset(introImage, 'webp'))
+const introAvifSrcset = computed(() => getFormatSrcset(introImage, 'avif'))
+const focusWebpSrcset = computed(() => getFormatSrcset(focusImage, 'webp'))
+const focusAvifSrcset = computed(() => getFormatSrcset(focusImage, 'avif'))
 
 const introAlt = computed(() => t('alts.sessionsIntro'))
 const focusAlt = computed(() => t('alts.sessionsFocus'))

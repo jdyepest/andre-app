@@ -4,18 +4,22 @@
 
     <header class="reflections-hero">
       <div class="reflections-hero-bg" aria-hidden="true">
-        <img
-          :src="heroImage"
-          alt="Collage artistico"
-          class="reflections-hero-image"
-          loading="eager"
-          decoding="async"
-          fetchpriority="high"
-          :width="heroSize.width"
-          :height="heroSize.height"
-          :srcset="heroSrcset || undefined"
-          sizes="100vw"
-        >
+        <picture>
+          <source v-if="heroAvifSrcset" type="image/avif" :srcset="heroAvifSrcset" sizes="100vw">
+          <source v-if="heroWebpSrcset" type="image/webp" :srcset="heroWebpSrcset" sizes="100vw">
+          <img
+            :src="heroImage"
+            alt="Collage artistico"
+            class="reflections-hero-image"
+            loading="eager"
+            decoding="async"
+            fetchpriority="high"
+            :width="heroSize.width"
+            :height="heroSize.height"
+            :srcset="heroSrcset || undefined"
+            sizes="100vw"
+          >
+        </picture>
         <div class="reflections-hero-overlay"></div>
         <div class="reflections-hero-glow"></div>
       </div>
@@ -44,16 +48,20 @@
             class="reflection-card reflections-card"
           >
             <div class="reflection-image">
-              <img
-                :src="card.image"
-                :alt="card.title"
-                loading="lazy"
-                decoding="async"
-                :width="getSize(card.image).width"
-                :height="getSize(card.image).height"
-                :srcset="getSrcset(card.image) || undefined"
-                sizes="(min-width: 1024px) 33vw, 90vw"
-              >
+              <picture>
+                <source v-if="getAvif(card.image)" type="image/avif" :srcset="getAvif(card.image)" sizes="(min-width: 1024px) 33vw, 90vw">
+                <source v-if="getWebp(card.image)" type="image/webp" :srcset="getWebp(card.image)" sizes="(min-width: 1024px) 33vw, 90vw">
+                <img
+                  :src="card.image"
+                  :alt="card.title"
+                  loading="lazy"
+                  decoding="async"
+                  :width="getSize(card.image).width"
+                  :height="getSize(card.image).height"
+                  :srcset="getSrcset(card.image) || undefined"
+                  sizes="(min-width: 1024px) 33vw, 90vw"
+                >
+              </picture>
             </div>
             <div class="reflection-body">
               <h3 class="reflection-title">{{ card.title }}</h3>
@@ -84,7 +92,7 @@ import { useLocalePath } from '#i18n'
 import Navbar from '~/components/Navbar.vue'
 import ContactSection from '~/components/landing/ContactSection.vue'
 import { useContentData } from '~/composables/useContentData'
-import { getImageSize, getImageSrcset } from '~/utils/imageSizes'
+import { getFormatSrcset, getImageSize, getImageSrcset } from '~/utils/imageSizes'
 
 const { locale, t } = useI18n()
 const localePath = useLocalePath()
@@ -93,6 +101,8 @@ const page = computed(() => contentData.value.reflections || { title: '', intro:
 const heroImage = '/assets/DKS2.jpg'
 const heroSize = computed(() => getImageSize(heroImage))
 const heroSrcset = computed(() => getImageSrcset(heroImage))
+const heroWebpSrcset = computed(() => getFormatSrcset(heroImage, 'webp'))
+const heroAvifSrcset = computed(() => getFormatSrcset(heroImage, 'avif'))
 
 const heroIntro = computed(() => {
   const intro = page.value?.intro || ''
@@ -147,4 +157,6 @@ const contactLinks = [
 
 const getSize = (src) => getImageSize(src)
 const getSrcset = (src) => getImageSrcset(src)
+const getWebp = (src) => getFormatSrcset(src, 'webp')
+const getAvif = (src) => getFormatSrcset(src, 'avif')
 </script>

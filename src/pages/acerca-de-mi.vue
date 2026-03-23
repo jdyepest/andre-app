@@ -4,18 +4,22 @@
 
     <header class="about-hero">
       <div class="about-hero-bg" aria-hidden="true">
-        <img
-          :src="heroImage"
-          :alt="heroImageAlt"
-          class="about-hero-image"
-          loading="eager"
-          decoding="async"
-          fetchpriority="high"
-          :width="heroSize.width"
-          :height="heroSize.height"
-          :srcset="heroSrcset || undefined"
-          sizes="100vw"
-        >
+        <picture>
+          <source v-if="heroAvifSrcset" type="image/avif" :srcset="heroAvifSrcset" sizes="100vw">
+          <source v-if="heroWebpSrcset" type="image/webp" :srcset="heroWebpSrcset" sizes="100vw">
+          <img
+            :src="heroImage"
+            :alt="heroImageAlt"
+            class="about-hero-image"
+            loading="eager"
+            decoding="async"
+            fetchpriority="high"
+            :width="heroSize.width"
+            :height="heroSize.height"
+            :srcset="heroSrcset || undefined"
+            sizes="100vw"
+          >
+        </picture>
         <div class="about-hero-overlay"></div>
         <div class="about-hero-fade"></div>
       </div>
@@ -29,17 +33,21 @@
     <section class="section section-soft">
       <div class="section-shell about-story-grid">
         <div class="image-frame about-portrait">
-          <img
-            :src="page.image"
-            :alt="portraitAlt"
-            class="section-image"
-            loading="lazy"
-            decoding="async"
-            :width="portraitSize.width"
-            :height="portraitSize.height"
-            :srcset="portraitSrcset || undefined"
-            sizes="(min-width: 1024px) 50vw, 90vw"
-          >
+          <picture>
+            <source v-if="portraitAvifSrcset" type="image/avif" :srcset="portraitAvifSrcset" sizes="(min-width: 1024px) 50vw, 90vw">
+            <source v-if="portraitWebpSrcset" type="image/webp" :srcset="portraitWebpSrcset" sizes="(min-width: 1024px) 50vw, 90vw">
+            <img
+              :src="page.image"
+              :alt="portraitAlt"
+              class="section-image"
+              loading="lazy"
+              decoding="async"
+              :width="portraitSize.width"
+              :height="portraitSize.height"
+              :srcset="portraitSrcset || undefined"
+              sizes="(min-width: 1024px) 50vw, 90vw"
+            >
+          </picture>
         </div>
         <div class="about-story">
           <p class="section-kicker">{{ $t('nav.about') }}</p>
@@ -92,17 +100,21 @@
       <div class="section-shell paintings-grid">
         <div class="paintings-media">
           <div class="image-frame painting-frame">
-            <img
-              :src="paintingsImage"
-              :alt="paintingsAlt"
-              class="section-image"
-              loading="lazy"
-              decoding="async"
-              :width="paintingsSize.width"
-              :height="paintingsSize.height"
-              :srcset="paintingsSrcset || undefined"
-              sizes="(min-width: 1024px) 50vw, 90vw"
-            >
+            <picture>
+              <source v-if="paintingsAvifSrcset" type="image/avif" :srcset="paintingsAvifSrcset" sizes="(min-width: 1024px) 50vw, 90vw">
+              <source v-if="paintingsWebpSrcset" type="image/webp" :srcset="paintingsWebpSrcset" sizes="(min-width: 1024px) 50vw, 90vw">
+              <img
+                :src="paintingsImage"
+                :alt="paintingsAlt"
+                class="section-image"
+                loading="lazy"
+                decoding="async"
+                :width="paintingsSize.width"
+                :height="paintingsSize.height"
+                :srcset="paintingsSrcset || undefined"
+                sizes="(min-width: 1024px) 50vw, 90vw"
+              >
+            </picture>
           </div>
         </div>
         <div class="paintings-content">
@@ -193,7 +205,7 @@ import { useI18n } from 'vue-i18n'
 import Navbar from '~/components/Navbar.vue'
 import ContactSection from '~/components/landing/ContactSection.vue'
 import { useContentData } from '~/composables/useContentData'
-import { getImageSize, getImageSrcset } from '~/utils/imageSizes'
+import { getFormatSrcset, getImageSize, getImageSrcset } from '~/utils/imageSizes'
 
 const { locale, t } = useI18n()
 const { contentData } = useContentData(locale)
@@ -202,6 +214,8 @@ const page = computed(() => contentData.value.about || { title: '', paragraphs: 
 const heroImage = '/assets/campo_lilas.jpg'
 const heroSize = computed(() => getImageSize(heroImage))
 const heroSrcset = computed(() => getImageSrcset(heroImage))
+const heroWebpSrcset = computed(() => getFormatSrcset(heroImage, 'webp'))
+const heroAvifSrcset = computed(() => getFormatSrcset(heroImage, 'avif'))
 
 const heroImageAlt = computed(() =>
   locale.value === 'en' ? 'Lavender field' : 'Campo de lilas'
@@ -213,6 +227,8 @@ const portraitAlt = computed(() =>
 
 const portraitSize = computed(() => getImageSize(page.value?.image || ''))
 const portraitSrcset = computed(() => getImageSrcset(page.value?.image || ''))
+const portraitWebpSrcset = computed(() => getFormatSrcset(page.value?.image || '', 'webp'))
+const portraitAvifSrcset = computed(() => getFormatSrcset(page.value?.image || '', 'avif'))
 
 const heroIntro = computed(() => {
   const paragraph = page.value?.paragraphs?.[0] || ''
@@ -268,6 +284,8 @@ const paintingsText = computed(() => page.value?.paintingsText || '')
 const paintingsImage = computed(() => page.value?.paintingsImage || '/assets/ai_painting_placeholder.svg')
 const paintingsSize = computed(() => getImageSize(paintingsImage.value))
 const paintingsSrcset = computed(() => getImageSrcset(paintingsImage.value))
+const paintingsWebpSrcset = computed(() => getFormatSrcset(paintingsImage.value, 'webp'))
+const paintingsAvifSrcset = computed(() => getFormatSrcset(paintingsImage.value, 'avif'))
 const paintingsAlt = computed(() =>
   locale.value === 'en' ? 'AI-generated painting' : 'Pintura generada por IA'
 )
