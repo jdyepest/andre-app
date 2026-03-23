@@ -4,7 +4,14 @@
 
     <header class="about-hero">
       <div class="about-hero-bg" aria-hidden="true">
-        <img :src="heroImage" :alt="heroImageAlt" class="about-hero-image">
+        <img
+          :src="heroImage"
+          :alt="heroImageAlt"
+          class="about-hero-image"
+          loading="eager"
+          decoding="async"
+          fetchpriority="high"
+        >
         <div class="about-hero-overlay"></div>
         <div class="about-hero-fade"></div>
       </div>
@@ -18,7 +25,7 @@
     <section class="section section-soft">
       <div class="section-shell about-story-grid">
         <div class="image-frame about-portrait">
-          <img :src="page.image" :alt="portraitAlt" class="section-image">
+          <img :src="page.image" :alt="portraitAlt" class="section-image" loading="lazy" decoding="async">
         </div>
         <div class="about-story">
           <p class="section-kicker">{{ $t('nav.about') }}</p>
@@ -71,7 +78,7 @@
       <div class="section-shell paintings-grid">
         <div class="paintings-media">
           <div class="image-frame painting-frame">
-            <img :src="paintingsImage" :alt="paintingsAlt" class="section-image">
+            <img :src="paintingsImage" :alt="paintingsAlt" class="section-image" loading="lazy" decoding="async">
           </div>
         </div>
         <div class="paintings-content">

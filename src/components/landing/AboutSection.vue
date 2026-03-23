@@ -2,7 +2,7 @@
   <section id="acerca" class="section section-soft">
     <div class="section-shell grid gap-12 md:grid-cols-2 items-center about-grid">
       <div class="image-frame">
-        <img :src="image" :alt="imageAlt" class="section-image">
+        <img :src="image" :alt="imageAlt" class="section-image" loading="lazy" decoding="async">
       </div>
       <div class="about-content">
         <p class="section-kicker">{{ kicker }}</p>

@@ -356,28 +356,28 @@
     },
     "carousel": [
       {
-        "image": "/assets/image4.png",
+        "image": "/assets/image4.jpg",
         "title": "Acerca de mi",
         "description": "Psicologa con formacion psicoanalitica, de genero y especialista en problemas de la infancia y adolescencia. Graduada de pregrado en la Universidad del Valle y posgrado en la Universidad de Antioquia. Procuro un espacio de confianza para ir mas alla del tratamiento de manera que se ofrezca un acompanamiento y atencion singular en cada proceso.",
         "buttonText": "Conoce mas",
         "link": "/acerca-de-mi"
       },
       {
-        "image": "/assets/image2.png",
+        "image": "/assets/image2.jpg",
         "title": "Terapia",
         "description": "Brindo sesiones de terapia psicoanalitica personalizadas, disponibles tanto en remoto para aquellos en distintas partes del mundo, con horarios flexibles que se adaptan a tu ritmo de vida, como presenciales en la ciudad de Cali, Colombia.",
         "buttonText": "Conoce mas",
         "link": "/sesiones"
       },
       {
-        "image": "/assets/image2.png",
+        "image": "/assets/image2.jpg",
         "title": "Reflexiones",
         "description": "En estas paginas me complace compartir algunos textos a partir de mi experiencia personal como psicologa con pasion a la poesia, interesada en los dialogos de genero, feministas y culturales, y comprometida con brindar espacios seguros en los acompanamientos psicoterapeuticos con enfoque psicoanalitico. Busco poder trasmitir a traves de pensamientos y sensaciones vividas una proximidad de conocerme en mi labor.",
         "buttonText": "Conoce mas",
         "link": "/reflexiones"
       },
       {
-        "image": "/assets/image5.png",
+        "image": "/assets/image5.jpg",
         "title": "Contacto",
         "description": "Puedes contactarme a traves de cualquiera de mis redes sociales si requieres mas informacion o tienes alguna pregunta al respecto.",
         "buttonText": "Contacto",

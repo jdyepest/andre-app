@@ -4,7 +4,14 @@
 
     <header class="sessions-hero">
       <div class="sessions-hero-bg" aria-hidden="true">
-        <img src="/assets/solecito.webp" :alt="heroAlt" class="sessions-hero-image">
+        <img
+          src="/assets/solecito.webp"
+          :alt="heroAlt"
+          class="sessions-hero-image"
+          loading="eager"
+          decoding="async"
+          fetchpriority="high"
+        >
         <div class="sessions-hero-overlay"></div>
         <div class="sessions-hero-glow"></div>
       </div>
@@ -26,7 +33,7 @@
         </div>
         <div class="sessions-intro-image">
           <div class="image-frame">
-            <img :src="introImage" :alt="introAlt" class="section-image">
+            <img :src="introImage" :alt="introAlt" class="section-image" loading="lazy" decoding="async">
           </div>
         </div>
       </div>
@@ -36,7 +43,7 @@
       <div class="section-shell sessions-focus-grid">
         <div class="sessions-focus-image">
           <div class="image-frame">
-            <img :src="focusImage" :alt="focusAlt" class="section-image">
+            <img :src="focusImage" :alt="focusAlt" class="section-image" loading="lazy" decoding="async">
           </div>
         </div>
         <div class="sessions-focus-text">

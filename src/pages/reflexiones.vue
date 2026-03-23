@@ -4,7 +4,14 @@
 
     <header class="reflections-hero">
       <div class="reflections-hero-bg" aria-hidden="true">
-        <img src="/assets/DKS2.jpg" alt="Collage artistico" class="reflections-hero-image">
+        <img
+          src="/assets/DKS2.jpg"
+          alt="Collage artistico"
+          class="reflections-hero-image"
+          loading="eager"
+          decoding="async"
+          fetchpriority="high"
+        >
         <div class="reflections-hero-overlay"></div>
         <div class="reflections-hero-glow"></div>
       </div>
@@ -33,7 +40,7 @@
             class="reflection-card reflections-card"
           >
             <div class="reflection-image">
-              <img :src="card.image" :alt="card.title">
+              <img :src="card.image" :alt="card.title" loading="lazy" decoding="async">
             </div>
             <div class="reflection-body">
               <h3 class="reflection-title">{{ card.title }}</h3>

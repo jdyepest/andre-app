@@ -356,28 +356,28 @@
     },
     "carousel": [
       {
-        "image": "/assets/image4.png",
+        "image": "/assets/image4.jpg",
         "title": "About me",
         "description": "Psychologist with psychoanalytic training, gender perspective, and a specialization in childhood and adolescence issues. I graduated from Universidad del Valle and completed postgraduate studies at Universidad de Antioquia. I offer a space of trust that goes beyond treatment, providing singular support and attention in each process.",
         "buttonText": "Learn more",
         "link": "/acerca-de-mi"
       },
       {
-        "image": "/assets/image2.png",
+        "image": "/assets/image2.jpg",
         "title": "Therapy",
         "description": "I provide personalized psychoanalytic therapy sessions, available online for people around the world with flexible schedules, as well as in-person in Cali, Colombia.",
         "buttonText": "Learn more",
         "link": "/sesiones"
       },
       {
-        "image": "/assets/image2.png",
+        "image": "/assets/image2.jpg",
         "title": "Reflections",
         "description": "In these pages I share texts from my personal experience as a psychologist with a passion for poetry, interested in gender, feminist and cultural dialogues, and committed to providing safe spaces in psychoanalytic accompaniment.",
         "buttonText": "Learn more",
         "link": "/reflexiones"
       },
       {
-        "image": "/assets/image5.png",
+        "image": "/assets/image5.jpg",
         "title": "Contact",
         "description": "You can contact me through any of my social networks if you need more information or have questions.",
         "buttonText": "Contact",

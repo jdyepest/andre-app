@@ -4,7 +4,14 @@
     <div class="carousel-inner  h-full">
     <TransitionGroup :name="slideDirection" tag="div">
       <div v-for="(slide, index) in slides" :key="slide.title" class="flex-none w-full h-full carousel-slider" v-show="index === currentSlide">
-            <img :src="slide.image" alt="Slide image" class="object-fill w-full h-full">
+            <img
+              :src="slide.image"
+              :alt="slide.title"
+              class="object-fill w-full h-full"
+              :loading="index === 0 ? 'eager' : 'lazy'"
+              decoding="async"
+              :fetchpriority="index === 0 ? 'high' : 'auto'"
+            >
             <div class="absolute md:bottom-[15%] md:left-[13%] bottom-5 left-[13%] bg-white bg-opacity-50 md:bg-opacity-75 p-5 rounded-lg w-3/4 text-violet-950">
               <h2 class="text-[1.5rem] md:text-[30px] mb-4 text-center font-vintage-coquete font-bold">{{ slide.title }}</h2>
               <p class="mb-4 text-[0.9rem] text-center md:text-xl font-sans">{{ slide.description }}</p>

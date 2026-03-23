@@ -17,7 +17,7 @@
           class="reflection-card"
         >
           <div class="reflection-image">
-            <img :src="card.image" :alt="card.title">
+            <img :src="card.image" :alt="card.title" loading="lazy" decoding="async">
           </div>
           <div class="reflection-body">
             <h3 class="reflection-title">{{ card.title }}</h3>

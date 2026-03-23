@@ -1,7 +1,14 @@
 <template>
   <section id="inicio" class="hero-section">
     <div class="hero-bg">
-      <img :src="image" :alt="imageAlt" class="hero-image">
+      <img
+        :src="image"
+        :alt="imageAlt"
+        class="hero-image"
+        loading="eager"
+        decoding="async"
+        fetchpriority="high"
+      >
       <div class="hero-overlay"></div>
       <div class="hero-fade"></div>
     </div>

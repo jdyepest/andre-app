@@ -12,7 +12,7 @@
         </p>
       </div>
       <div class="image-frame book-image">
-        <img :src="image" :alt="imageAlt" class="section-image">
+        <img :src="image" :alt="imageAlt" class="section-image" loading="lazy" decoding="async">
       </div>
     </div>
   </section>
